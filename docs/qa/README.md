@@ -2,6 +2,8 @@
 
 版本 v0.2；2026-11-03（Asia/Shanghai）；状态：本地静态预览已检查，正式环境未检查。
 
+2026-11-03 后续配置更新：NanXuan 与主要咨询账号已写入；重新通过类型、内容、构建检查，生成链接断言确认案例标题编码正确且不带伪域名，没有外发消息。360px 联系页无横向溢出。build-report.json 是当前配置的构建结果；下述旧截图和全量交互报告对应初始 P1 版本。新增联系页截图见 [360px](screenshots/contact-confirmed-360.jpg)／[1440px](screenshots/contact-confirmed-1440.jpg)。
+
 ## 环境与方法
 
 Windows，Node 24.22.1，pnpm 11.25.0，Astro 7.4.5。浏览器为 Codex in-app browser，版本接口未暴露。`pnpm preview` 提供构建后的 http://127.0.0.1:4321/en/。视口为 360／390×844 和 768／1440×1000 CSS px，模拟尺寸；不是四台真实设备。

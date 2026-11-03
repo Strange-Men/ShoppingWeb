@@ -27,7 +27,7 @@ export const copy = {
     materialNoteTitle: 'Made around your requirements.', materialNote: 'Share your reference, dimensions, quantity and project setting. Material specifications, finishes, pricing and timing are confirmed through discussion for each project.',
   },
   contact: {
-    title: 'Contact & discuss a custom sculpture', description: 'Prepare a sculpture inquiry with your reference, material, dimensions, quantity and project location. WhatsApp and email account details are awaiting confirmation.',
+    title: 'Contact & discuss a custom sculpture', description: 'Contact NanXuan by WhatsApp or email to discuss custom fiberglass / FRP and stainless steel sculpture. Share your reference, dimensions, quantity and project location.',
     eyebrow: 'Let’s start a conversation', heading: 'What would you like to create?', lead: 'An image, a drawing or an idea. Bring your starting point, and let’s discuss the sculpture you have in mind.',
     panelEyebrow: 'Direct conversation', panelTitle: 'Your project starts here.', panelText: 'WhatsApp and email are our main inquiry channels. Share your reference and project requirements when getting in touch.',
     pending: 'Preview notice: contact accounts are awaiting owner confirmation. Inquiry links will appear once the details are ready.',

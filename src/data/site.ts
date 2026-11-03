@@ -4,13 +4,13 @@ import type { MediaSlot } from './types';
 export const isPreview = process.env.SITE_MODE !== 'production';
 export const site = {
   companyName: '楠轩雕塑',
-  brandName: '', // Owner-approved English brand; intentionally unconfirmed.
+  brandName: 'NanXuan', // Owner-confirmed spelling and capitalization.
   legalName: '',
   canonicalOrigin: '', // Verified public HTTPS origin, without a path.
   profile: '',
   address: '',
   businessHours: '',
-  contacts: { whatsappDigits: '', email: '', facebookUrl: '', instagramUrl: '' },
+  contacts: { whatsappDigits: '8613699888635', email: 'shuixingliu416@gmail.com', facebookUrl: '', instagramUrl: '' },
 };
 export const displayBrand = site.brandName || 'SCULPTURE STUDIO';
 export const media: Record<'hero' | 'workshop' | 'fiberglass' | 'stainless-steel', MediaSlot> = {
