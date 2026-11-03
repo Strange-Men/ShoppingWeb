@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-03",
+  "origin": "http://127.0.0.1:4321",
+  "results": [
+    {
+      "route": "/en/about/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/contact/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/privacy/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/fiberglass/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/fiberglass/preview-01/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/fiberglass/preview-02/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/fiberglass/preview-03/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/fiberglass/preview-04/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/stainless-steel/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/stainless-steel/preview-01/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/stainless-steel/preview-02/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/stainless-steel/preview-03/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/stainless-steel/preview-04/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/qa-missing-page/",
+      "status": 404,
+      "actual": 404,
+      "pass": true
+    },
+    {
+      "route": "/en/products/fiberglass/not-a-case/",
+      "status": 404,
+      "actual": 404,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/",
+      "status": 404,
+      "actual": 404,
+      "pass": true
+    },
+    {
+      "route": "/ar/",
+      "status": 404,
+      "actual": 404,
+      "pass": true
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 404,
+      "actual": 404,
+      "pass": true
+    }
+  ]
+}

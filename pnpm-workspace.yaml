@@ -1,0 +1,6 @@
+minimumReleaseAgeExclude:
+  - astro@7.4.5
+saveExact: true
+engineStrict: true
+allowBuilds:
+  sharp: true

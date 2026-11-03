@@ -1,0 +1,12 @@
+---
+import { displayBrand, materials, site, isPreview } from '../data/site';
+import { socialUrl } from '../lib/inquiry';
+const social = [{name:'Facebook', url:socialUrl(site.contacts.facebookUrl,'facebook')}, {name:'Instagram',url:socialUrl(site.contacts.instagramUrl,'instagram')}];
+---
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid"><div class="footer-brand"><a class="brand" href="/en/"><span class="brand-seal" aria-hidden="true">楠</span><span><strong>{displayBrand}</strong><small>{site.companyName}</small></span></a><p>Custom sculptures in fiberglass / FRP and stainless steel. Begin with your idea.</p>{!site.brandName && <small class="muted">English brand awaiting confirmation.</small>}</div>
+    <div><h2>Explore</h2><a href="/en/">Home</a><a href="/en/about/">About us</a><a href="/en/products/">Our work</a><a href="/en/contact/">Contact</a></div>
+    <div><h2>Materials</h2>{materials.map(material => <a href={`/en/products/${material.id}/`}>{material.title}</a>)}</div>
+    <div><h2>Let’s talk</h2><p>WhatsApp & email</p><a href="/en/contact/">Contact details <span aria-hidden="true">↗</span></a>{social.filter(item => item.url).map(item => <a href={item.url!} target="_blank" rel="noopener noreferrer">{item.name} ↗</a>)}</div>
+  </div><div class="footer-bottom"><span>© {new Date().getFullYear()} {site.companyName}</span><span>{isPreview ? 'P1 preview · Not for public release' : 'Custom sculpture studio'}</span><a href="/en/privacy/">Privacy notice</a></div>
+</div></footer>

@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "mode": "preview",
+  "node": "v24.22.1",
+  "htmlPages": 17,
+  "checkedLocalLinks": 527,
+  "externalScriptBytes": 0,
+  "externalScriptGzipBytes": 0,
+  "maxInlineScriptBytes": 2400,
+  "maxInlineScriptGzipBytes": 878,
+  "noindex": "all HTML checked",
+  "previewSitemap": "absent",
+  "errors": []
+}

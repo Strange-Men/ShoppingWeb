@@ -1,0 +1,46 @@
+// Owner-facing English page copy. Review here before introducing another language.
+export const copy = {
+  home: {
+    title: 'Custom sculptures, shaped around your vision',
+    description: 'Explore custom fiberglass / FRP and stainless steel sculpture, from your reference and 3D design through production, shipping and installation guidance.',
+    heroEyebrow: 'Fiberglass / FRP & Stainless Steel', heroTitle: ['Your vision.', 'Sculpted into form.'],
+    heroText: ['Custom sculpture, from the first reference', 'to the finishing details.'],
+    heroNotes: ['Made to your reference', 'Design & 3D modeling', 'Custom production'],
+    introEyebrow: 'An idea. A material. A possibility.', introTitle: ['Custom sculpture,', 'with your project in mind.'],
+    intro: ['楠轩雕塑 offers custom sculpture in fiberglass / FRP and stainless steel. A drawing, reference image or concept can be the starting point.', 'From design and 3D modeling to sampling, production, packaging, shipping and installation guidance, the scope is shaped around each project.'],
+    imageNote: 'A space for the people and process behind the work.',
+    featured: { eyebrow: 'The work, in focus', title: 'Selected sculptures', description: 'Explore the case layouts across our two materials.', note: 'Layout preview — these unpublished slots await your own photographs and verified project details.' },
+    materials: { eyebrow: 'Two materials. Your direction.', title: 'Find the right starting point.', description: 'Form, scale and finish begin with a conversation about your project.' },
+    capabilities: { eyebrow: 'A collaborative approach', title: 'Built around your brief.', description: 'The confirmed services behind a custom commission.' },
+  },
+  about: {
+    title: 'About the studio & our custom approach', description: 'Learn about 楠轩雕塑’s confirmed custom sculpture services in fiberglass and stainless steel. Company background and workshop photographs are pending.',
+    eyebrow: 'About us', heading: 'Every sculpture begins with an idea.', lead: 'A custom approach to fiberglass / FRP and stainless steel sculpture.',
+    introTitle: ['From your reference', 'to a considered form.'],
+    paragraphs: ['We offer custom sculpture services in two materials: fiberglass / FRP and stainless steel. Start with your drawing, reference image or concept, then discuss the design and production requirements.', 'Our confirmed service scope includes design and 3D modeling, sampling, production, packaging and shipping, and installation guidance.'],
+    pending: 'Owner-approved company background, team information and workshop photographs will be added here.',
+  },
+  work: {
+    title: 'Sculpture cases — fiberglass & stainless steel', description: 'Browse fiberglass / FRP and stainless steel sculpture case layouts. All current examples are clearly identified as unpublished preview slots.',
+    eyebrow: 'Our work', heading: 'A place for your next possibility.', lead: 'Custom sculpture in fiberglass / FRP and stainless steel. Explore by material.',
+    note: '8 unpublished layout slots · no completed projects are represented', empty: 'Cases will be added when approved project details are available.',
+    materialNoteTitle: 'Made around your requirements.', materialNote: 'Share your reference, dimensions, quantity and project setting. Material specifications, finishes, pricing and timing are confirmed through discussion for each project.',
+  },
+  contact: {
+    title: 'Contact & discuss a custom sculpture', description: 'Prepare a sculpture inquiry with your reference, material, dimensions, quantity and project location. WhatsApp and email account details are awaiting confirmation.',
+    eyebrow: 'Let’s start a conversation', heading: 'What would you like to create?', lead: 'An image, a drawing or an idea. Bring your starting point, and let’s discuss the sculpture you have in mind.',
+    panelEyebrow: 'Direct conversation', panelTitle: 'Your project starts here.', panelText: 'WhatsApp and email are our main inquiry channels. Share your reference and project requirements when getting in touch.',
+    pending: 'Preview notice: contact accounts are awaiting owner confirmation. Inquiry links will appear once the details are ready.',
+    briefEyebrow: 'Before you get in touch', briefTitle: 'A useful starting brief.',
+    brief: [
+      { title: 'Your reference', text: 'An image, sketch, drawing or a description of the idea.' },
+      { title: 'Material & dimensions', text: 'Fiberglass / FRP or stainless steel, preferred size and quantity.' },
+      { title: 'The project setting', text: 'The intended location, site conditions and destination.' },
+      { title: 'Your requirements', text: 'Design, sampling, finish, packing, transport or installation guidance to discuss.' },
+    ],
+    scopeNote: 'Project price, schedule and service scope are confirmed individually.',
+  },
+  process: { eyebrow: 'The custom process', title: 'A considered path, from start to finish.', description: 'Each commission has its own requirements. The steps and scope are agreed for your project.' },
+  inquiry: { eyebrow: 'From your idea to a custom sculpture', title: 'Let’s give your vision form.', paragraphs: ['Share a reference, dimensions and project location.', 'We can discuss the next steps together.'] },
+  detail: { preview: 'This is an empty case slot, not a completed project.', scope: 'A consultation begins with a discussion. No price, lead time or installation scope is assumed.', noteTitle: 'The project, in detail.', note: 'Design, 3D modeling, sampling, production, packaging, shipping and installation guidance can be discussed. The requirements and scope will be agreed individually.' },
+};

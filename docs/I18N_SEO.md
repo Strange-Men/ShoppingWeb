@@ -1,16 +1,18 @@
 # 多语言与 SEO 规范
 
-版本 v0.1；2026-11-03；状态：实施规划。对应 FR-005、FR-009、FR-010、NFR-001。官方依据见[资料目录](research/SOURCES.md)。
+版本 v0.2；2026-11-03；状态：P1 已实现，P2／P3 仍待发布验证。对应 FR-005、FR-009、FR-010、NFR-001。官方依据见[资料目录](research/SOURCES.md)。
 
 ## 语言和发布状态
 
 | 语言 | 内部标识与 HTML lang | 网址前缀 | 首个英文版状态 |
 | --- | --- | --- | --- |
-| English | en | `/en/` | 已实现并通过检查后启用 |
+| English | en | `/en/` | 本地占位预览已启用，全部 noindex |
 | 繁體中文 | zh-Hant | `/zh-hant/` | coming-soon，不生成正式内容 URL |
 | العربية | ar | `/ar/` | coming-soon，不生成正式内容 URL |
 
 根路径 `/` 在生产 Nginx 统一 301 至 `/en/`，英文从首发起保留前缀，后续不迁移英文路径。预览服务如不能输出 HTTP 重定向，可显示明确英文入口，生产重定向单独验证。域名尚未确定，文档中的 example.com 仅为示例，禁止写入生产 canonical。
+
+P1 实际行为：根路径显示英文入口；17 个 HTML 全部 `noindex, nofollow`；不输出 canonical、hreflang、sitemap。robots.txt 允许读取 HTML 以识别 noindex，不把禁抓当作 noindex。正式域名缺失时不生成任何伪生产 URL。正式模式的 sitemap 规则只列英文真实页面和 approved／published 案例；build:release 先执行资料门槛。此规则尚未在真实域名部署验收。
 
 内部标识、URL 前缀、hreflang 代码分别管理，不将大小写规则混为一谈。繁体为跨地区内容，初始使用 zh-Hant，不强行归为某一个国家或地区。英文覆盖多数目标市场的通用交流；阿语不是中亚、印度所有访客的替代语言，暂不增加俄语等未要求语言。
 

@@ -1,0 +1,152 @@
+[
+  {
+    "check": "language keyboard open",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "language Escape / focus",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "menu keyboard open",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "menu Escape / focus",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "case click path / reload",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "gallery open second view",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "gallery next",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "gallery Escape / focus",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "language keyboard open",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "language Escape / focus",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "menu keyboard open",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "menu Escape / focus",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "case click path / reload",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "gallery open second view",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "gallery next",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "gallery Escape / focus",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "language keyboard open",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "language Escape / focus",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "menu keyboard open",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "menu Escape / focus",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "case click path / reload",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "gallery open second view",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "gallery next",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "gallery Escape / focus",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "language keyboard open",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "language Escape / focus",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "case click path / reload",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "gallery open second view",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "gallery next",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "gallery Escape / focus",
+    "pass": true,
+    "width": 1440
+  }
+]

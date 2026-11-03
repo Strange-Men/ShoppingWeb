@@ -1,0 +1,16 @@
+---
+import { languages } from '../i18n/routes';
+---
+<details class="language-picker" data-disclosure="language">
+  <summary aria-controls="language-panel"><span aria-hidden="true">◎</span> English <span class="chevron" aria-hidden="true">⌄</span></summary>
+  <div class="language-panel" id="language-panel">
+    <p class="eyebrow">Choose your language</p>
+    <ul>
+      {languages.map((language) => <li lang={language.locale} dir={language.dir} class:list={{ 'language-current': language.enabled }}>
+        <span>{language.label}</span>
+        {language.enabled ? <small lang="en" dir="ltr">Current language <span aria-hidden="true">✓</span></small> : <small lang="en" dir="ltr">Coming soon</small>}
+      </li>)}
+    </ul>
+    <button class="text-button disclosure-close" type="button">Close language selection <span aria-hidden="true">×</span></button>
+  </div>
+</details>

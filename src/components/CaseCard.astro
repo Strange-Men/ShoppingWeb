@@ -1,0 +1,13 @@
+---
+import type { SculptureCase } from '../data/types';
+import { casePath } from '../data/cases';
+import { materials } from '../data/site';
+import Media from './Media.astro';
+interface Props { item: SculptureCase }
+const { item } = Astro.props;
+const material = materials.find(entry => entry.id === item.material)!;
+---
+<article class="case-card"><a class="case-card-link" href={casePath(item)}>
+  <div class="case-card-image"><Media image={item.images[0]!} label="Photograph pending" />{item.status !== 'published' && <span class="preview-badge">Preview · Unpublished</span>}</div>
+  <div class="case-card-copy"><span class="eyebrow">{material.title}</span><h3>{item.locales.en.title}</h3><div class="case-card-bottom"><span>{item.status === 'preview' ? 'View layout' : 'View case'}</span><span class="round-arrow" aria-hidden="true">↗</span></div></div>
+</a></article>

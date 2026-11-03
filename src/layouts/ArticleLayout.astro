@@ -1,0 +1,7 @@
+---
+// A future article can use this layout after content review. This file generates no route.
+import SiteLayout from './SiteLayout.astro';
+interface Props { title: string; description: string; publishedDate?: string }
+const { title, description, publishedDate } = Astro.props;
+---
+<SiteLayout title={title} description={description}><article class="section"><div class="container narrow prose"><h1>{title}</h1>{publishedDate && <p><time datetime={publishedDate}>{publishedDate}</time></p>}<p class="lead">{description}</p><slot /></div></article></SiteLayout>
