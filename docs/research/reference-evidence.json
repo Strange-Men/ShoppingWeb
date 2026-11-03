@@ -1,0 +1,1092 @@
+{
+  "researchDate": "2026-11-03",
+  "method": "Public GET requests; static-response analysis only; no browser rendering or translation execution",
+  "cachePolicy": "Raw responses are local ignored files; repository stores metadata only",
+  "results": [
+    {
+      "id": "home",
+      "requestedUrl": "https://tongmeisculpture.com/",
+      "finalUrl": "https://tongmeisculpture.com/",
+      "checkedAt": "2026-11-03T03:04:39.130Z",
+      "status": 200,
+      "bytes": 139566,
+      "sha256": "e394e5ea597f33e2a63f64e37f581b4c71428424dc2b056c8d2102d1f587dac3",
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "server": "LiteSpeed",
+        "x-powered-by": "PHP/8.3.36"
+      },
+      "generators": [
+        "WordPress 7.0.8",
+        "Elementor 4.3.5; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
+      ],
+      "assetPaths": [
+        "//fonts.googleapis.com",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluent-forms-elementor-widget.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.9.6",
+        "https://tongmeisculpture.com/wp-includes/css/dist/components/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/preferences/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/block-editor/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-content/plugins/popup-maker/dist/packages/block-library-style.css?ver=32732a797d59d961da0d",
+        "https://tongmeisculpture.com/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.9.6",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/post-4.css?ver=1793456127",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-loop-common.min.css?ver=4.1.1",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-loop-grid.min.css?ver=4.1.1",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/post-18.css?ver=1793456128",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/base-desktop.css?ver=6ae5f8001f93c",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/local-18-frontend-desktop.css?ver=6ae5f800202e7",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/local-356-frontend-desktop.css?ver=6ae5f80020542",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/base-mobile.css?ver=6ae5f8001f93c",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/local-18-frontend-mobile.css?ver=6ae5f800202e7",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/style.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-content/themes/tongmei-child/style.css?ver=1.0.1",
+        "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluent-forms-public.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluentform-public-default.css?ver=6.2.16",
+        "//tongmeisculpture.com/wp-content/uploads/pum/pum-site-styles.css?generated=1784790566&ver=1.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.34.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0",
+        "https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Playfair+Display:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Inter:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-32x32.png",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-192x192.png",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-180x180.png",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-post-info.min.css?ver=4.1.1",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/js/fluent-forms-elementor-widget.js?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/js/form-submission.js?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d",
+        "//tongmeisculpture.com/wp-content/uploads/pum/pum-site-scripts.js?defer&generated=1784790615&ver=1.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/gtranslate/js/dropdown.js?ver=5.0.1",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=4.1.1",
+        "https://tongmeisculpture.com/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.1.1",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.1.1"
+      ],
+      "canonical": [
+        "https://tongmeisculpture.com/"
+      ],
+      "hreflang": [],
+      "h1Count": 1,
+      "sectionCount": 6,
+      "pluginDirectories": [
+        "fluentform",
+        "header-footer-elementor",
+        "popup-maker",
+        "elementor",
+        "elementor-pro",
+        "gtranslate"
+      ],
+      "themeDirectories": [
+        "hello-elementor",
+        "tongmei-child"
+      ],
+      "translationConfigs": [
+        {
+          "default_language": "en",
+          "languages": [
+            "en",
+            "es",
+            "it",
+            "pt",
+            "de",
+            "fr",
+            "ru",
+            "nl",
+            "ar",
+            "zh-CN"
+          ],
+          "url_structure": "none",
+          "wrapper_selector": "#gt-wrapper-44919599",
+          "select_language_label": "Select Language",
+          "horizontal_position": "inline",
+          "flags_location": "/wp-content/plugins/gtranslate/flags/"
+        },
+        {
+          "default_language": "en",
+          "languages": [
+            "en",
+            "es",
+            "it",
+            "pt",
+            "de",
+            "fr",
+            "ru",
+            "nl",
+            "ar",
+            "zh-CN"
+          ],
+          "url_structure": "none",
+          "wrapper_selector": "#gt-wrapper-44789259",
+          "select_language_label": "Select Language",
+          "horizontal_position": "inline",
+          "flags_location": "/wp-content/plugins/gtranslate/flags/"
+        }
+      ],
+      "forms": [
+        {
+          "id": "fluentform_1",
+          "method": "POST",
+          "action": "(not explicitly set)",
+          "class": "frm-fluent-form fluent_form_1 ff-el-form-top ff_form_instance_1_1 ff-form-loading ffs_default"
+        }
+      ],
+      "externalContactTypes": [],
+      "inlineContactText": {
+        "hasEmailText": true,
+        "hasContactFormDemoLabel": true
+      },
+      "internalRoutes": [
+        "/",
+        "/about-us/",
+        "/products/",
+        "/blog/",
+        "/contact-us/",
+        "/products/weather-resistant-stainless-steel-sculpture-for-urban-landscape/",
+        "/products/geometric-stainless-steel-art-sculpture/",
+        "/products/custom-bronze-sculpture-manufacturer-for-public-art-projects/",
+        "/products/custom-cast-bronze-animal-sculpture-supplier/",
+        "/products/custom-hand-carved-marble-gazebo-for-garden-landscape-projects/",
+        "/products/copy-of-custom-hand-carved-marble-gazebo-for-garden-landscape-projects/",
+        "/products/custom-marble-headstone-manufacturer-for-memorial-projects/",
+        "/products/large-outdoor-fiberglass-sculpture-for-commercial-landscape-decoration/",
+        "/why-marble-tombstones-remain-the-premium-choicein-the-global-memorial-market/",
+        "/resin-sculptures-the-engine-of-the-home-decor-wholesale-market/",
+        "/marble-sculptures-delivering-classical-luxury-to-the-b2b-market/",
+        "/fiberglass-frp-sculptures-versatility-and-scale-for-b2b-buyers/",
+        "/the-timeless-value-of-bronze-sculptures-in-wholesale-markets/",
+        "/why-stainless-steel-sculptures-drive-the-b2b-commercial-art-market/",
+        "/privacy-policy/"
+      ],
+      "inlineBehaviorMarkers": [
+        "closeMenu()",
+        "toggleMenu()",
+        "pum_popups",
+        "fluentform"
+      ]
+    },
+    {
+      "id": "about",
+      "requestedUrl": "https://tongmeisculpture.com/about-us/",
+      "finalUrl": "https://tongmeisculpture.com/about-us/",
+      "checkedAt": "2026-11-03T03:04:39.349Z",
+      "status": 200,
+      "bytes": 90721,
+      "sha256": "d8ba7ebd321215c1fc4e79a5ec4284340e6b094f584153b2aeff641e0f005528",
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "server": "LiteSpeed",
+        "x-powered-by": "PHP/8.3.36"
+      },
+      "generators": [
+        "WordPress 7.0.8",
+        "Elementor 4.3.5; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
+      ],
+      "assetPaths": [
+        "//fonts.googleapis.com",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluent-forms-elementor-widget.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.9.6",
+        "https://tongmeisculpture.com/wp-includes/css/dist/components/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/preferences/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/block-editor/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-content/plugins/popup-maker/dist/packages/block-library-style.css?ver=32732a797d59d961da0d",
+        "https://tongmeisculpture.com/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.9.6",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/post-4.css?ver=1793456127",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/post-450.css?ver=1793458832",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/base-desktop.css?ver=6ae5f8001f93c",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/base-mobile.css?ver=6ae5f8001f93c",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/style.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-content/themes/tongmei-child/style.css?ver=1.0.1",
+        "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluent-forms-public.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluentform-public-default.css?ver=6.2.16",
+        "//tongmeisculpture.com/wp-content/uploads/pum/pum-site-styles.css?generated=1784790566&ver=1.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.34.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0",
+        "https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Playfair+Display:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Inter:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-32x32.png",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-192x192.png",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-180x180.png",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/js/fluent-forms-elementor-widget.js?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/js/form-submission.js?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d",
+        "//tongmeisculpture.com/wp-content/uploads/pum/pum-site-scripts.js?defer&generated=1784790615&ver=1.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/gtranslate/js/dropdown.js?ver=5.0.1",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=4.1.1",
+        "https://tongmeisculpture.com/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.1.1",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.1.1"
+      ],
+      "canonical": [
+        "https://tongmeisculpture.com/about-us/"
+      ],
+      "hreflang": [],
+      "h1Count": 1,
+      "sectionCount": 3,
+      "pluginDirectories": [
+        "fluentform",
+        "header-footer-elementor",
+        "popup-maker",
+        "elementor",
+        "elementor-pro",
+        "gtranslate"
+      ],
+      "themeDirectories": [
+        "hello-elementor",
+        "tongmei-child"
+      ],
+      "translationConfigs": [
+        {
+          "default_language": "en",
+          "languages": [
+            "en",
+            "es",
+            "it",
+            "pt",
+            "de",
+            "fr",
+            "ru",
+            "nl",
+            "ar",
+            "zh-CN"
+          ],
+          "url_structure": "none",
+          "wrapper_selector": "#gt-wrapper-10969360",
+          "select_language_label": "Select Language",
+          "horizontal_position": "inline",
+          "flags_location": "/wp-content/plugins/gtranslate/flags/"
+        },
+        {
+          "default_language": "en",
+          "languages": [
+            "en",
+            "es",
+            "it",
+            "pt",
+            "de",
+            "fr",
+            "ru",
+            "nl",
+            "ar",
+            "zh-CN"
+          ],
+          "url_structure": "none",
+          "wrapper_selector": "#gt-wrapper-60521133",
+          "select_language_label": "Select Language",
+          "horizontal_position": "inline",
+          "flags_location": "/wp-content/plugins/gtranslate/flags/"
+        }
+      ],
+      "forms": [
+        {
+          "id": "fluentform_1",
+          "method": "POST",
+          "action": "(not explicitly set)",
+          "class": "frm-fluent-form fluent_form_1 ff-el-form-top ff_form_instance_1_1 ff-form-loading ffs_default"
+        }
+      ],
+      "externalContactTypes": [],
+      "inlineContactText": {
+        "hasEmailText": true,
+        "hasContactFormDemoLabel": true
+      },
+      "internalRoutes": [
+        "/",
+        "/about-us/",
+        "/products/",
+        "/blog/",
+        "/contact-us/",
+        "/wp-content/uploads/2026/07/product-354-2g8muZuR.jpg",
+        "/wp-content/uploads/2026/07/product-354-HJxSnaQg.jpg",
+        "/wp-content/uploads/2026/07/product-354-1cKsOvkz.jpg",
+        "/wp-content/uploads/2026/07/product-353-5Lgw6m13.jpg",
+        "/wp-content/uploads/2026/07/product-353-3N3XRQJl.jpg",
+        "/wp-content/uploads/2026/07/product-352-ExfKRzRy.jpg",
+        "/wp-content/uploads/2026/07/product-352-KawBmMfe.jpg",
+        "/wp-content/uploads/2026/07/product-352-B0LTiQ49.jpg",
+        "/privacy-policy/"
+      ],
+      "inlineBehaviorMarkers": [
+        "closeMenu()",
+        "toggleMenu()",
+        "pum_popups",
+        "fluentform"
+      ]
+    },
+    {
+      "id": "products",
+      "requestedUrl": "https://tongmeisculpture.com/products/",
+      "finalUrl": "https://tongmeisculpture.com/products/",
+      "checkedAt": "2026-11-03T03:04:39.573Z",
+      "status": 200,
+      "bytes": 86274,
+      "sha256": "bf2042e4b57d4bab620fc38d220c8e229884058e1b49459e7c70da23597dee33",
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "server": "LiteSpeed",
+        "x-powered-by": "PHP/8.3.36"
+      },
+      "generators": [
+        "WordPress 7.0.8",
+        "Elementor 4.3.5; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
+      ],
+      "assetPaths": [
+        "//fonts.googleapis.com",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluent-forms-elementor-widget.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.9.6",
+        "https://tongmeisculpture.com/wp-includes/css/dist/block-library/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/components/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/preferences/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/block-editor/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-content/plugins/popup-maker/dist/packages/block-library-style.css?ver=32732a797d59d961da0d",
+        "https://tongmeisculpture.com/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.9.6",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/post-4.css?ver=1793456127",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/style.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-content/themes/tongmei-child/style.css?ver=1.0.1",
+        "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0",
+        "https://tongmeisculpture.com/wp-content/themes/tongmei-child/css/blog.css?ver=1.0.1",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluent-forms-public.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluentform-public-default.css?ver=6.2.16",
+        "//tongmeisculpture.com/wp-content/uploads/pum/pum-site-styles.css?generated=1784790566&ver=1.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.34.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0",
+        "https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Playfair+Display:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Inter:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-32x32.png",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-192x192.png",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-180x180.png",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/js/fluent-forms-elementor-widget.js?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/js/form-submission.js?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3",
+        "https://tongmeisculpture.com/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d",
+        "//tongmeisculpture.com/wp-content/uploads/pum/pum-site-scripts.js?defer&generated=1784790615&ver=1.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/gtranslate/js/dropdown.js?ver=5.0.1"
+      ],
+      "canonical": [],
+      "hreflang": [],
+      "h1Count": 1,
+      "sectionCount": 0,
+      "pluginDirectories": [
+        "fluentform",
+        "header-footer-elementor",
+        "popup-maker",
+        "elementor",
+        "elementor-pro",
+        "gtranslate"
+      ],
+      "themeDirectories": [
+        "hello-elementor",
+        "tongmei-child"
+      ],
+      "translationConfigs": [
+        {
+          "default_language": "en",
+          "languages": [
+            "en",
+            "es",
+            "it",
+            "pt",
+            "de",
+            "fr",
+            "ru",
+            "nl",
+            "ar",
+            "zh-CN"
+          ],
+          "url_structure": "none",
+          "wrapper_selector": "#gt-wrapper-20959529",
+          "select_language_label": "Select Language",
+          "horizontal_position": "inline",
+          "flags_location": "/wp-content/plugins/gtranslate/flags/"
+        },
+        {
+          "default_language": "en",
+          "languages": [
+            "en",
+            "es",
+            "it",
+            "pt",
+            "de",
+            "fr",
+            "ru",
+            "nl",
+            "ar",
+            "zh-CN"
+          ],
+          "url_structure": "none",
+          "wrapper_selector": "#gt-wrapper-24190091",
+          "select_language_label": "Select Language",
+          "horizontal_position": "inline",
+          "flags_location": "/wp-content/plugins/gtranslate/flags/"
+        }
+      ],
+      "forms": [
+        {
+          "id": "fluentform_1",
+          "method": "POST",
+          "action": "(not explicitly set)",
+          "class": "frm-fluent-form fluent_form_1 ff-el-form-top ff_form_instance_1_1 ff-form-loading ffs_default"
+        }
+      ],
+      "externalContactTypes": [],
+      "inlineContactText": {
+        "hasEmailText": true,
+        "hasContactFormDemoLabel": true
+      },
+      "internalRoutes": [
+        "/",
+        "/about-us/",
+        "/products/",
+        "/blog/",
+        "/contact-us/",
+        "/products/stainless-steel-abstract-sculpture-for-outdoor-indoor-decoration/",
+        "/products/modern-mirror-polished-stainless-steel-garden-sculpture/",
+        "/products/large-outdoor-stainless-steel-public-art-sculpture/",
+        "/products/custom-metal-stainless-steel-landscape-sculpture-for-parks/",
+        "/products/contemporary-stainless-steel-sculpture-for-commercial-projects/",
+        "/products/handcrafted-stainless-steel-abstract-art-sculpture/",
+        "/products/mirror-finish-stainless-steel-animal-sculpture-for-outdoor-spaces/",
+        "/products/luxury-stainless-steel-decorative-sculpture-for-hotels-plazas/",
+        "/products/weather-resistant-stainless-steel-sculpture-for-urban-landscape/",
+        "/products/geometric-stainless-steel-art-sculpture/",
+        "/products/custom-bronze-sculpture-manufacturer-for-public-art-projects/",
+        "/products/handcrafted-bronze-statue-for-indoor-outdoor-decoration/",
+        "/products/page/2/",
+        "/products/page/3/",
+        "/products/page/4/",
+        "/privacy-policy/"
+      ],
+      "inlineBehaviorMarkers": [
+        "closeMenu()",
+        "toggleMenu()",
+        "pum_popups",
+        "fluentform"
+      ]
+    },
+    {
+      "id": "product-detail",
+      "requestedUrl": "https://tongmeisculpture.com/products/weather-resistant-stainless-steel-sculpture-for-urban-landscape/",
+      "finalUrl": "https://tongmeisculpture.com/products/weather-resistant-stainless-steel-sculpture-for-urban-landscape/",
+      "checkedAt": "2026-11-03T03:04:39.813Z",
+      "status": 200,
+      "bytes": 98136,
+      "sha256": "135c664a8da04eb83a1a6f5e3ef3f4043047ff95acbb4ea098568a8a03a617ff",
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "server": "LiteSpeed",
+        "x-powered-by": "PHP/8.3.36"
+      },
+      "generators": [
+        "WordPress 7.0.8",
+        "Elementor 4.3.5; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
+      ],
+      "assetPaths": [
+        "//fonts.googleapis.com",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluent-forms-elementor-widget.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.9.6",
+        "https://tongmeisculpture.com/wp-includes/css/dist/block-library/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/components/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/preferences/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/block-editor/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-content/plugins/popup-maker/dist/packages/block-library-style.css?ver=32732a797d59d961da0d",
+        "https://tongmeisculpture.com/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.9.6",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/post-4.css?ver=1793456127",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/base-desktop.css?ver=6ae5f8001f93c",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/base-mobile.css?ver=6ae5f8001f93c",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/style.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-content/themes/tongmei-child/style.css?ver=1.0.1",
+        "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0",
+        "https://tongmeisculpture.com/wp-content/themes/tongmei-child/css/blog.css?ver=1.0.1",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluent-forms-public.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluentform-public-default.css?ver=6.2.16",
+        "//tongmeisculpture.com/wp-content/uploads/pum/pum-site-styles.css?generated=1784790566&ver=1.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.34.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0",
+        "https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Playfair+Display:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Inter:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-32x32.png",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-192x192.png",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-180x180.png",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/js/fluent-forms-elementor-widget.js?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/js/form-submission.js?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3",
+        "https://tongmeisculpture.com/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d",
+        "//tongmeisculpture.com/wp-content/uploads/pum/pum-site-scripts.js?defer&generated=1784790615&ver=1.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/gtranslate/js/dropdown.js?ver=5.0.1"
+      ],
+      "canonical": [
+        "https://tongmeisculpture.com/products/weather-resistant-stainless-steel-sculpture-for-urban-landscape/"
+      ],
+      "hreflang": [],
+      "h1Count": 1,
+      "sectionCount": 2,
+      "pluginDirectories": [
+        "fluentform",
+        "header-footer-elementor",
+        "popup-maker",
+        "elementor",
+        "elementor-pro",
+        "gtranslate"
+      ],
+      "themeDirectories": [
+        "hello-elementor",
+        "tongmei-child"
+      ],
+      "translationConfigs": [
+        {
+          "default_language": "en",
+          "languages": [
+            "en",
+            "es",
+            "it",
+            "pt",
+            "de",
+            "fr",
+            "ru",
+            "nl",
+            "ar",
+            "zh-CN"
+          ],
+          "url_structure": "none",
+          "wrapper_selector": "#gt-wrapper-46444870",
+          "select_language_label": "Select Language",
+          "horizontal_position": "inline",
+          "flags_location": "/wp-content/plugins/gtranslate/flags/"
+        },
+        {
+          "default_language": "en",
+          "languages": [
+            "en",
+            "es",
+            "it",
+            "pt",
+            "de",
+            "fr",
+            "ru",
+            "nl",
+            "ar",
+            "zh-CN"
+          ],
+          "url_structure": "none",
+          "wrapper_selector": "#gt-wrapper-67312307",
+          "select_language_label": "Select Language",
+          "horizontal_position": "inline",
+          "flags_location": "/wp-content/plugins/gtranslate/flags/"
+        }
+      ],
+      "forms": [
+        {
+          "id": "fluentform_1",
+          "method": "POST",
+          "action": "(not explicitly set)",
+          "class": "frm-fluent-form fluent_form_1 ff-el-form-top ff_form_instance_1_2 ff-form-loading ffs_default"
+        },
+        {
+          "id": "fluentform_1",
+          "method": "POST",
+          "action": "(not explicitly set)",
+          "class": "frm-fluent-form fluent_form_1 ff-el-form-top ff_form_instance_1_1 ff-form-loading ffs_default"
+        }
+      ],
+      "externalContactTypes": [],
+      "inlineContactText": {
+        "hasEmailText": true,
+        "hasContactFormDemoLabel": true
+      },
+      "internalRoutes": [
+        "/",
+        "/about-us/",
+        "/products/",
+        "/blog/",
+        "/contact-us/",
+        "/product-category/stainless-steel/",
+        "/products/geometric-stainless-steel-art-sculpture/",
+        "/products/custom-metal-stainless-steel-landscape-sculpture-for-parks/",
+        "/products/contemporary-stainless-steel-sculpture-for-commercial-projects/",
+        "/products/large-outdoor-stainless-steel-public-art-sculpture/",
+        "/privacy-policy/"
+      ],
+      "inlineBehaviorMarkers": [
+        "closeMenu()",
+        "toggleMenu()",
+        "pum_popups",
+        "fluentform"
+      ]
+    },
+    {
+      "id": "contact",
+      "requestedUrl": "https://tongmeisculpture.com/contact-us/",
+      "finalUrl": "https://tongmeisculpture.com/contact-us/",
+      "checkedAt": "2026-11-03T03:04:40.111Z",
+      "status": 200,
+      "bytes": 88952,
+      "sha256": "f4dfeffe7626af7d32bb5655ff6905bcd2ac57d58ee4bc4041b097567b8254e3",
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "server": "LiteSpeed",
+        "x-powered-by": "PHP/8.3.36"
+      },
+      "generators": [
+        "WordPress 7.0.8",
+        "Elementor 4.3.5; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
+      ],
+      "assetPaths": [
+        "//fonts.googleapis.com",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluent-forms-elementor-widget.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.9.6",
+        "https://tongmeisculpture.com/wp-includes/css/dist/components/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/preferences/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/block-editor/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-content/plugins/popup-maker/dist/packages/block-library-style.css?ver=32732a797d59d961da0d",
+        "https://tongmeisculpture.com/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.9.6",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/post-4.css?ver=1793456127",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluent-forms-public.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluentform-public-default.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/post-22.css?ver=1793458832",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/base-desktop.css?ver=6ae5f8001f93c",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/base-mobile.css?ver=6ae5f8001f93c",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/style.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-content/themes/tongmei-child/style.css?ver=1.0.1",
+        "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.9",
+        "//tongmeisculpture.com/wp-content/uploads/pum/pum-site-styles.css?generated=1784790566&ver=1.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.34.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0",
+        "https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Playfair+Display:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Inter:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-32x32.png",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-192x192.png",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-180x180.png",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/js/fluent-forms-elementor-widget.js?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/js/form-submission.js?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d",
+        "//tongmeisculpture.com/wp-content/uploads/pum/pum-site-scripts.js?defer&generated=1784790615&ver=1.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/gtranslate/js/dropdown.js?ver=5.0.1",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=4.1.1",
+        "https://tongmeisculpture.com/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.1.1",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.1.1"
+      ],
+      "canonical": [
+        "https://tongmeisculpture.com/contact-us/"
+      ],
+      "hreflang": [],
+      "h1Count": 1,
+      "sectionCount": 2,
+      "pluginDirectories": [
+        "fluentform",
+        "header-footer-elementor",
+        "popup-maker",
+        "elementor",
+        "elementor-pro",
+        "gtranslate"
+      ],
+      "themeDirectories": [
+        "hello-elementor",
+        "tongmei-child"
+      ],
+      "translationConfigs": [
+        {
+          "default_language": "en",
+          "languages": [
+            "en",
+            "es",
+            "it",
+            "pt",
+            "de",
+            "fr",
+            "ru",
+            "nl",
+            "ar",
+            "zh-CN"
+          ],
+          "url_structure": "none",
+          "wrapper_selector": "#gt-wrapper-39823887",
+          "select_language_label": "Select Language",
+          "horizontal_position": "inline",
+          "flags_location": "/wp-content/plugins/gtranslate/flags/"
+        },
+        {
+          "default_language": "en",
+          "languages": [
+            "en",
+            "es",
+            "it",
+            "pt",
+            "de",
+            "fr",
+            "ru",
+            "nl",
+            "ar",
+            "zh-CN"
+          ],
+          "url_structure": "none",
+          "wrapper_selector": "#gt-wrapper-15463532",
+          "select_language_label": "Select Language",
+          "horizontal_position": "inline",
+          "flags_location": "/wp-content/plugins/gtranslate/flags/"
+        }
+      ],
+      "forms": [
+        {
+          "id": "fluentform_1",
+          "method": "POST",
+          "action": "(not explicitly set)",
+          "class": "frm-fluent-form fluent_form_1 ff-el-form-top ff_form_instance_1_2 ff-form-loading ffs_default"
+        },
+        {
+          "id": "fluentform_1",
+          "method": "POST",
+          "action": "(not explicitly set)",
+          "class": "frm-fluent-form fluent_form_1 ff-el-form-top ff_form_instance_1_1 ff-form-loading ffs_default"
+        }
+      ],
+      "externalContactTypes": [],
+      "inlineContactText": {
+        "hasEmailText": true,
+        "hasContactFormDemoLabel": true
+      },
+      "internalRoutes": [
+        "/",
+        "/about-us/",
+        "/products/",
+        "/blog/",
+        "/contact-us/",
+        "/privacy-policy/"
+      ],
+      "inlineBehaviorMarkers": [
+        "closeMenu()",
+        "toggleMenu()",
+        "pum_popups",
+        "fluentform"
+      ]
+    },
+    {
+      "id": "blog",
+      "requestedUrl": "https://tongmeisculpture.com/blog/",
+      "finalUrl": "https://tongmeisculpture.com/blog/",
+      "checkedAt": "2026-11-03T03:04:40.322Z",
+      "status": 200,
+      "bytes": 101932,
+      "sha256": "4575eb343a68cb029b0aefab7ee93e07242fdfcd932b482205d5827bc63ccbc4",
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "server": "LiteSpeed",
+        "x-powered-by": "PHP/8.3.36"
+      },
+      "generators": [
+        "WordPress 7.0.8",
+        "Elementor 4.3.5; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
+      ],
+      "assetPaths": [
+        "//fonts.googleapis.com",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluent-forms-elementor-widget.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.9.6",
+        "https://tongmeisculpture.com/wp-includes/css/dist/block-library/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/components/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/preferences/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-includes/css/dist/block-editor/style.min.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-content/plugins/popup-maker/dist/packages/block-library-style.css?ver=32732a797d59d961da0d",
+        "https://tongmeisculpture.com/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.9.6",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.3.5",
+        "https://tongmeisculpture.com/wp-content/uploads/elementor/css/post-4.css?ver=1793456127",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/style.css?ver=7.0.8",
+        "https://tongmeisculpture.com/wp-content/themes/tongmei-child/style.css?ver=1.0.1",
+        "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0",
+        "https://tongmeisculpture.com/wp-content/themes/tongmei-child/css/blog.css?ver=1.0.1",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluent-forms-public.css?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/css/fluentform-public-default.css?ver=6.2.16",
+        "//tongmeisculpture.com/wp-content/uploads/pum/pum-site-styles.css?generated=1784790566&ver=1.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.34.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=5.15.3",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2",
+        "https://tongmeisculpture.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0",
+        "https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Playfair+Display:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Inter:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-32x32.png",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-192x192.png",
+        "https://tongmeisculpture.com/wp-content/uploads/2026/09/cropped-favicon-180x180.png",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/js/fluent-forms-elementor-widget.js?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.9",
+        "https://tongmeisculpture.com/wp-content/plugins/fluentform/assets/js/form-submission.js?ver=6.2.16",
+        "https://tongmeisculpture.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3",
+        "https://tongmeisculpture.com/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d",
+        "//tongmeisculpture.com/wp-content/uploads/pum/pum-site-scripts.js?defer&generated=1784790615&ver=1.25.0",
+        "https://tongmeisculpture.com/wp-content/plugins/gtranslate/js/dropdown.js?ver=5.0.1"
+      ],
+      "canonical": [],
+      "hreflang": [],
+      "h1Count": 0,
+      "sectionCount": 1,
+      "pluginDirectories": [
+        "fluentform",
+        "header-footer-elementor",
+        "popup-maker",
+        "elementor",
+        "elementor-pro",
+        "gtranslate"
+      ],
+      "themeDirectories": [
+        "hello-elementor",
+        "tongmei-child"
+      ],
+      "translationConfigs": [
+        {
+          "default_language": "en",
+          "languages": [
+            "en",
+            "es",
+            "it",
+            "pt",
+            "de",
+            "fr",
+            "ru",
+            "nl",
+            "ar",
+            "zh-CN"
+          ],
+          "url_structure": "none",
+          "wrapper_selector": "#gt-wrapper-58009396",
+          "select_language_label": "Select Language",
+          "horizontal_position": "inline",
+          "flags_location": "/wp-content/plugins/gtranslate/flags/"
+        },
+        {
+          "default_language": "en",
+          "languages": [
+            "en",
+            "es",
+            "it",
+            "pt",
+            "de",
+            "fr",
+            "ru",
+            "nl",
+            "ar",
+            "zh-CN"
+          ],
+          "url_structure": "none",
+          "wrapper_selector": "#gt-wrapper-55574282",
+          "select_language_label": "Select Language",
+          "horizontal_position": "inline",
+          "flags_location": "/wp-content/plugins/gtranslate/flags/"
+        }
+      ],
+      "forms": [
+        {
+          "method": "get",
+          "action": "https://tongmeisculpture.com/",
+          "class": "error-404-search-form"
+        },
+        {
+          "id": "fluentform_1",
+          "method": "POST",
+          "action": "(not explicitly set)",
+          "class": "frm-fluent-form fluent_form_1 ff-el-form-top ff_form_instance_1_1 ff-form-loading ffs_default"
+        }
+      ],
+      "externalContactTypes": [],
+      "inlineContactText": {
+        "hasEmailText": true,
+        "hasContactFormDemoLabel": true
+      },
+      "internalRoutes": [
+        "/",
+        "/about-us/",
+        "/products/",
+        "/blog/",
+        "/contact-us/",
+        "/why-marble-tombstones-remain-the-premium-choicein-the-global-memorial-market/",
+        "/category/uncategorized/",
+        "/resin-sculptures-the-engine-of-the-home-decor-wholesale-market/",
+        "/marble-sculptures-delivering-classical-luxury-to-the-b2b-market/",
+        "/fiberglass-frp-sculptures-versatility-and-scale-for-b2b-buyers/",
+        "/the-timeless-value-of-bronze-sculptures-in-wholesale-markets/",
+        "/why-stainless-steel-sculptures-drive-the-b2b-commercial-art-market/",
+        "/privacy-policy/"
+      ],
+      "inlineBehaviorMarkers": [
+        "closeMenu()",
+        "toggleMenu()",
+        "pum_popups",
+        "fluentform"
+      ]
+    },
+    {
+      "id": "theme-css",
+      "requestedUrl": "https://tongmeisculpture.com/wp-content/themes/tongmei-child/style.css?ver=1.0.1",
+      "finalUrl": "https://tongmeisculpture.com/wp-content/themes/tongmei-child/style.css?ver=1.0.1",
+      "checkedAt": "2026-11-03T03:04:40.413Z",
+      "status": 200,
+      "bytes": 9882,
+      "sha256": "33667c4e74c796743fe84fc7e675122f66e744e24f3863724a84fbf2ac5a7602",
+      "headers": {
+        "content-type": "text/css",
+        "server": "LiteSpeed"
+      },
+      "colors": [
+        "#fff",
+        "#f0f0f0",
+        "#f8f6f3",
+        "#e8e4df",
+        "#666",
+        "#888",
+        "#555",
+        "#eee",
+        "#444",
+        "#e0e0e0",
+        "#999",
+        "#ddd"
+      ],
+      "fontFamilies": [
+        "'Playfair Display', serif",
+        "'Inter', sans-serif"
+      ],
+      "mediaQueries": [
+        "(min-width: 1200px)",
+        "(max-width: 768px)",
+        "(max-width: 480px)"
+      ]
+    },
+    {
+      "id": "translation-js",
+      "requestedUrl": "https://tongmeisculpture.com/wp-content/plugins/gtranslate/js/dropdown.js?ver=5.0.1",
+      "finalUrl": "https://tongmeisculpture.com/wp-content/plugins/gtranslate/js/dropdown.js?ver=5.0.1",
+      "checkedAt": "2026-11-03T03:04:40.470Z",
+      "status": 200,
+      "bytes": 11650,
+      "sha256": "49c2a6137f3847ad4f43a8a14b893e4899b757cc5b17ec4c91be85a12595be3e",
+      "headers": {
+        "content-type": "application/x-javascript",
+        "server": "LiteSpeed"
+      },
+      "markers": [
+        "cdn.gtranslate.net",
+        "gtranslate",
+        "url_structure",
+        "createElement"
+      ],
+      "externalOrigins": [
+        "https://gtranslate.com",
+        "https://cdn.gtranslate.net"
+      ]
+    }
+  ]
+}
