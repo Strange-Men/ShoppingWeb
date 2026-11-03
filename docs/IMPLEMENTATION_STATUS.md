@@ -6,6 +6,8 @@
 
 基于原 `main` 文档基线 64675a5 开发，开始时工作区干净。没有重新初始化或覆盖已有文档／研究脚本；在 `codex/p1-english-preview` 分支交付。仓库为 Strange-Men/ShoppingWeb；读取 main 元数据时 protected=false，仍使用分支与 PR 便于审阅，不强推、不擅自合并。
 
+代码及检查证据对应提交 `928c3ba1ace91aeabe372dc3e9961be0c279b98d`，已推送并用远端分支 SHA 核对一致。[PR #1](https://github.com/Strange-Men/ShoppingWeb/pull/1) 已创建且未合并；此后的交付记录仅改文档。命令行推送曾等待凭据流程，最终实际返回成功，没有使用新托管平台或替代仓库。
+
 Astro 7.4.5 静态生成、TypeScript 6.0.3、原生 CSS 与 2400B 内联原生 JS（878B gzip）；Node 24.22.1、pnpm 11.25.0。Inter 和 Playfair Display 自托管，许可证随静态产物保留。运行时无后端、数据库、账号登录、购物车、支付、留言表单或分析 SDK。
 
 英文路由已实现：首页、关于、案例总览、Fiberglass / FRP 列表、Stainless Steel 列表、每类 4 个预览详情、联系及隐私。另有根入口和真实 404，共 17 份 HTML。没有空博客页；保留文章类型与布局。核心正文和案例内链均在构建 HTML 中。

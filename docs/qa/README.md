@@ -6,6 +6,8 @@
 
 Windows，Node 24.22.1，pnpm 11.25.0，Astro 7.4.5。浏览器为 Codex in-app browser，版本接口未暴露。`pnpm preview` 提供构建后的 http://127.0.0.1:4321/en/。视口为 360／390×844 和 768／1440×1000 CSS px，模拟尺寸；不是四台真实设备。
 
+对应代码与证据提交：`928c3ba1ace91aeabe372dc3e9961be0c279b98d`；后续交付记录为纯文档更新。审阅入口：[PR #1](https://github.com/Strange-Men/ShoppingWeb/pull/1)。
+
 - [构建产物报告](build-report.json)：17 HTML、527 个本地链接和资源；独立标题／描述、单 H1、noindex、无生产 sitemap；内联脚本计入每页 gzip JS 878B。
 - [HTTP 报告](http-results.json)：根入口和 15 个英文页面 200；错误地址、虚构案例、两种未发布语言与 sitemap 返回 404。
 - [布局测量](layout-results.json)：7 类页面×4 视口，共 28 项，没有 document 横向溢出。

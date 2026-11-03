@@ -9,6 +9,7 @@
 - 全部占位 HTML noindex，无生产 canonical／hreflang／sitemap；空账号不输出链接，正式构建门槛按预期拒绝不完整资料。咨询 URL 编码断言只使用测试数据，没有发送消息。
 - 实际通过 frozen-lockfile 安装、Astro 类型检查（0 error／warning／hint）、内容／文档检查、17 页／527 个本地链接与资源检查、16 页面入口和 5 个 404 HTTP 检查、四档 28 布局测量和 30 交互断言。包含内联脚本的每页 gzip JS 为 878B，不代表真实素材性能。
 - 追加参考站桌面／手机观察、实现状态、验收证据、截图和启动说明。没有采购、注册托管站点、公网部署或海外网络验收。
+- 代码与证据提交 928c3ba 已同步 `codex/p1-english-preview`，并创建 [PR #1](https://github.com/Strange-Men/ShoppingWeb/pull/1)，保持未合并；随后补充交付记录。
 
 ## v0.1.1 2026-11-03
 
