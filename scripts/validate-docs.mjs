@@ -8,7 +8,7 @@ const required = [
   'docs/I18N_SEO.md', 'docs/CONTENT_ASSETS.md', 'docs/DEPLOYMENT_COST.md',
   'docs/ACCEPTANCE.md', 'docs/DECISIONS.md', 'docs/GOVERNANCE.md', 'docs/PLAN.md',
   'docs/adr/0001-static-site.md', 'docs/research/REFERENCE_ANALYSIS.md',
-  'docs/research/SOURCES.md', 'docs/research/reference-evidence.json',
+  'docs/research/SOURCES.md', 'docs/research/reference-evidence.json', 'docs/DEVELOPMENT_HANDOFF.md',
 ];
 const errors = [];
 for (const file of required) { try { await access(path.join(root, file)); } catch { errors.push(`Missing required file: ${file}`); } }

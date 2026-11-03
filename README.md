@@ -9,6 +9,7 @@
 | 文档 | 用途 |
 | --- | --- |
 | [文档索引](docs/README.md) | 文档状态、阅读顺序、负责人 |
+| [开发交接 Prompt](docs/DEVELOPMENT_HANDOFF.md) | 新窗口直接执行英文预览版开发 |
 | [产品需求 PRD](docs/PRD.md) | 业务范围、功能、阶段与验收条件 |
 | [参考站逆向分析](docs/research/REFERENCE_ANALYSIS.md) | 已确认技术、公开代码证据、推断边界 |
 | [技术方案](docs/ARCHITECTURE.md) | 推荐技术栈、内容与组件设计 |

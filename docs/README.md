@@ -7,6 +7,7 @@
 | 文件 | 状态 | 权威范围 |
 | --- | --- | --- |
 | [PRD](PRD.md) | 草案，已纳入业主三项补充 | 需求定义唯一来源 |
+| [开发交接 Prompt](DEVELOPMENT_HANDOFF.md) | 已准备，尚未执行开发 | 新窗口 P1 实施指令与完成条件 |
 | [参考站分析](research/REFERENCE_ANALYSIS.md) | 已调研，未做浏览器交互验证 | 事实、推断与还原边界 |
 | [证据元数据](research/reference-evidence.json) | 2026-11-03 采集 | 公开响应、资源路径及摘要哈希 |
 | [文献来源](research/SOURCES.md) | 已联网核验 | 技术主张来源 |
