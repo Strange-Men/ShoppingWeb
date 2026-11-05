@@ -4,6 +4,8 @@
 
 ## 文档清单
 
+分享与跨电脑启动：[SHARED_PREVIEW](SHARED_PREVIEW.md)，记录最新托管授权、独立克隆检查和实际部署状态。
+
 公司标后续更新：[铸形 NX 设计与官方参考](BRAND_IDENTITY.md)、[品牌适配检查](qa/2026-11-05/brand/README.md)。此更新只涉及公司标，保留现有页面 UI。
 
 最新补充（v0.3，2026-11-05）：公司资料、城市与工艺确认，10 张授权素材已处理并接入，正式案例暂缓。优先读 [最新实现状态](IMPLEMENTATION_STATUS.md)、[素材处理与待补项](IMAGE_ASSETS.md)、[编辑提示词](IMAGE_EDIT_PROMPTS.md)、[本轮 QA 与截图](qa/2026-11-05/README.md)。下表与旧文档内的 v0.2 记录保留阶段历史；当前状态以上述补充为准。
