@@ -30,9 +30,9 @@ pnpm preview
 
 **已上线，可直接发给同事：[NanXuan 英文分享预览](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/)**。Sites 部署工具实际返回 succeeded，并在无登录 cookie／token 的 HTTP 和浏览器中确认可访问，不以预期域名代替发布证明。
 
-当前发布版本 1，源码提交 `b862502b4de4e33b1e1cc87ecc3b4c5f3a5d8112`，部署 ID `appgdep_6aebf9f8ff8081918366533aaf03bc9f`。归档 71 文件／5,273,600B。后续归档与说明提交只补文档，不改这次已发布的网页内容。
+当前发布版本 **2**，源码提交 `11f7edc354f3188417942bffd4f7f449371779e2`，部署 ID `appgdep_6aec1aea50d08191ac2b3c37e9934c7f`。按业主截图更新首页首屏左侧文字、能力和数据；原网址、访问权限与 noindex 保留。线上已核对新文案及数据，并确认两份样式、主图、标志和咨询／展示入口均返回 200。证据：[首屏 QA](qa/2026-11-05/hero/README.md)、[线上验证](qa/2026-11-05/hero/online.json)。
 
-实测 62 项匿名 HTTP 检查全部通过：16 页面 200／noindex；41 图片及品牌资源 200、可解码且 SHA256 与构建文件一致；5 个错误／未上线地址 404。浏览器实际打开首页，NX 与已加载图片无错误。证据：[部署记录](qa/2026-11-05/shared-deployment.json)、[线上 HTTP](qa/2026-11-05/shared-http-results.json)、[线上截图](qa/2026-11-05/shared-live.jpg)。此结果不代表所有国家网络或真实设备验收。
+版本 1 历史验收：源码 `b862502`，归档 71 文件／5,273,600B。62 项匿名 HTTP 全部通过：16 页面 200／noindex；41 图片及品牌资源 200、可解码且 SHA256 与构建文件一致；5 个错误／未上线地址 404。浏览器实际打开首页，NX 与已加载图片无错误。证据：[部署记录](qa/2026-11-05/shared-deployment.json)、[线上 HTTP](qa/2026-11-05/shared-http-results.json)、[线上截图](qa/2026-11-05/shared-live.jpg)。此结果不代表所有国家网络或真实设备验收。
 
 使用普通 `pnpm build` 的预览产物，保留 noindex、8 个明确未发布案例模板、真实咨询账号；未设置 SITE_MODE=production，也不把分享域名当作公司正式 canonicalOrigin。正式发布资料门槛仍然生效。
 
