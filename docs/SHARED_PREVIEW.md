@@ -10,6 +10,8 @@
 
 已实际从 GitHub 全新克隆到独立目录，执行 `pnpm install --frozen-lockfile` 与 `pnpm build`：生成 35 张图片、17 HTML，859 个本地链接／资源通过，无旧目录生成文件依赖。本次环境为 Windows、Node 24.22.1、pnpm 11.25.0，不把它写成所有操作系统的兼容性验收。
 
+机器记录见 [独立克隆检查](qa/2026-11-05/portability-report.json)，并逐张解码验证了克隆目录生成的全部 35 图。
+
 新电脑安装上述 Node／pnpm 后：
 
 ```powershell
