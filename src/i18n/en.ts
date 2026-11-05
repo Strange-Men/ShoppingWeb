@@ -1,11 +1,16 @@
 // Owner-facing English page copy. Review here before introducing another language.
 export const copy = {
   home: {
-    title: 'Custom sculptures, shaped around your vision',
+    title: 'Custom sculpture manufacturer in fiberglass & stainless steel',
     description: 'Explore custom fiberglass / FRP and stainless steel sculpture, from your reference and 3D design through production, shipping and installation guidance.',
-    heroEyebrow: 'Fiberglass / FRP & Stainless Steel', heroTitle: ['Your vision.', 'Sculpted into form.'],
-    heroText: ['Custom sculpture, from the first reference', 'to the finishing details.'],
-    heroNotes: ['Made to your reference', 'Design & 3D modeling', 'Custom production'],
+    hero: {
+      eyebrow: 'NanXuan · Custom sculpture studio',
+      title: ['Custom sculpture', 'manufacturer'],
+      text: 'From your drawing or reference to a finished sculpture in fiberglass / FRP or stainless steel.',
+      capabilities: ['Design & 3D modeling', 'Fiberglass / FRP & stainless steel', 'Sampling & production', 'Shipping & installation guidance'],
+      facts: ['Established', 'Approx. workshop area', 'Sculpture materials', 'Service stages'],
+      notes: ['Made to your reference', 'Shenzhen company', 'Zhaoqing workshop'],
+    },
     introEyebrow: 'An idea. A material. A possibility.', introTitle: ['Custom sculpture,', 'with your project in mind.'],
     intro: ['Established in 2012, NanXuan creates custom sculpture in fiberglass / FRP and stainless steel. Our company is in Shenzhen, with an approximately 4,000 m² workshop in Zhaoqing, Guangdong, China.', 'Start with a drawing, reference image or concept. From design and 3D modeling through production and shipping, the scope is shaped around your project.'],
     imageNote: 'Model-making equipment in our workshop.',

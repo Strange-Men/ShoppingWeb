@@ -1,0 +1,122 @@
+[
+  {
+    "capabilities": 4,
+    "cta": [
+      "/en/contact/",
+      "/en/products/"
+    ],
+    "factOverflow": false,
+    "facts": [
+      "Established2012",
+      "Approx. workshop area4,000 m²",
+      "Sculpture materials2",
+      "Service stages6"
+    ],
+    "imageLoaded": true,
+    "overflow": false,
+    "panelOverflow": false,
+    "panelTop": 326.54168701171875,
+    "photoTop": 100.66667175292967,
+    "width": 360
+  },
+  {
+    "capabilities": 4,
+    "cta": [
+      "/en/contact/",
+      "/en/products/"
+    ],
+    "factOverflow": false,
+    "facts": [
+      "Established2012",
+      "Approx. workshop area4,000 m²",
+      "Sculpture materials2",
+      "Service stages6"
+    ],
+    "imageLoaded": true,
+    "overflow": false,
+    "panelOverflow": false,
+    "panelTop": 343.41668701171875,
+    "photoTop": 100.66667175292967,
+    "width": 390
+  },
+  {
+    "capabilities": 4,
+    "cta": [
+      "/en/contact/",
+      "/en/products/"
+    ],
+    "factOverflow": false,
+    "facts": [
+      "Established2012",
+      "Approx. workshop area4,000 m²",
+      "Sculpture materials2",
+      "Service stages6"
+    ],
+    "imageLoaded": true,
+    "overflow": false,
+    "panelOverflow": false,
+    "panelTop": 452.2708435058594,
+    "photoTop": 106.66667175292967,
+    "width": 768
+  },
+  {
+    "capabilities": 4,
+    "cta": [
+      "/en/contact/",
+      "/en/products/"
+    ],
+    "factOverflow": false,
+    "facts": [
+      "Established2012",
+      "Approx. workshop area4,000 m²",
+      "Sculpture materials2",
+      "Service stages6"
+    ],
+    "imageLoaded": true,
+    "overflow": false,
+    "panelOverflow": false,
+    "panelTop": 153.23959350585938,
+    "photoTop": 106.66667175292967,
+    "width": 900
+  },
+  {
+    "capabilities": 4,
+    "cta": [
+      "/en/contact/",
+      "/en/products/"
+    ],
+    "factOverflow": false,
+    "facts": [
+      "Established2012",
+      "Approx. workshop area4,000 m²",
+      "Sculpture materials2",
+      "Service stages6"
+    ],
+    "imageLoaded": true,
+    "overflow": false,
+    "panelOverflow": false,
+    "panelTop": 174.4166717529297,
+    "photoTop": 114.66667175292967,
+    "width": 1024
+  },
+  {
+    "capabilities": 4,
+    "cta": [
+      "/en/contact/",
+      "/en/products/"
+    ],
+    "factOverflow": false,
+    "facts": [
+      "Established2012",
+      "Approx. workshop area4,000 m²",
+      "Sculpture materials2",
+      "Service stages6"
+    ],
+    "imageLoaded": true,
+    "overflow": false,
+    "panelOverflow": false,
+    "panelTop": 186.6666717529297,
+    "photoTop": 114.66667175292967,
+    "width": 1440
+  }
+]
