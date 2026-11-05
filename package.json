@@ -1,6 +1,6 @@
 {
   "name": "sculpture-preview",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.25.0",
@@ -14,6 +14,7 @@
     "preview": "astro preview --host 127.0.0.1 --port 4321",
     "check": "node scripts/prepare-media.mjs && astro check && node scripts/validate-content.mjs && node scripts/check-inquiries.mjs && node scripts/validate-docs.mjs",
     "prepare:media": "node scripts/prepare-media.mjs",
+    "prepare:brand": "node scripts/prepare-brand.mjs",
     "check:content": "node scripts/prepare-media.mjs && node scripts/validate-content.mjs",
     "check:dist": "node scripts/check-dist.mjs",
     "check:http": "node scripts/check-http.mjs",

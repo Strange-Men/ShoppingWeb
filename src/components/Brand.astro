@@ -1,0 +1,7 @@
+---
+import { displayBrand, site } from '../data/site';
+---
+<a class="brand" href="/en/" aria-label={`${displayBrand} home`}>
+  <img class="brand-mark" src="/brand/nx-mark-128.webp" srcset="/brand/nx-mark-128.webp 128w, /brand/nx-mark-256.webp 256w" sizes="(max-width: 599px) 36px, 46px" width="128" height="107" alt="" aria-hidden="true" decoding="async" />
+  <span><strong>{displayBrand}</strong><small>{site.companyName}{!site.brandName && <span> · Brand preview</span>}</small></span>
+</a>

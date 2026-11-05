@@ -40,7 +40,7 @@
   .site-header { position:sticky; inset-block-start:0; z-index:40; background:var(--navy); color:var(--white); border-block-end:1px solid #ffffff18; }
   .header-inner { display:flex; align-items:center; gap:28px; min-block-size:82px; }
   .brand { display:flex; gap:12px; align-items:center; flex-shrink:0; }
-  .brand-seal { inline-size:38px; block-size:43px; display:grid; place-items:center; font:25px/1 Georgia,serif; border:1px solid #c9a96e85; color:var(--gold); }
+  .brand-mark { inline-size:46px; block-size:auto; flex-shrink:0; object-fit:contain; }
   .brand strong { display:block; font:500 22px/1.2 var(--heading); letter-spacing:.085em; }
   .brand small { display:block; font-size:10px; letter-spacing:.12em; line-height:1.5; margin-block-start:6px; color:#b9b7c3; }
   .brand small span { font-size:8px; letter-spacing:.04em; }
@@ -290,7 +290,7 @@
     .preview-dot { display:none; }
     .header-inner { min-block-size:68px; gap:12px; }
     .brand { gap:9px; }
-    .brand-seal { inline-size:30px; block-size:36px; font-size:22px; }
+    .brand-mark { inline-size:36px; }
     .brand strong { font-size:16px; letter-spacing:.06em; }
     .brand small { font-size:9px; margin-block-start:5px; }
     .brand small span { display:none; }

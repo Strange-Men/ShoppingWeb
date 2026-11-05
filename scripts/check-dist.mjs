@@ -38,7 +38,7 @@ for (const file of files.filter(file=>file.endsWith('.html'))) {
   for (const match of html.matchAll(/\bsrcset="([^"]+)"/g)) {
     for (const entry of match[1].split(',')) {
       const source=entry.trim().split(/\s+/)[0];
-      if(!source?.startsWith('/media/')) {errors.push(`Unexpected responsive image source: ${rel}`);continue;}
+      if(!/^\/(?:media|brand)\/[a-zA-Z0-9/_-]+\.(?:webp|png|jpg|jpeg|avif)$/.test(source)) {errors.push(`Unexpected responsive image source: ${rel}`);continue;}
       try {await access(path.join(dist,source));links++;}catch{errors.push(`Missing srcset image: ${rel} -> ${source}`);}
     }
   }

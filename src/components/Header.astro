@@ -1,12 +1,12 @@
 ---
-import { displayBrand, site } from '../data/site';
 import LanguageCard from './LanguageCard.astro';
+import Brand from './Brand.astro';
 const links = [{ url: '/en/', label: 'Home' }, { url: '/en/about/', label: 'About us' }, { url: '/en/products/', label: 'Our work' }, { url: '/en/contact/', label: 'Contact' }];
 const current = (url: string) => url === '/en/' ? Astro.url.pathname === url : Astro.url.pathname.startsWith(url);
 ---
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/en/" aria-label={`${displayBrand} home`}><span class="brand-seal" aria-hidden="true">楠</span><span><strong>{displayBrand}</strong><small>{site.companyName}{!site.brandName && <span> · Brand preview</span>}</small></span></a>
+    <Brand />
     <nav class="desktop-nav" aria-label="Main navigation">
       {links.map((link) => <a href={link.url} aria-current={current(link.url) ? 'page' : undefined}>{link.label}</a>)}
     </nav>
