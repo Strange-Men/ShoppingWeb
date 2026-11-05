@@ -1,0 +1,5 @@
+---
+import { copy } from '../i18n/en';
+import { services } from '../data/site';
+---
+<section class="section process-section"><div class="container"><div class="section-heading"><p class="eyebrow">{copy.process.eyebrow}</p><h2>{copy.process.title}</h2><p>{copy.process.description}</p></div><ol class="process-grid">{services.map((service, index) => <li><span class="process-number">0{index + 1}</span><h3>{service.title}</h3><p>{service.text}</p></li>)}</ol></div></section>

@@ -1,0 +1,38 @@
+[
+  {
+    "check": "mobile reverse tab wrap",
+    "pass": true
+  },
+  {
+    "check": "mobile forward tab wrap",
+    "pass": true
+  },
+  {
+    "check": "mobile Escape and focus return",
+    "pass": true
+  },
+  {
+    "check": "mobile language card keyboard open",
+    "pass": true
+  },
+  {
+    "check": "language close and focus return",
+    "pass": true
+  },
+  {
+    "check": "case route and direct reload",
+    "pass": true
+  },
+  {
+    "check": "gallery keyboard opens second view",
+    "pass": true
+  },
+  {
+    "check": "gallery next image",
+    "pass": true
+  },
+  {
+    "check": "gallery Escape and opener focus",
+    "pass": true
+  }
+]

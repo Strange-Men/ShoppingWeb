@@ -1,0 +1,16 @@
+---
+import type { MediaSlot } from '../data/types';
+import Media from './Media.astro';
+interface Props { images: MediaSlot[]; title: string }
+const { images, title } = Astro.props;
+---
+<div class="gallery" data-gallery>
+  <figure class="gallery-primary"><Media image={images[0]!} label="Case photograph pending" eager /><figcaption><span>{images[0]!.alt}</span><span>01 / {String(images.length).padStart(2,'0')}</span></figcaption></figure>
+  <div class="gallery-thumbnails" aria-label="Case image views">{images.map((image,index) => <button type="button" class="gallery-open" data-index={index} aria-label={`Open ${index + 1} of ${images.length}: ${image.alt}`}><Media image={image} label={['Main view','Detail view','Context view'][index] || `View ${index + 1}`} /><span>{String(index + 1).padStart(2,'0')}</span></button>)}</div>
+  <noscript><p class="small muted">All image views</p>{images.slice(1).map(image => <figure><Media image={image} /><figcaption>{image.alt}</figcaption></figure>)}</noscript>
+  <dialog class="gallery-dialog" aria-label={`${title} image viewer`}>
+    <div class="gallery-toolbar"><span class="eyebrow">Image viewer</span><button class="icon-button gallery-close" type="button" aria-label="Close image viewer">×</button></div>
+    <div class="gallery-slides">{images.map((image,index) => <figure data-slide={index} hidden={index !== 0}><Media image={image} label="Owner-supplied photograph pending" /><figcaption>{image.alt}</figcaption></figure>)}</div>
+    <div class="gallery-controls"><button class="button button-outline gallery-prev" type="button" aria-label="Previous image">← Previous</button><span class="gallery-count" aria-live="polite">1 / {images.length}</span><button class="button button-outline gallery-next" type="button" aria-label="Next image">Next →</button></div>
+  </dialog>
+</div>

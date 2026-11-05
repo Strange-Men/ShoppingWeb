@@ -1,0 +1,20 @@
+---
+import { copy } from '../../../../i18n/en';
+import SiteLayout from '../../../../layouts/SiteLayout.astro';
+import Gallery from '../../../../components/Gallery.astro';
+import ContactActions from '../../../../components/ContactActions.astro';
+import CaseCard from '../../../../components/CaseCard.astro';
+import { visibleCases, casePath } from '../../../../data/cases';
+import { materials } from '../../../../data/site';
+export function getStaticPaths() { return visibleCases().map(item => ({params:{material:item.material,slug:item.locales.en.slug},props:{item}})); }
+const { item } = Astro.props;
+const content = item.locales.en;
+const material = materials.find(entry => entry.id === item.material)!;
+const related = visibleCases().filter(entry => entry.material === item.material && entry.id !== item.id).slice(0,3);
+---
+<SiteLayout title={content.title} description={content.seoDescription} noindex={item.status !== 'published'}>
+  <div class="container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/en/">Home</a><span aria-hidden="true">/</span><a href="/en/products/">Our work</a><span aria-hidden="true">/</span><a href={`/en/products/${item.material}/`}>{material.title}</a><span aria-hidden="true">/</span><span aria-current="page">{item.status === 'preview' ? 'Preview detail' : content.title}</span></nav></div>
+  <section class="section case-detail"><div class="container detail-grid"><Gallery images={item.images} title={content.title} /><div class="detail-copy"><p class="eyebrow">{material.title} / Custom sculpture</p><h1>{content.title}</h1>{item.status === 'preview' && <p class="detail-preview">Layout preview · Unpublished<br /><span>{copy.detail.preview}</span></p>}<p class="lead">{content.summary}</p><dl class="spec-list"><div><dt>Material</dt><dd>{material.title}</dd></div><div><dt>Dimensions</dt><dd>{item.sizeNote}</dd></div><div><dt>Surface finish</dt><dd>{item.finish || 'To be confirmed with project details.'}</dd></div><div><dt>Application</dt><dd>{item.application || 'Project setting to be added.'}</dd></div><div><dt>Case reference</dt><dd><bdi>{item.id}</bdi></dd></div></dl><h2>Discuss a similar idea</h2><p>{item.customizationNotes}</p><ContactActions title={content.title} path={casePath(item)} /><p class="small muted">{copy.detail.scope}</p></div></div></section>
+  <section class="section detail-notes"><div class="container narrow"><p class="eyebrow">Case information</p><h2>{copy.detail.noteTitle}</h2><p>{content.body}</p><p>{copy.detail.note}</p></div></section>
+  <section class="section"><div class="container"><div class="section-heading"><p class="eyebrow">Continue exploring</p><h2>More in {material.short.toLowerCase()}</h2></div><div class="case-grid related-grid">{related.map(entry => <CaseCard item={entry} />)}</div><div class="section-action"><a href={`/en/products/${item.material}/`} class="text-link">Back to {material.title} <span aria-hidden="true">↗</span></a></div></div></section>
+</SiteLayout>

@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-05",
+  "timezone": "Asia/Shanghai",
+  "siteVersion": 2,
+  "deploymentId": "appgdep_6aec1aea50d08191ac2b3c37e9934c7f",
+  "commit": "11f7edc354f3188417942bffd4f7f449371779e2",
+  "url": "https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/",
+  "homeStatus": 200,
+  "missing": [],
+  "resources": [
+    {
+      "route": "/_astro/SiteLayout.BLBNNgHk.css",
+      "status": 200
+    },
+    {
+      "route": "/_astro/index.BcENZg6K.css",
+      "status": 200
+    },
+    {
+      "route": "/media/hero-waterfront-1600.webp",
+      "status": 200
+    },
+    {
+      "route": "/brand/nx-mark-128.webp",
+      "status": 200
+    },
+    {
+      "route": "/en/contact/",
+      "status": 200
+    },
+    {
+      "route": "/en/products/",
+      "status": 200
+    }
+  ],
+  "passed": true
+}

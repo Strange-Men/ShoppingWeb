@@ -1,0 +1,237 @@
+[
+  {
+    "check": "language keyboard open",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "language Escape and focus return",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "mobile menu keyboard open",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "mobile menu Escape focus",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "presentation viewer opens",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "presentation arrow key",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "presentation previous",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "presentation Escape opener focus",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "all material presentations",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "fiberglass photos and deferred cases",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "native preview disclosure",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "unpublished case direct reload",
+    "pass": true,
+    "width": 360
+  },
+  {
+    "check": "language keyboard open",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "language Escape and focus return",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "mobile menu keyboard open",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "mobile menu Escape focus",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "presentation viewer opens",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "presentation arrow key",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "presentation previous",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "presentation Escape opener focus",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "all material presentations",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "fiberglass photos and deferred cases",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "native preview disclosure",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "unpublished case direct reload",
+    "pass": true,
+    "width": 390
+  },
+  {
+    "check": "language keyboard open",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "language Escape and focus return",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "mobile menu keyboard open",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "mobile menu Escape focus",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "presentation viewer opens",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "presentation arrow key",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "presentation previous",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "presentation Escape opener focus",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "all material presentations",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "fiberglass photos and deferred cases",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "native preview disclosure",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "unpublished case direct reload",
+    "pass": true,
+    "width": 768
+  },
+  {
+    "check": "language keyboard open",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "language Escape and focus return",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "presentation viewer opens",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "presentation arrow key",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "presentation previous",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "presentation Escape opener focus",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "all material presentations",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "fiberglass photos and deferred cases",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "native preview disclosure",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "check": "unpublished case direct reload (keyboard)",
+    "pass": true,
+    "width": 1440
+  },
+  {
+    "width": 1440,
+    "check": "desktop pointer opens unpublished case after scroll margin adjustment",
+    "pass": true
+  }
+]

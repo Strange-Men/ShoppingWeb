@@ -1,0 +1,15 @@
+---
+import { copy } from '../../../i18n/en';
+import SiteLayout from '../../../layouts/SiteLayout.astro';
+import PageHeading from '../../../components/PageHeading.astro';
+import CaseCard from '../../../components/CaseCard.astro';
+import Inquiry from '../../../components/Inquiry.astro';
+import SculptureGallery from '../../../components/SculptureGallery.astro';
+import { presentationImages } from '../../../data/photography';
+import { visibleCases } from '../../../data/cases';
+import { productCategories, isPreview } from '../../../data/site';
+---
+<SiteLayout title={copy.work.title} description={copy.work.description}>
+  <PageHeading eyebrow={copy.work.eyebrow} title={copy.work.heading} description={copy.work.lead} />
+  <section class="section listing-section"><div class="container"><nav class="material-tabs" aria-label="Browse by category"><a href="/en/products/" aria-current="page">All work</a>{productCategories.map(category => <a href={`/en/products/${category.id}/`}>{category.title}</a>)}</nav><div class="listing-meta"><p>{copy.work.note}</p><span>Made to order</span></div><SculptureGallery items={presentationImages()} id="all-sculptures" /><p class="gallery-disclosure">Retouched presentation imagery. Individual project case studies are being prepared.</p>{isPreview && <details class="case-previews"><summary>Case detail previews · Unpublished</summary><p class="small muted">These layouts are retained for review. The images above are material presentations, not published project case studies.</p><div class="case-grid">{visibleCases().map(item => <CaseCard item={item} />)}</div></details>}{!visibleCases().length && <p class="content-pending">{copy.work.empty}</p>}</div></section><Inquiry />
+</SiteLayout>

@@ -1,0 +1,51 @@
+// Owner-facing English page copy. Review here before introducing another language.
+export const copy = {
+  home: {
+    title: 'Custom sculpture manufacturer & bottle props',
+    description: 'Explore custom fiberglass / FRP sculptures, stainless steel sculptures and oversized bottle props from NanXuan.',
+    hero: {
+      eyebrow: 'NanXuan · Custom sculpture studio',
+      title: ['Custom sculpture', 'manufacturer'],
+      text: 'From your drawing or reference to a finished sculpture or display prop. Explore fiberglass / FRP, stainless steel and custom bottle props.',
+      capabilities: ['Design & 3D modeling', 'Sculptures & display props', 'Sampling & production', 'Shipping & installation guidance'],
+      facts: ['Established', 'Approx. workshop area', 'Product categories', 'Service stages'],
+      notes: ['Made to your reference', 'Shenzhen company', 'Zhaoqing workshop'],
+    },
+    introEyebrow: 'An idea. A material. A possibility.', introTitle: ['Custom sculpture,', 'with your project in mind.'],
+    intro: ['Established in 2012, NanXuan creates custom sculpture in fiberglass / FRP and stainless steel. Our company is in Shenzhen, with an approximately 4,000 m² workshop in Zhaoqing, Guangdong, China.', 'Start with a drawing, reference image or concept. From design and 3D modeling through production and shipping, the scope is shaped around your project.'],
+    imageNote: 'Model-making equipment in our workshop.',
+    featured: { eyebrow: 'The possibilities of form', title: 'Selected sculptures & props', description: 'Explore fiberglass characters, polished steel forms and oversized bottle props.', note: 'Retouched presentation imagery. Individual project case studies will follow.' },
+    materials: { eyebrow: 'Product categories', title: 'Find the right starting point.', description: 'Browse sculptures by material or explore oversized props modeled on packaging.' },
+    capabilities: { eyebrow: 'A collaborative approach', title: 'Built around your brief.', description: 'Services that support a custom commission.' },
+  },
+  about: {
+    title: 'About NanXuan & our custom approach', description: 'Established in 2012, NanXuan is based in Shenzhen with an approximately 4,000 m² workshop in Zhaoqing, creating custom fiberglass and stainless steel sculptures.',
+    eyebrow: 'About us', heading: 'Every sculpture begins with an idea.', lead: 'A custom approach to fiberglass / FRP and stainless steel sculpture.',
+    introTitle: ['From your reference', 'to a considered form.'],
+    paragraphs: ['A sculpture starts with a drawing, reference image or concept. We develop the shape and production approach around the setting, scale and finish you have in mind.', 'Our stainless steel processes include forging, assembly, grinding and polishing. Fiberglass / FRP work begins with model-making and molding, followed by finishing and painting.'],
+    pending: 'Owner-approved company background, team information and workshop photographs will be added here.',
+  },
+  work: {
+    title: 'Custom sculptures and bottle props', description: 'Explore NanXuan’s fiberglass / FRP sculptures, stainless steel sculptures and oversized bottle props.',
+    eyebrow: 'Our work', heading: 'Custom sculptures and props', lead: 'Browse fiberglass / FRP, stainless steel and bottle props.',
+    note: 'Product presentations · Project case studies to follow', empty: 'Individual project case studies will be added after their details are confirmed.',
+    materialNoteTitle: 'Made around your requirements.', materialNote: 'Share your reference, dimensions, quantity and project setting. Material specifications, finishes, pricing and timing are confirmed through discussion for each project.',
+  },
+  contact: {
+    title: 'Contact & discuss a custom sculpture', description: 'Contact NanXuan by WhatsApp or email to discuss custom fiberglass / FRP and stainless steel sculpture. Share your reference, dimensions, quantity and project location.',
+    eyebrow: 'Let’s start a conversation', heading: 'What would you like to create?', lead: 'An image, a drawing or an idea. Bring your starting point, and let’s discuss the sculpture you have in mind.',
+    panelEyebrow: 'Direct conversation', panelTitle: 'Your project starts here.', panelText: 'WhatsApp and email are our main inquiry channels. Share your reference and project requirements when getting in touch.',
+    pending: 'Preview notice: contact accounts are awaiting owner confirmation. Inquiry links will appear once the details are ready.',
+    briefEyebrow: 'Before you get in touch', briefTitle: 'A useful starting brief.',
+    brief: [
+      { title: 'Your reference', text: 'An image, sketch, drawing or a description of the idea.' },
+      { title: 'Material & dimensions', text: 'Fiberglass / FRP or stainless steel, preferred size and quantity.' },
+      { title: 'The project setting', text: 'The intended location, site conditions and destination.' },
+      { title: 'Your requirements', text: 'Design, sampling, finish, packing, transport or installation guidance to discuss.' },
+    ],
+    scopeNote: 'Project price, schedule and service scope are confirmed individually.',
+  },
+  process: { eyebrow: 'The custom process', title: 'A considered path, from start to finish.', description: 'Each commission has its own requirements. The steps and scope are agreed for your project.' },
+  inquiry: { eyebrow: 'From your idea to a custom sculpture', title: 'Let’s give your vision form.', paragraphs: ['Share a reference, dimensions and project location.', 'We can discuss the next steps together.'] },
+  detail: { preview: 'This is an empty case slot, not a completed project.', scope: 'A consultation begins with a discussion. No price, lead time or installation scope is assumed.', noteTitle: 'The project, in detail.', note: 'Design, 3D modeling, sampling, production, packaging, shipping and installation guidance can be discussed. The requirements and scope will be agreed individually.' },
+};

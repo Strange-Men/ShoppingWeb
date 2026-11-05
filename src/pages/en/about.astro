@@ -1,0 +1,16 @@
+---
+import { copy } from '../../i18n/en';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import PageHeading from '../../components/PageHeading.astro';
+import Media from '../../components/Media.astro';
+import Process from '../../components/Process.astro';
+import Inquiry from '../../components/Inquiry.astro';
+import { media, site, companyFacts, materialProcesses } from '../../data/site';
+---
+<SiteLayout title={copy.about.title} description={copy.about.description}>
+  <PageHeading eyebrow={copy.about.eyebrow} title={copy.about.heading} description={copy.about.lead} />
+  <section class="company-facts" aria-label="Company facts"><div class="container company-facts-grid">{companyFacts.map(fact => <div><strong>{fact.value}</strong><span>{fact.label}</span></div>)}</div></section>
+  <section class="section"><div class="container split-grid"><Media image={media.workshop} eager /><div><p class="eyebrow">{site.legalName}</p><h2>{copy.about.introTitle[0]}<br />{copy.about.introTitle[1]}</h2><div class="gold-rule"></div><p>{copy.about.paragraphs[0]}</p><p>{copy.about.paragraphs[1]}</p>{site.profile ? <p>{site.profile}</p> : <div class="content-pending"><span class="eyebrow">Company profile pending</span><p>{copy.about.pending}</p></div>}</div></div></section>
+  <section class="section material-processes"><div class="container"><div class="section-heading"><p class="eyebrow">Two materials. One custom approach.</p><h2>The making of a sculpture.</h2></div><div class="material-process-grid">{materialProcesses.map(process => <article><p class="eyebrow">{process.material}</p><h3>{process.title}</h3><p>{process.text}</p></article>)}</div></div></section>
+  <Process /><Inquiry />
+</SiteLayout>

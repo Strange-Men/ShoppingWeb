@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-05",
+  "timezone": "Asia/Shanghai",
+  "pages": [
+    {
+      "file": "404.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\products\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\products\\stainless-steel\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\products\\stainless-steel\\preview-04\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\products\\stainless-steel\\preview-03\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\products\\stainless-steel\\preview-02\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\products\\stainless-steel\\preview-01\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\products\\fiberglass\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\products\\fiberglass\\preview-04\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\products\\fiberglass\\preview-03\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\products\\fiberglass\\preview-02\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\products\\fiberglass\\preview-01\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\privacy\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\contact\\index.html",
+      "marks": 2,
+      "icons": 3
+    },
+    {
+      "file": "en\\about\\index.html",
+      "marks": 2,
+      "icons": 3
+    }
+  ],
+  "assets": [
+    {
+      "file": "apple-touch-icon.png",
+      "width": 180,
+      "height": 180,
+      "hasAlpha": true,
+      "bytes": 12066,
+      "httpStatus": 200
+    },
+    {
+      "file": "favicon-192.png",
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "bytes": 13558,
+      "httpStatus": 200
+    },
+    {
+      "file": "favicon-32.png",
+      "width": 32,
+      "height": 32,
+      "hasAlpha": true,
+      "bytes": 1418,
+      "httpStatus": 200
+    },
+    {
+      "file": "nx-mark-128.webp",
+      "width": 128,
+      "height": 107,
+      "hasAlpha": true,
+      "bytes": 6504,
+      "httpStatus": 200
+    },
+    {
+      "file": "nx-mark-256.webp",
+      "width": 256,
+      "height": 215,
+      "hasAlpha": true,
+      "bytes": 15846,
+      "httpStatus": 200
+    },
+    {
+      "file": "nx-mark.png",
+      "width": 1036,
+      "height": 870,
+      "hasAlpha": true,
+      "bytes": 481923,
+      "httpStatus": 200
+    }
+  ]
+}

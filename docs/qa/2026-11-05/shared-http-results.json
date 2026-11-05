@@ -1,0 +1,567 @@
+{
+  "date": "2026-11-05",
+  "timezone": "Asia/Shanghai",
+  "origin": "https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site",
+  "authentication": "Anonymous HTTP; no cookies or bearer token",
+  "sourceCommit": "b862502b4de4e33b1e1cc87ecc3b4c5f3a5d8112",
+  "results": [
+    {
+      "route": "/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 10216,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/ar/",
+      "expected": 404,
+      "kind": "missing",
+      "actual": 404,
+      "bytes": 10230,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/brand/apple-touch-icon.png",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 12066,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/brand/favicon-192.png",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 13558,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/brand/favicon-32.png",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 1418,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/brand/nx-mark-128.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 6504,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/brand/nx-mark-256.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 15846,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/brand/nx-mark.png",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 481923,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/en/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 25452,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/about/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 15286,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/contact/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 12375,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/privacy/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 11527,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/products/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 30997,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/products/fiberglass/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 22196,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/products/fiberglass/not-a-case/",
+      "expected": 404,
+      "kind": "missing",
+      "actual": 404,
+      "bytes": 10230,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/products/fiberglass/preview-01/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 20054,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/products/fiberglass/preview-02/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 20054,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/products/fiberglass/preview-03/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 20054,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/products/fiberglass/preview-04/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 20054,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/products/stainless-steel/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 22098,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/products/stainless-steel/preview-01/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 20148,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/products/stainless-steel/preview-02/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 20148,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/products/stainless-steel/preview-03/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 20148,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/en/products/stainless-steel/preview-04/",
+      "expected": 200,
+      "kind": "page",
+      "actual": 200,
+      "bytes": 20148,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-letters-1200.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 183978,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-letters-1448.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 284548,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-letters-480.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 39716,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-letters-800.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 96370,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-mascot-1122.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 199638,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-mascot-480.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 36056,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-mascot-800.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 94460,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-phoenix-1200.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 73704,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-phoenix-1448.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 104036,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-phoenix-480.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 19604,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-phoenix-800.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 41858,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-qilin-1200.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 203054,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-qilin-1254.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 249026,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-qilin-480.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 47592,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/frp-qilin-800.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 113170,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/hero-waterfront-1200.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 87960,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/hero-waterfront-1600.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 155642,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/hero-waterfront-480.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 19000,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/hero-waterfront-800.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 48926,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/steel-faceted-1122.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 219412,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/steel-faceted-480.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 52742,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/steel-faceted-800.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 121136,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/steel-leaf-1122.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 216366,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/steel-leaf-480.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 54296,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/steel-leaf-800.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 120828,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/steel-ring-1122.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 269042,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/steel-ring-480.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 57780,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/steel-ring-800.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 139978,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/steel-wings-1122.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 112068,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/steel-wings-480.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 28234,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/steel-wings-800.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 61796,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/workshop-cnc-1200.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 169864,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/workshop-cnc-1536.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 283074,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/workshop-cnc-480.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 35998,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/media/workshop-cnc-800.webp",
+      "expected": 200,
+      "kind": "image",
+      "actual": 200,
+      "bytes": 88422,
+      "sameBuild": true,
+      "pass": true
+    },
+    {
+      "route": "/qa-missing-page/",
+      "expected": 404,
+      "kind": "missing",
+      "actual": 404,
+      "bytes": 10230,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/sitemap.xml",
+      "expected": 404,
+      "kind": "missing",
+      "actual": 404,
+      "bytes": 10230,
+      "sameBuild": null,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/",
+      "expected": 404,
+      "kind": "missing",
+      "actual": 404,
+      "bytes": 10230,
+      "sameBuild": null,
+      "pass": true
+    }
+  ]
+}

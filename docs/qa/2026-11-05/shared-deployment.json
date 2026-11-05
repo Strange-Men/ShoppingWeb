@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-05",
+  "timezone": "Asia/Shanghai",
+  "platform": "Sites",
+  "projectId": "appgprj_6aebf877e3008191b2b13be49d44e610",
+  "versionId": "appgprj_6aebf877e3008191b2b13be49d44e610~appgver_3708ed87c068819189aaf47e8c4db332",
+  "versionNumber": 1,
+  "deploymentId": "appgdep_6aebf9f8ff8081918366533aaf03bc9f",
+  "deploymentStatus": "succeeded",
+  "url": "https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site",
+  "entryPath": "/en/",
+  "accessMode": "public",
+  "sourceCommit": "b862502b4de4e33b1e1cc87ecc3b4c5f3a5d8112",
+  "siteMode": "preview",
+  "indexing": "noindex, nofollow",
+  "archiveFiles": 71,
+  "archiveBytes": 5273600,
+  "anonymousChecks": 62,
+  "failedChecks": 0,
+  "browser": {
+    "name": "Codex in-app browser",
+    "version": "not exposed",
+    "viewport": 409,
+    "loadedImageFailures": 0,
+    "logoLoaded": true
+  }
+}
