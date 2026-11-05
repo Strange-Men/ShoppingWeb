@@ -1,6 +1,6 @@
 ---
 import Media from './Media.astro';
-import { media, materials, services, site } from '../data/site';
+import { media, productCategories, services, site } from '../data/site';
 import { copy } from '../i18n/en';
 
 const { hero } = copy.home;
@@ -10,7 +10,7 @@ const icons = [
   'M4 27V13l8 4v-7l8 4V5h6l2 22H4z M9 22h2m5 0h2m5 0h2',
   'M3 8h17v15H3z M20 13h5l4 5v5h-9 M7 23a3 3 0 1 0 6 0 M22 23a3 3 0 1 0 6 0',
 ];
-const values = [site.foundedYear, `${site.workshopAreaSqm.toLocaleString('en-US')} m²`, materials.length, services.length];
+const values = [site.foundedYear, `${site.workshopAreaSqm.toLocaleString('en-US')} m²`, productCategories.length, services.length];
 ---
 <section class="home-hero" aria-labelledby="home-hero-title">
   <div class="hero-art"><Media image={media.hero} eager sizes="100vw" /></div>

@@ -2,45 +2,51 @@
   "date": "2026-11-05",
   "timezone": "Asia/Shanghai",
   "environment": "Local loopback HTTP; unthrottled Windows; no overseas or field CWV claim",
-  "reviewedMasters": 10,
-  "derivatives": 35,
+  "reviewedMasters": 17,
+  "derivatives": 56,
   "largestDerivativeBytes": 284548,
-  "cssBytes": 30740,
+  "cssBytes": 31682,
   "fontWoff2Bytes": 95436,
   "pages": [
     {
       "route": "/en/",
-      "uniqueImages": 6,
-      "largestFallbackImageBytes": 1120212,
-      "htmlBytes": 23785
+      "uniqueImages": 11,
+      "largestFallbackImageBytes": 1576272,
+      "htmlBytes": 33888
     },
     {
       "route": "/en/about/",
-      "uniqueImages": 1,
-      "largestFallbackImageBytes": 283074,
-      "htmlBytes": 13619
+      "uniqueImages": 2,
+      "largestFallbackImageBytes": 289578,
+      "htmlBytes": 14302
     },
     {
       "route": "/en/products/",
-      "uniqueImages": 8,
-      "largestFallbackImageBytes": 1654136,
-      "htmlBytes": 29330
+      "uniqueImages": 16,
+      "largestFallbackImageBytes": 2502120,
+      "htmlBytes": 40402
     },
     {
       "route": "/en/products/fiberglass/",
-      "uniqueImages": 4,
-      "largestFallbackImageBytes": 837248,
-      "htmlBytes": 20529
+      "uniqueImages": 7,
+      "largestFallbackImageBytes": 1022786,
+      "htmlBytes": 24083
     },
     {
       "route": "/en/products/stainless-steel/",
+      "uniqueImages": 7,
+      "largestFallbackImageBytes": 1295382,
+      "htmlBytes": 24134
+    },
+    {
+      "route": "/en/products/bottle-props/",
       "uniqueImages": 4,
-      "largestFallbackImageBytes": 816888,
-      "htmlBytes": 20431
+      "largestFallbackImageBytes": 196960,
+      "htmlBytes": 16521
     }
   ],
   "localResponseMedianMs": 2.05,
-  "localResponseMaxMs": 26.4,
+  "localResponseMaxMs": 27.55,
   "variants": [
     {
       "source": "/media/hero-waterfront-480.webp",
@@ -251,224 +257,476 @@
       "width": 1536,
       "height": 1024,
       "bytes": 283074
+    },
+    {
+      "source": "/media/bottle-pastel-480.webp",
+      "width": 480,
+      "height": 480,
+      "bytes": 7792
+    },
+    {
+      "source": "/media/bottle-pastel-800.webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 16426
+    },
+    {
+      "source": "/media/bottle-pastel-1200.webp",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 31108
+    },
+    {
+      "source": "/media/bottle-display-480.webp",
+      "width": 480,
+      "height": 480,
+      "bytes": 17210
+    },
+    {
+      "source": "/media/bottle-display-800.webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 36522
+    },
+    {
+      "source": "/media/bottle-display-1200.webp",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 71522
+    },
+    {
+      "source": "/media/bottle-cups-480.webp",
+      "width": 480,
+      "height": 480,
+      "bytes": 16128
+    },
+    {
+      "source": "/media/bottle-cups-800.webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 40056
+    },
+    {
+      "source": "/media/bottle-cups-1200.webp",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 87826
+    },
+    {
+      "source": "/media/steel-ribbon-480.webp",
+      "width": 480,
+      "height": 480,
+      "bytes": 46366
+    },
+    {
+      "source": "/media/steel-ribbon-800.webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 104354
+    },
+    {
+      "source": "/media/steel-ribbon-1200.webp",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 217986
+    },
+    {
+      "source": "/media/steel-orbits-480.webp",
+      "width": 480,
+      "height": 480,
+      "bytes": 49740
+    },
+    {
+      "source": "/media/steel-orbits-800.webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 118454
+    },
+    {
+      "source": "/media/steel-orbits-1200.webp",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 254004
+    },
+    {
+      "source": "/media/frp-mosaic-480.webp",
+      "width": 480,
+      "height": 480,
+      "bytes": 24152
+    },
+    {
+      "source": "/media/frp-mosaic-800.webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 54980
+    },
+    {
+      "source": "/media/frp-mosaic-1200.webp",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 117624
+    },
+    {
+      "source": "/media/frp-woodland-480.webp",
+      "width": 480,
+      "height": 480,
+      "bytes": 14918
+    },
+    {
+      "source": "/media/frp-woodland-800.webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 32018
+    },
+    {
+      "source": "/media/frp-woodland-1200.webp",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 61410
     }
   ],
   "requests": [
     {
       "source": "/en/",
       "status": 200,
-      "bytes": 23785,
-      "elapsedMs": 26.4
+      "bytes": 33888,
+      "elapsedMs": 27.55
     },
     {
       "source": "/media/hero-waterfront-480.webp",
       "status": 200,
       "bytes": 19000,
-      "elapsedMs": 3.34
+      "elapsedMs": 3.42
     },
     {
       "source": "/media/hero-waterfront-800.webp",
       "status": 200,
       "bytes": 48926,
-      "elapsedMs": 3.26
+      "elapsedMs": 2.89
     },
     {
       "source": "/media/hero-waterfront-1200.webp",
       "status": 200,
       "bytes": 87960,
-      "elapsedMs": 2.82
+      "elapsedMs": 2.42
     },
     {
       "source": "/media/hero-waterfront-1600.webp",
       "status": 200,
       "bytes": 155642,
-      "elapsedMs": 2.94
+      "elapsedMs": 3.24
     },
     {
       "source": "/media/steel-wings-480.webp",
       "status": 200,
       "bytes": 28234,
-      "elapsedMs": 1.95
+      "elapsedMs": 1.91
     },
     {
       "source": "/media/steel-wings-800.webp",
       "status": 200,
       "bytes": 61796,
-      "elapsedMs": 2.01
+      "elapsedMs": 2.09
     },
     {
       "source": "/media/steel-wings-1122.webp",
       "status": 200,
       "bytes": 112068,
-      "elapsedMs": 4.08
+      "elapsedMs": 3.06
     },
     {
       "source": "/media/steel-leaf-480.webp",
       "status": 200,
       "bytes": 54296,
-      "elapsedMs": 1.94
+      "elapsedMs": 2.5
     },
     {
       "source": "/media/steel-leaf-800.webp",
       "status": 200,
       "bytes": 120828,
-      "elapsedMs": 2.4
+      "elapsedMs": 2.59
     },
     {
       "source": "/media/steel-leaf-1122.webp",
       "status": 200,
       "bytes": 216366,
-      "elapsedMs": 2.26
+      "elapsedMs": 4.28
     },
     {
       "source": "/media/steel-ring-480.webp",
       "status": 200,
       "bytes": 57780,
-      "elapsedMs": 1.73
+      "elapsedMs": 2.38
     },
     {
       "source": "/media/steel-ring-800.webp",
       "status": 200,
       "bytes": 139978,
-      "elapsedMs": 1.7
+      "elapsedMs": 2.39
     },
     {
       "source": "/media/steel-ring-1122.webp",
       "status": 200,
       "bytes": 269042,
-      "elapsedMs": 2.04
+      "elapsedMs": 3.13
     },
     {
       "source": "/media/steel-faceted-480.webp",
       "status": 200,
       "bytes": 52742,
-      "elapsedMs": 2
+      "elapsedMs": 3
     },
     {
       "source": "/media/steel-faceted-800.webp",
       "status": 200,
       "bytes": 121136,
-      "elapsedMs": 2.05
+      "elapsedMs": 2.11
     },
     {
       "source": "/media/steel-faceted-1122.webp",
       "status": 200,
       "bytes": 219412,
-      "elapsedMs": 2.56
+      "elapsedMs": 2.01
     },
     {
       "source": "/media/frp-qilin-480.webp",
       "status": 200,
       "bytes": 47592,
-      "elapsedMs": 1.58
+      "elapsedMs": 1.5
     },
     {
       "source": "/media/frp-qilin-800.webp",
       "status": 200,
       "bytes": 113170,
-      "elapsedMs": 1.77
+      "elapsedMs": 1.54
     },
     {
       "source": "/media/frp-qilin-1200.webp",
       "status": 200,
       "bytes": 203054,
-      "elapsedMs": 1.81
+      "elapsedMs": 2.19
     },
     {
       "source": "/media/frp-qilin-1254.webp",
       "status": 200,
       "bytes": 249026,
-      "elapsedMs": 2.06
+      "elapsedMs": 4.73
     },
     {
       "source": "/media/frp-phoenix-480.webp",
       "status": 200,
       "bytes": 19604,
-      "elapsedMs": 1.54
+      "elapsedMs": 2.05
     },
     {
       "source": "/media/frp-phoenix-800.webp",
       "status": 200,
       "bytes": 41858,
-      "elapsedMs": 2.65
+      "elapsedMs": 2.02
     },
     {
       "source": "/media/frp-phoenix-1200.webp",
       "status": 200,
       "bytes": 73704,
-      "elapsedMs": 2.25
+      "elapsedMs": 2.4
     },
     {
       "source": "/media/frp-phoenix-1448.webp",
       "status": 200,
       "bytes": 104036,
-      "elapsedMs": 2.14
+      "elapsedMs": 2.47
     },
     {
       "source": "/media/frp-mascot-480.webp",
       "status": 200,
       "bytes": 36056,
-      "elapsedMs": 2.15
+      "elapsedMs": 2.68
     },
     {
       "source": "/media/frp-mascot-800.webp",
       "status": 200,
       "bytes": 94460,
-      "elapsedMs": 2.33
+      "elapsedMs": 5.38
     },
     {
       "source": "/media/frp-mascot-1122.webp",
       "status": 200,
       "bytes": 199638,
-      "elapsedMs": 19.33
+      "elapsedMs": 2.4
     },
     {
       "source": "/media/frp-letters-480.webp",
       "status": 200,
       "bytes": 39716,
-      "elapsedMs": 2.05
+      "elapsedMs": 1.69
     },
     {
       "source": "/media/frp-letters-800.webp",
       "status": 200,
       "bytes": 96370,
-      "elapsedMs": 1.47
+      "elapsedMs": 1.34
     },
     {
       "source": "/media/frp-letters-1200.webp",
       "status": 200,
       "bytes": 183978,
-      "elapsedMs": 1.43
+      "elapsedMs": 2.02
     },
     {
       "source": "/media/frp-letters-1448.webp",
       "status": 200,
       "bytes": 284548,
-      "elapsedMs": 1.76
+      "elapsedMs": 2.59
     },
     {
       "source": "/media/workshop-cnc-480.webp",
       "status": 200,
       "bytes": 35998,
-      "elapsedMs": 1.29
+      "elapsedMs": 1.64
     },
     {
       "source": "/media/workshop-cnc-800.webp",
       "status": 200,
       "bytes": 88422,
-      "elapsedMs": 1.3
+      "elapsedMs": 2.26
     },
     {
       "source": "/media/workshop-cnc-1200.webp",
       "status": 200,
       "bytes": 169864,
-      "elapsedMs": 1.36
+      "elapsedMs": 1.9
     },
     {
       "source": "/media/workshop-cnc-1536.webp",
       "status": 200,
       "bytes": 283074,
-      "elapsedMs": 1.89
+      "elapsedMs": 2.37
+    },
+    {
+      "source": "/media/bottle-pastel-480.webp",
+      "status": 200,
+      "bytes": 7792,
+      "elapsedMs": 1.43
+    },
+    {
+      "source": "/media/bottle-pastel-800.webp",
+      "status": 200,
+      "bytes": 16426,
+      "elapsedMs": 1.2
+    },
+    {
+      "source": "/media/bottle-pastel-1200.webp",
+      "status": 200,
+      "bytes": 31108,
+      "elapsedMs": 1.23
+    },
+    {
+      "source": "/media/bottle-display-480.webp",
+      "status": 200,
+      "bytes": 17210,
+      "elapsedMs": 1.36
+    },
+    {
+      "source": "/media/bottle-display-800.webp",
+      "status": 200,
+      "bytes": 36522,
+      "elapsedMs": 1.32
+    },
+    {
+      "source": "/media/bottle-display-1200.webp",
+      "status": 200,
+      "bytes": 71522,
+      "elapsedMs": 1.46
+    },
+    {
+      "source": "/media/bottle-cups-480.webp",
+      "status": 200,
+      "bytes": 16128,
+      "elapsedMs": 1.43
+    },
+    {
+      "source": "/media/bottle-cups-800.webp",
+      "status": 200,
+      "bytes": 40056,
+      "elapsedMs": 1.55
+    },
+    {
+      "source": "/media/bottle-cups-1200.webp",
+      "status": 200,
+      "bytes": 87826,
+      "elapsedMs": 1.62
+    },
+    {
+      "source": "/media/steel-ribbon-480.webp",
+      "status": 200,
+      "bytes": 46366,
+      "elapsedMs": 1.95
+    },
+    {
+      "source": "/media/steel-ribbon-800.webp",
+      "status": 200,
+      "bytes": 104354,
+      "elapsedMs": 1.37
+    },
+    {
+      "source": "/media/steel-ribbon-1200.webp",
+      "status": 200,
+      "bytes": 217986,
+      "elapsedMs": 2.06
+    },
+    {
+      "source": "/media/steel-orbits-480.webp",
+      "status": 200,
+      "bytes": 49740,
+      "elapsedMs": 1.74
+    },
+    {
+      "source": "/media/steel-orbits-800.webp",
+      "status": 200,
+      "bytes": 118454,
+      "elapsedMs": 1.72
+    },
+    {
+      "source": "/media/steel-orbits-1200.webp",
+      "status": 200,
+      "bytes": 254004,
+      "elapsedMs": 2.26
+    },
+    {
+      "source": "/media/frp-mosaic-480.webp",
+      "status": 200,
+      "bytes": 24152,
+      "elapsedMs": 1.41
+    },
+    {
+      "source": "/media/frp-mosaic-800.webp",
+      "status": 200,
+      "bytes": 54980,
+      "elapsedMs": 1.72
+    },
+    {
+      "source": "/media/frp-mosaic-1200.webp",
+      "status": 200,
+      "bytes": 117624,
+      "elapsedMs": 2.99
+    },
+    {
+      "source": "/media/frp-woodland-480.webp",
+      "status": 200,
+      "bytes": 14918,
+      "elapsedMs": 1.7
+    },
+    {
+      "source": "/media/frp-woodland-800.webp",
+      "status": 200,
+      "bytes": 32018,
+      "elapsedMs": 1.45
+    },
+    {
+      "source": "/media/frp-woodland-1200.webp",
+      "status": 200,
+      "bytes": 61410,
+      "elapsedMs": 1.39
     }
   ]
 }

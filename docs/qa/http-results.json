@@ -27,6 +27,12 @@
       "pass": true
     },
     {
+      "route": "/en/products/bottle-props/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
       "route": "/en/products/fiberglass/",
       "status": 200,
       "actual": 200,

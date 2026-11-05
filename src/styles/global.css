@@ -111,9 +111,9 @@
   .materials-section { background:var(--navy); color:var(--white); }
   .materials-section .eyebrow,.inquiry-section .eyebrow { color:var(--gold); }
   .materials-section .section-heading p:not(.eyebrow) { color:#bdbac8; }
-  .material-grid { display:grid; grid-template-columns:1fr 1fr; gap:32px; }
-  .material-card { display:grid; grid-template-columns:43% 1fr; background:var(--navy-soft); border:1px solid #ffffff16; overflow:hidden; border-radius:var(--radius); }
-  .material-card > .media-slot { block-size:100%; aspect-ratio:auto; min-block-size:300px; }
+  .material-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+  .material-card { display:grid; grid-template-rows:auto 1fr; background:var(--navy-soft); border:1px solid #ffffff16; overflow:hidden; border-radius:var(--radius); }
+  .material-card > .media-slot { aspect-ratio:1.55; }
   .material-card .empty-media { background:#302f40; }
   .material-card .slot-corners { border-color:#ffffff18; }
   .material-card .slot-caption { color:#b6b1a4; }
@@ -299,7 +299,7 @@
     .round-arrow { inline-size:24px; block-size:24px; font-size:14px; }
     .preview-note { font-size:10px; padding:12px 14px; }
     .material-grid { grid-template-columns:1fr; gap:24px; }
-    .material-card { grid-template-columns:40% 1fr; border-radius:10px; }
+    .material-card { grid-template-columns:40% 1fr; grid-template-rows:auto; border-radius:10px; }
     .material-card > .media-slot { block-size:100%; aspect-ratio:auto; }
     .material-card-body { padding:25px 20px; }
     .material-card h3 { font-size:25px; }
@@ -363,6 +363,7 @@
   .material-process-grid h3 { margin-block:14px 18px; }
   .material-process-grid article > p:last-child { font-size:13px; color:var(--muted); }
   .sculpture-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:30px 24px; }
+  .sculpture-grid-three { grid-template-columns:repeat(3,minmax(0,1fr)); }
   .sculpture-tile { border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:white; transition:transform .25s,box-shadow .25s; }
   .sculpture-tile:hover { transform:translateY(-5px); box-shadow:0 12px 25px #1a1a2e0d; }
   .presentation-open { display:block; position:relative; inline-size:100%; padding:0; border:0; background:var(--paper); cursor:zoom-in; }

@@ -1,21 +1,21 @@
 // Owner-facing English page copy. Review here before introducing another language.
 export const copy = {
   home: {
-    title: 'Custom sculpture manufacturer in fiberglass & stainless steel',
-    description: 'Explore custom fiberglass / FRP and stainless steel sculpture, from your reference and 3D design through production, shipping and installation guidance.',
+    title: 'Custom sculpture manufacturer & bottle props',
+    description: 'Explore custom fiberglass / FRP sculptures, stainless steel sculptures and oversized bottle props from NanXuan.',
     hero: {
       eyebrow: 'NanXuan · Custom sculpture studio',
       title: ['Custom sculpture', 'manufacturer'],
-      text: 'From your drawing or reference to a finished sculpture in fiberglass / FRP or stainless steel.',
-      capabilities: ['Design & 3D modeling', 'Fiberglass / FRP & stainless steel', 'Sampling & production', 'Shipping & installation guidance'],
-      facts: ['Established', 'Approx. workshop area', 'Sculpture materials', 'Service stages'],
+      text: 'From your drawing or reference to a finished sculpture or display prop. Explore fiberglass / FRP, stainless steel and custom bottle props.',
+      capabilities: ['Design & 3D modeling', 'Sculptures & display props', 'Sampling & production', 'Shipping & installation guidance'],
+      facts: ['Established', 'Approx. workshop area', 'Product categories', 'Service stages'],
       notes: ['Made to your reference', 'Shenzhen company', 'Zhaoqing workshop'],
     },
     introEyebrow: 'An idea. A material. A possibility.', introTitle: ['Custom sculpture,', 'with your project in mind.'],
     intro: ['Established in 2012, NanXuan creates custom sculpture in fiberglass / FRP and stainless steel. Our company is in Shenzhen, with an approximately 4,000 m² workshop in Zhaoqing, Guangdong, China.', 'Start with a drawing, reference image or concept. From design and 3D modeling through production and shipping, the scope is shaped around your project.'],
     imageNote: 'Model-making equipment in our workshop.',
-    featured: { eyebrow: 'The possibilities of form', title: 'Sculpture, in focus.', description: 'Explore forms and finishes across fiberglass / FRP and stainless steel.', note: 'Retouched presentation imagery. Individual project case studies will follow.' },
-    materials: { eyebrow: 'Two materials. Your direction.', title: 'Find the right starting point.', description: 'Form, scale and finish begin with a conversation about your project.' },
+    featured: { eyebrow: 'The possibilities of form', title: 'Selected sculptures & props', description: 'Explore fiberglass characters, polished steel forms and oversized bottle props.', note: 'Retouched presentation imagery. Individual project case studies will follow.' },
+    materials: { eyebrow: 'Product categories', title: 'Find the right starting point.', description: 'Browse sculptures by material or explore oversized props modeled on packaging.' },
     capabilities: { eyebrow: 'A collaborative approach', title: 'Built around your brief.', description: 'Services that support a custom commission.' },
   },
   about: {
@@ -26,9 +26,9 @@ export const copy = {
     pending: 'Owner-approved company background, team information and workshop photographs will be added here.',
   },
   work: {
-    title: 'Sculpture forms — fiberglass & stainless steel', description: 'Explore NanXuan presentation imagery in fiberglass / FRP and stainless steel. Individual project case studies are being prepared.',
-    eyebrow: 'Our work', heading: 'A place for your next possibility.', lead: 'Custom sculpture in fiberglass / FRP and stainless steel. Explore by material.',
-    note: 'Material and form presentation · Project case studies to follow', empty: 'Individual project case studies will be added after their details are confirmed.',
+    title: 'Custom sculptures and bottle props', description: 'Explore NanXuan’s fiberglass / FRP sculptures, stainless steel sculptures and oversized bottle props.',
+    eyebrow: 'Our work', heading: 'Custom sculptures and props', lead: 'Browse fiberglass / FRP, stainless steel and bottle props.',
+    note: 'Product presentations · Project case studies to follow', empty: 'Individual project case studies will be added after their details are confirmed.',
     materialNoteTitle: 'Made around your requirements.', materialNote: 'Share your reference, dimensions, quantity and project setting. Material specifications, finishes, pricing and timing are confirmed through discussion for each project.',
   },
   contact: {

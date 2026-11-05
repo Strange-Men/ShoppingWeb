@@ -1,5 +1,6 @@
 export type Locale = 'en' | 'zh-Hant' | 'ar';
 export type MaterialId = 'fiberglass' | 'stainless-steel';
+export type ProductCategoryId = MaterialId | 'bottle-props';
 export interface MediaSlot {
   source: string | null;
   width: number;

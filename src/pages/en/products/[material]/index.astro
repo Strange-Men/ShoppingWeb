@@ -6,13 +6,29 @@ import CaseCard from '../../../../components/CaseCard.astro';
 import Inquiry from '../../../../components/Inquiry.astro';
 import SculptureGallery from '../../../../components/SculptureGallery.astro';
 import { presentationImages } from '../../../../data/photography';
-import { materials, isPreview } from '../../../../data/site';
+import { productCategories, isPreview } from '../../../../data/site';
 import { visibleCases } from '../../../../data/cases';
-export function getStaticPaths() { return materials.map(material => ({params:{material:material.id},props:{material}})); }
-const { material } = Astro.props;
-const items = visibleCases().filter(item => item.material === material.id);
+export function getStaticPaths() {
+  return productCategories.map(category => ({ params: { material: category.id }, props: { category } }));
+}
+const { category } = Astro.props;
+const photos = presentationImages(category.id);
+const cases = visibleCases().filter(item => item.material === category.id);
 ---
-<SiteLayout title={`${material.title} sculpture cases`} description={`Explore ${material.title.toLowerCase()} sculpture forms, material presentation images and NanXuan’s custom production approach.`}>
-  <PageHeading eyebrow="Custom sculpture / Materials" title={`${material.title} sculptures`} description={material.description} />
-  <section class="section listing-section"><div class="container"><nav class="material-tabs" aria-label="Browse by material"><a href="/en/products/">All work</a>{materials.map(entry => <a href={`/en/products/${entry.id}/`} aria-current={entry.id === material.id ? 'page' : undefined}>{entry.title}</a>)}</nav><div class="listing-meta"><p>{presentationImages(material.id).length} sculpture presentations · Project case studies to follow</p><a href="/en/contact/" class="text-link">Discuss this material ↗</a></div><SculptureGallery items={presentationImages(material.id)} id={`${material.id}-sculptures`} /><p class="gallery-disclosure">Retouched presentation imagery. Discuss the form, material and finish for your own project.</p>{isPreview && <details class="case-previews"><summary>Case detail previews · Unpublished</summary><div class="case-grid">{items.map(item => <CaseCard item={item} />)}</div></details>}{!items.length && <p class="content-pending">Approved cases for this material will be added here.</p>}<div class="material-note"><h2>{copy.work.materialNoteTitle}</h2><p>{copy.work.materialNote}</p></div></div></section><Inquiry />
+<SiteLayout title={category.heading} description={category.description}>
+  <PageHeading eyebrow="Made to order / Products" title={category.heading} description={category.description} />
+  <section class="section listing-section">
+    <div class="container">
+      <nav class="material-tabs" aria-label="Browse by category">
+        <a href="/en/products/">All work</a>
+        {productCategories.map(entry => <a href={`/en/products/${entry.id}/`} aria-current={entry.id === category.id ? 'page' : undefined}>{entry.title}</a>)}
+      </nav>
+      <div class="listing-meta"><p>{photos.length} product presentations</p><a href="/en/contact/" class="text-link">Discuss a project ↗</a></div>
+      <SculptureGallery items={photos} id={`${category.id}-gallery`} />
+      <p class="gallery-disclosure">Retouched presentation imagery. Discuss the form, material and finish for your own project.</p>
+      {isPreview && cases.length > 0 && <details class="case-previews"><summary>Case detail previews · Unpublished</summary><div class="case-grid">{cases.map(item => <CaseCard item={item} />)}</div></details>}
+      <div class="material-note"><h2>{copy.work.materialNoteTitle}</h2><p>{copy.work.materialNote}</p></div>
+    </div>
+  </section>
+  <Inquiry />
 </SiteLayout>

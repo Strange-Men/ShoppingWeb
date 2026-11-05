@@ -1,5 +1,5 @@
 import manifest from './photography.json' with { type: 'json' };
-import type { MediaSlot, MaterialId } from './types';
+import type { MediaSlot, ProductCategoryId } from './types';
 export interface PhotoRecord {
   id: string;
   width: number;
@@ -26,17 +26,24 @@ export function photo(id: string): MediaSlot {
     focalPoint: record.focalPoint || '50% 50%',
   };
 }
-export interface PresentationImage { id: string; material: MaterialId; title: string; image: MediaSlot }
+export interface PresentationImage { id: string; category: ProductCategoryId; title: string; image: MediaSlot }
 const galleryEntries = [
-  { id: 'steel-wings', material: 'stainless-steel', title: 'Sculptural wings' },
-  { id: 'frp-qilin', material: 'fiberglass', title: 'Figurative sculpture' },
-  { id: 'steel-leaf', material: 'stainless-steel', title: 'Organic metal forms' },
-  { id: 'frp-phoenix', material: 'fiberglass', title: 'Large-scale sculpture' },
-  { id: 'steel-ring', material: 'stainless-steel', title: 'Circular forms' },
-  { id: 'frp-mascot', material: 'fiberglass', title: 'Character sculpture' },
-  { id: 'steel-faceted', material: 'stainless-steel', title: 'Geometric forms' },
-  { id: 'frp-letters', material: 'fiberglass', title: 'Dimensional lettering' },
+  { id: 'steel-ribbon', category: 'stainless-steel', title: 'Twisting steel ribbon' },
+  { id: 'frp-mosaic', category: 'fiberglass', title: 'Patchwork dolphin' },
+  { id: 'bottle-pastel', category: 'bottle-props', title: 'Pastel bottle display' },
+  { id: 'steel-wings', category: 'stainless-steel', title: 'Sculptural wings' },
+  { id: 'frp-qilin', category: 'fiberglass', title: 'Figurative sculpture' },
+  { id: 'bottle-cups', category: 'bottle-props', title: 'Oversized cup props' },
+  { id: 'steel-orbits', category: 'stainless-steel', title: 'Polished steel flock' },
+  { id: 'frp-woodland', category: 'fiberglass', title: 'Woodland characters' },
+  { id: 'bottle-display', category: 'bottle-props', title: 'Bottle and container props' },
+  { id: 'steel-leaf', category: 'stainless-steel', title: 'Organic metal forms' },
+  { id: 'frp-phoenix', category: 'fiberglass', title: 'Large-scale sculpture' },
+  { id: 'steel-ring', category: 'stainless-steel', title: 'Circular forms' },
+  { id: 'frp-mascot', category: 'fiberglass', title: 'Character sculpture' },
+  { id: 'steel-faceted', category: 'stainless-steel', title: 'Geometric forms' },
+  { id: 'frp-letters', category: 'fiberglass', title: 'Dimensional lettering' },
 ] as const;
-export function presentationImages(material?: MaterialId): PresentationImage[] {
-  return galleryEntries.filter(item => !material || item.material === material).map(item => ({...item,image:photo(item.id)}));
+export function presentationImages(category?: ProductCategoryId): PresentationImage[] {
+  return galleryEntries.filter(item => !category || item.category === category).map(item => ({...item,image:photo(item.id)}));
 }

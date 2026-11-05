@@ -1,7 +1,7 @@
 import { access } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { site, media, materials, isPreview } from '../src/data/site.ts';
+import { site, media, materials, productCategories, isPreview } from '../src/data/site.ts';
 import { cases, visibleCases, casePath } from '../src/data/cases.ts';
 import { presentationImages } from '../src/data/photography.ts';
 import { publicOrigin, inquiryLinks, socialUrl } from '../src/lib/inquiry.ts';
@@ -10,6 +10,10 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const errors = [];
 const assert = (value, message) => { if (!value) errors.push(message); };
 assert(materials.length === 2 && materials.map(item => item.id).sort().join(',') === 'fiberglass,stainless-steel', 'Only two supported materials are allowed.');
+assert(productCategories.length === 3 && productCategories.map(item => item.id).sort().join(',') === 'bottle-props,fiberglass,stainless-steel', 'Expected three product categories.');
+for (const category of productCategories) {
+  assert(presentationImages(category.id).length > 0, `Missing presentation images: ${category.id}`);
+}
 assert(new Set(cases.map(item => item.id)).size === cases.length, 'Duplicate stable case ID.');
 assert(new Set(cases.map(casePath)).size === cases.length, 'Duplicate English case path.');
 for (const item of cases) {

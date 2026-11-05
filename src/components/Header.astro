@@ -1,6 +1,7 @@
 ---
 import LanguageCard from './LanguageCard.astro';
 import Brand from './Brand.astro';
+import { productCategories } from '../data/site';
 const links = [{ url: '/en/', label: 'Home' }, { url: '/en/about/', label: 'About us' }, { url: '/en/products/', label: 'Our work' }, { url: '/en/contact/', label: 'Contact' }];
 const current = (url: string) => url === '/en/' ? Astro.url.pathname === url : Astro.url.pathname.startsWith(url);
 ---
@@ -17,7 +18,7 @@ const current = (url: string) => url === '/en/' ? Astro.url.pathname === url : A
       <div class="mobile-panel" id="mobile-panel">
         <div class="mobile-panel-top"><span class="eyebrow">Explore the studio</span></div>
         <nav aria-label="Mobile navigation">{links.map((link, index) => <a href={link.url} aria-current={current(link.url) ? 'page' : undefined}><span class="nav-number">0{index + 1}</span>{link.label}<span aria-hidden="true">↗</span></a>)}</nav>
-        <div class="mobile-materials"><span class="eyebrow">Our materials</span><a href="/en/products/fiberglass/">Fiberglass / FRP</a><a href="/en/products/stainless-steel/">Stainless steel</a></div>
+        <div class="mobile-materials"><span class="eyebrow">Product categories</span>{productCategories.map(category => <a href={`/en/products/${category.id}/`}>{category.title}</a>)}</div>
         <a href="/en/contact/" class="button button-gold">Discuss a project <span aria-hidden="true">↗</span></a>
         <p class="muted small">Custom sculpture. A conversation starts with your idea.</p>
       </div>

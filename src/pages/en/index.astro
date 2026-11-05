@@ -6,15 +6,15 @@ import SculptureGallery from '../../components/SculptureGallery.astro';
 import Inquiry from '../../components/Inquiry.astro';
 import Process from '../../components/Process.astro';
 import HomeHero from '../../components/HomeHero.astro';
-import { media, materials, capabilities } from '../../data/site';
+import { media, productCategories, capabilities } from '../../data/site';
 import { presentationImages } from '../../data/photography';
-const gallery = presentationImages().slice(0,4);
+const gallery = presentationImages().slice(0,8);
 ---
 <SiteLayout title={copy.home.title} description={copy.home.description}>
   <HomeHero />
   <section class="section intro-section"><div class="container split-grid"><div><p class="eyebrow">{copy.home.introEyebrow}</p><h2>{copy.home.introTitle[0]}<br />{copy.home.introTitle[1]}</h2><div class="gold-rule"></div><p>{copy.home.intro[0]}</p><p>{copy.home.intro[1]}</p><a href="/en/about/" class="text-link">Discover our approach <span aria-hidden="true">↗</span></a></div><div class="intro-image"><Media image={media.workshop} label="Workshop photograph pending" /><span class="image-note">{copy.home.imageNote}</span></div></div></section>
   <section class="section featured-section"><div class="container"><div class="section-heading"><p class="eyebrow">{copy.home.featured.eyebrow}</p><h2>{copy.home.featured.title}</h2><p>{copy.home.featured.description}</p><div class="gold-rule"></div></div><p class="preview-note">{copy.home.featured.note}</p><SculptureGallery items={gallery} id="home-sculptures" /><div class="section-action"><a href="/en/products/" class="button button-outline">Explore all forms <span aria-hidden="true">↗</span></a></div></div></section>
-  <section class="section materials-section"><div class="container"><div class="section-heading"><p class="eyebrow">{copy.home.materials.eyebrow}</p><h2>{copy.home.materials.title}</h2><p>{copy.home.materials.description}</p><div class="gold-rule"></div></div><div class="material-grid">{materials.map((material,index) => <a href={`/en/products/${material.id}/`} class="material-card"><Media image={media[material.id]} label="Material photograph pending" /><div class="material-card-body"><span class="eyebrow">0{index + 1} / Custom sculpture</span><h3>{material.title}</h3><p>{material.description}</p><span class="text-link">Explore material <span aria-hidden="true">↗</span></span></div></a>)}</div></div></section>
+  <section class="section materials-section"><div class="container"><div class="section-heading"><p class="eyebrow">{copy.home.materials.eyebrow}</p><h2>{copy.home.materials.title}</h2><p>{copy.home.materials.description}</p><div class="gold-rule"></div></div><div class="material-grid">{productCategories.map((category,index) => <a href={`/en/products/${category.id}/`} class="material-card"><Media image={media[category.id]} label="Product photograph pending" sizes="(max-width: 599px) 40vw, 400px" /><div class="material-card-body"><span class="eyebrow">0{index + 1} / Made to order</span><h3>{category.title}</h3><p>{category.description}</p><span class="text-link">Explore category <span aria-hidden="true">↗</span></span></div></a>)}</div></div></section>
   <section class="section capabilities-section"><div class="container"><div class="section-heading"><p class="eyebrow">{copy.home.capabilities.eyebrow}</p><h2>{copy.home.capabilities.title}</h2><p>{copy.home.capabilities.description}</p><div class="gold-rule"></div></div><div class="capability-grid">{capabilities.map(item => <article><span class="capability-number">{item.number}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div></div></section>
   <Process /><Inquiry />
 </SiteLayout>

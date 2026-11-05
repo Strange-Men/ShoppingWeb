@@ -1,6 +1,7 @@
 import { readFile, readdir, stat, mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
+import { productCategories } from '../src/data/site.ts';
 const origin=process.argv[2] || 'http://127.0.0.1:4321';
 const records=JSON.parse(await readFile('src/data/photography.json','utf8'));
 const date=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
@@ -14,7 +15,7 @@ for(const record of records) {
   }
 }
 const pages=[];
-for(const route of ['/en/','/en/about/','/en/products/','/en/products/fiberglass/','/en/products/stainless-steel/']) {
+for(const route of ['/en/','/en/about/','/en/products/', ...productCategories.map(category => `/en/products/${category.id}/`)]) {
   const html=await readFile(path.join('dist',route,'index.html'),'utf8');
   const normal=html.replace(/<dialog\b[\s\S]*?<\/dialog>/g,'');
   const sources=[...new Set([...normal.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map(match=>match[1]))];
