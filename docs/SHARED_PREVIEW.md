@@ -28,7 +28,11 @@ pnpm preview
 
 采用 Sites 静态托管，项目 ID 为 `appgprj_6aebf877e3008191b2b13be49d44e610`，配置见 [.openai/hosting.json](../.openai/hosting.json)。权限为 public，即持链接可访问；noindex 是索引控制，不是访问密码。没有发送邀请、询盘或邮件。
 
-预期地址是 `https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/`；**目前在准备发布，只有部署工具成功及返回地址后才视为已上线**。后续结果追加在本节，不根据预期域名宣称成功。
+**已上线，可直接发给同事：[NanXuan 英文分享预览](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/)**。Sites 部署工具实际返回 succeeded，并在无登录 cookie／token 的 HTTP 和浏览器中确认可访问，不以预期域名代替发布证明。
+
+当前发布版本 1，源码提交 `b862502b4de4e33b1e1cc87ecc3b4c5f3a5d8112`，部署 ID `appgdep_6aebf9f8ff8081918366533aaf03bc9f`。归档 71 文件／5,273,600B。后续归档与说明提交只补文档，不改这次已发布的网页内容。
+
+实测 62 项匿名 HTTP 检查全部通过：16 页面 200／noindex；41 图片及品牌资源 200、可解码且 SHA256 与构建文件一致；5 个错误／未上线地址 404。浏览器实际打开首页，NX 与已加载图片无错误。证据：[部署记录](qa/2026-11-05/shared-deployment.json)、[线上 HTTP](qa/2026-11-05/shared-http-results.json)、[线上截图](qa/2026-11-05/shared-live.jpg)。此结果不代表所有国家网络或真实设备验收。
 
 使用普通 `pnpm build` 的预览产物，保留 noindex、8 个明确未发布案例模板、真实咨询账号；未设置 SITE_MODE=production，也不把分享域名当作公司正式 canonicalOrigin。正式发布资料门槛仍然生效。
 
