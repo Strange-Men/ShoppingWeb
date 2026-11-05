@@ -29,6 +29,7 @@
 | S-23 | [Astro 检查器包](https://registry.npmjs.org/@astrojs/check/latest) | Node fetch 核查 0.9.12 peer 只支持 TypeScript ^5／^6 |
 | S-24 | [TypeScript 包元数据](https://registry.npmjs.org/typescript/latest) | latest 7.0.2 与检查器不兼容，另核查并安装 6.0.3 |
 | S-25 | [pnpm 设置](https://pnpm.io/settings) | pnpm-workspace.yaml 管理 engineStrict、saveExact、allowBuilds；实际 11.25.0 安装验证 |
+| S-26 | [sharp 安装与兼容性](https://sharp.pixelplumbing.com/install/) | 2026-11-05 核对 Node-API v9／例如 Node ≥20.9.0、Windows x64 预编译支持；本机 Node 24.22.1 实际生成 WebP 通过，锁定 0.35.5 |
 
 除列出的关键证据外，本次还采样 about-us、products、一个 product-detail 和 blog 资源，完整 URL、时间和哈希见[采样记录](reference-evidence.json)。不将截图、公开宣传文案或服务器响应头当作私有架构的完整证明。
 

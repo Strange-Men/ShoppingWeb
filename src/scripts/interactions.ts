@@ -53,3 +53,27 @@ document.querySelectorAll<HTMLElement>('[data-gallery]').forEach((gallery) => {
   dialog.addEventListener('click', event => { if (event.target === dialog) { const rect = dialog.getBoundingClientRect(); if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close(); } });
   dialog.addEventListener('close', () => { document.body.classList.remove('viewer-open'); opener?.focus(); });
 });
+document.querySelectorAll<HTMLElement>('[data-presentation-gallery]').forEach((gallery) => {
+  const dialog = gallery.querySelector<HTMLDialogElement>('dialog')!;
+  const slides = [...dialog.querySelectorAll<HTMLElement>('[data-presentation-slide]')];
+  let index = 0;
+  let opener: HTMLElement | null = null;
+  function show(next: number) {
+    index = (next + slides.length) % slides.length;
+    slides.forEach((slide, position) => { slide.hidden = position !== index; });
+    dialog.querySelector('.presentation-count')!.textContent = `${index + 1} / ${slides.length}`;
+  }
+  gallery.querySelectorAll<HTMLElement>('.presentation-open').forEach(button => button.addEventListener('click', () => {
+    opener = button; show(Number(button.dataset.index)); dialog.showModal(); document.body.classList.add('viewer-open');
+  }));
+  dialog.querySelector('.presentation-close')?.addEventListener('click', () => dialog.close());
+  dialog.querySelector('.presentation-prev')?.addEventListener('click', () => show(index - 1));
+  dialog.querySelector('.presentation-next')?.addEventListener('click', () => show(index + 1));
+  dialog.addEventListener('keydown', event => { if (event.key === 'ArrowRight') show(index + 1); if (event.key === 'ArrowLeft') show(index - 1); });
+  dialog.addEventListener('click', event => {
+    if (event.target !== dialog) return;
+    const rect = dialog.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
+  });
+  dialog.addEventListener('close', () => { document.body.classList.remove('viewer-open'); opener?.focus(); });
+});

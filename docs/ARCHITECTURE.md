@@ -1,6 +1,6 @@
 # 技术架构与选型
 
-版本 v0.2；2026-11-03；状态：P1 已采用静态栈并验证。Astro 7.4.5、TypeScript 6.0.3、@astrojs/check 0.9.12、@types/node 24.19.2 已锁定；Node 24.22.1、pnpm 11.25.0 已实际构建。Astro 官方当前要求 Node ≥22.23.4，本环境满足；TypeScript 最新 7.0.2 不在检查器 ^5／^6 peer 范围，故锁定 6.0.3。来源见[文献](research/SOURCES.md)。
+版本 v0.3；2026-11-05；状态：静态栈与图片派生已实施并验证。Astro 7.4.5、TypeScript 6.0.3、@astrojs/check 0.9.12、@types/node 24.19.2、sharp 0.35.5 已锁定；Node 24.22.1、pnpm 11.25.0 已实际构建。2026-11-03 选型时 Astro 官方要求 Node ≥22.23.4，本环境满足；当时 TypeScript 最新 7.0.2 不在检查器 ^5／^6 peer 范围，故锁定 6.0.3。来源见[文献](research/SOURCES.md)。
 
 ## 推荐栈
 
@@ -11,7 +11,7 @@
 | 样式 | 原生 CSS、设计变量、逻辑属性 | 接近参考布局，方便 RTL；不引入额外 UI 框架 |
 | 内容 | 仓库内 JSON／TypeScript 数据；案例和文章可用 Astro 内容集合及 schema | 集中配置，构建时校验，适合少修改 |
 | 交互 | 原生模块脚本 | 菜单、语言卡片与可选图片浏览，按需加载 |
-| 图片 | P1 本地空白槽／宽高／alt；P2 计划构建时优化 | 真实素材到位后再增加响应式派生与压缩，不将规划视为已实现 |
+| 图片 | 已实施：sharp 0.35.5 构建 WebP 响应式派生、srcset／sizes／lazy | 10 张母版和来源 JSON 入库，35 张派生图构建生成；未发布案例继续保留空槽 |
 | 构建 | Node 24.22.1＋pnpm 11.25.0＋pnpm-lock.yaml | 环境提供 pnpm，没有 npm；仅用于开发和构建 |
 | 生产服务 | 腾讯云 Linux＋Nginx | 提供静态文件和正确的路由、缓存、HTTPS |
 | 业务后端／数据库 | 第一版无 | 咨询在 WhatsApp／邮件完成，不存用户提交 |
@@ -20,6 +20,10 @@
 依据：[Astro 渲染](https://docs.astro.build/en/guides/on-demand-rendering/)、[内容集合](https://docs.astro.build/en/guides/content-collections/)、[图片](https://docs.astro.build/en/guides/images/)。业务受众看到普通网页，不需要知道构建工具。
 
 ## 方案比较
+
+2026-11-05 图片实现补充：[photography.json](../src/data/photography.json) 集中来源哈希、尺寸、alt、编辑摘要和焦点；[photography.ts](../src/data/photography.ts) 生成统一 MediaSlot／variants。`dev`、`check`、`build` 在内容检查之前调用 `prepare-media.mjs`；`build:release` 同样先准备图片，不绕过正式内容门槛。`public/media/` 忽略，`src/assets/photos/` 母版提交，克隆无需外部原图。图片浏览只增加原生 dialog 和少量 JS，不引入运行时图片服务。
+
+sharp 0.35.5 与当前 Astro 依赖解析一致，已精确锁定。官方安装要求 Node-API v9 兼容运行时（例如 Node ≥20.9.0），本机 Node 24.22.1 满足，Windows x64 实际构建通过。[sharp 安装依据](https://sharp.pixelplumbing.com/install/)（2026-11-05 核对）。源目录只读处理，生成脚本仅清理受清单管理的过期派生文件，不删除原始素材。
 
 | 方案 | 优点 | 本项目的成本与取舍 |
 | --- | --- | --- |
@@ -73,7 +77,7 @@ docs/            当前需求及设计记录
 | Case | id、material、status、locales、images、featured | id 跨语言稳定；状态 preview／draft／published；预览插槽正式模式排除 |
 | CaseLocale | locale、slug、title、summary、body、seoTitle、seoDescription、reviewStatus | 一种语言一份正文；reviewStatus 决定能否启用 |
 | CaseSpec | sizeNote、finish、application、customizationNotes | 不明确的参数省略，不造数据；尺寸以可定制描述为主 |
-| Image | source、alt、width、height、rights、credit | P1 为英文 alt；非空 source 必须是本地文件且有授权记录；多语言 alt／焦点与响应式派生图 P2／P3 扩展 |
+| Image | source、alt、width、height、rights、credit、variants、focalPoint | 英文 alt、响应式派生与焦点已实现；非空 source 必须是本地文件且有授权记录；多语言 alt 留待 P3 |
 | Contacts | whatsappDigits、email、facebookUrl、instagramUrl | 空值不生成可点击账号；正式版本至少一个真实主要渠道 |
 
 所有用户文本在模板中按普通内容转义，案例内容不直接渲染未审查任意 HTML。联系方式模板使用 URL API／encodeURIComponent 构造，不能拼出错误参数或把未编码的 & 混入消息。网站不把点击误记为成功发送。

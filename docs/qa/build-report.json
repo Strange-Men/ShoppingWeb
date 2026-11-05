@@ -1,14 +1,14 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-05",
   "timezone": "Asia/Shanghai",
   "mode": "preview",
   "node": "v24.22.1",
   "htmlPages": 17,
-  "checkedLocalLinks": 527,
+  "checkedLocalLinks": 723,
   "externalScriptBytes": 0,
   "externalScriptGzipBytes": 0,
-  "maxInlineScriptBytes": 2400,
-  "maxInlineScriptGzipBytes": 878,
+  "maxInlineScriptBytes": 3480,
+  "maxInlineScriptGzipBytes": 937,
   "noindex": "all HTML checked",
   "previewSitemap": "absent",
   "errors": []

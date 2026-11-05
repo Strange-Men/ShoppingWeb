@@ -60,4 +60,4 @@ README.md、docs/README.md、docs/PRD.md、docs/DECISIONS.md、docs/ARCHITECTURE
 
 ## 后续阶段入口
 
-P1 交付后，先审阅英文布局和图片插槽，再集中补自有素材、英文品牌与账号；满足正式发布依赖后进入 P2。P3 以英文定稿为基础补齐繁中、阿语、RTL 与等价页 SEO，不在 P1 同时扩展业务范围。每次新窗口继续开发时，优先读取最新 PLAN、IMPLEMENTATION_STATUS（若已存在）、DECISIONS 和当前 Git 状态，而非重复执行项目初始化。
+2026-11-05 当前进度：NanXuan 品牌、主要账号、企业资料／城市／钢材工艺、10 张授权编辑素材已接入；完整英文页面和本地检查已完成。首发真实案例按业主要求暂缓，8 个未发布详情只供模板审阅。先读最新 IMPLEMENTATION_STATUS、PLAN、DECISIONS、IMAGE_ASSETS 与当前 Git 状态，从现有代码继续，不重新初始化。满足正式发布依赖后进入 P2；P3 以英文定稿为基础补齐繁中、阿语、RTL 与等价页 SEO，不在 P1 扩展业务范围。

@@ -8,5 +8,5 @@ const requests=[...routes.map(route=>({route,status:200})),...['/qa-missing-page
 const results=[];
 for(const request of requests) {const response=await fetch(new URL(request.route,origin),{signal:AbortSignal.timeout(10000)});const body=await response.text();results.push({...request,actual:response.status,pass:response.status===request.status && (request.status!==200 || body.includes('noindex, nofollow'))});}
 await mkdir('docs/qa',{recursive:true});
-await writeFile('docs/qa/http-results.json',JSON.stringify({date:'2026-11-03',origin,results},null,2)+'\n');
+await writeFile('docs/qa/http-results.json',JSON.stringify({date:new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()),origin,results},null,2)+'\n');
 if(results.some(result=>!result.pass)) {console.error(results.filter(result=>!result.pass));process.exitCode=1;}else console.log(`PASS HTTP: ${routes.length} page routes return 200/noindex; ${requests.length-routes.length} missing/unpublished routes return 404. Local preview only.`);

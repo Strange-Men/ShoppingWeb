@@ -1,0 +1,22 @@
+---
+import type { PresentationImage } from '../data/photography';
+import Media from './Media.astro';
+interface Props { items: PresentationImage[]; id: string }
+const { items, id } = Astro.props;
+---
+<div class="presentation-gallery" data-presentation-gallery>
+  <div class="sculpture-grid">
+    {items.map((item,index) => <figure class="sculpture-tile">
+      <button type="button" class="presentation-open" data-index={index} aria-label={`Enlarge ${item.title}`} aria-controls={`${id}-dialog`}>
+        <Media image={item.image} sizes="(max-width: 599px) 50vw, (max-width: 999px) 50vw, 300px" />
+        <span class="photo-zoom" aria-hidden="true">＋</span>
+      </button>
+      <figcaption><span class="eyebrow">{item.material === 'fiberglass' ? 'Fiberglass / FRP' : 'Stainless steel'}</span><h3>{item.title}</h3></figcaption>
+    </figure>)}
+  </div>
+  <dialog class="presentation-dialog" id={`${id}-dialog`} aria-label="Sculpture presentation image viewer">
+    <div class="gallery-toolbar"><span class="eyebrow">Sculpture presentation</span><button class="icon-button presentation-close" aria-label="Close sculpture image" type="button">×</button></div>
+    {items.map((item,index) => <figure data-presentation-slide={index} hidden={index !== 0}><Media image={item.image} sizes="(max-width: 999px) 90vw, 850px" /><figcaption><h3>{item.title}</h3><p>Retouched presentation image · Project case studies to follow</p></figcaption></figure>)}
+    <div class="gallery-controls"><button class="button button-outline presentation-prev" type="button" aria-label="Previous sculpture">← Previous</button><span class="presentation-count" aria-live="polite">1 / {items.length}</span><button class="button button-outline presentation-next" type="button" aria-label="Next sculpture">Next →</button></div>
+  </dialog>
+</div>

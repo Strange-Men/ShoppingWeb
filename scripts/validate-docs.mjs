@@ -10,6 +10,7 @@ const required = [
   'docs/adr/0001-static-site.md', 'docs/research/REFERENCE_ANALYSIS.md',
   'docs/research/SOURCES.md', 'docs/research/reference-evidence.json', 'docs/DEVELOPMENT_HANDOFF.md',
   'docs/IMPLEMENTATION_STATUS.md', 'docs/qa/README.md', 'docs/THIRD_PARTY.md',
+  'docs/IMAGE_ASSETS.md', 'docs/IMAGE_EDIT_PROMPTS.md', 'docs/qa/2026-11-05/README.md',
 ];
 const errors = [];
 for (const file of required) { try { await access(path.join(root, file)); } catch { errors.push(`Missing required file: ${file}`); } }

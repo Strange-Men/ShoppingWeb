@@ -6,7 +6,7 @@ const current = (url: string) => url === '/en/' ? Astro.url.pathname === url : A
 ---
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/en/" aria-label={`${site.companyName} home`}><span class="brand-seal" aria-hidden="true">楠</span><span><strong>{displayBrand}</strong><small>{site.companyName}{!site.brandName && <span> · Brand preview</span>}</small></span></a>
+    <a class="brand" href="/en/" aria-label={`${displayBrand} home`}><span class="brand-seal" aria-hidden="true">楠</span><span><strong>{displayBrand}</strong><small>{site.companyName}{!site.brandName && <span> · Brand preview</span>}</small></span></a>
     <nav class="desktop-nav" aria-label="Main navigation">
       {links.map((link) => <a href={link.url} aria-current={current(link.url) ? 'page' : undefined}>{link.label}</a>)}
     </nav>

@@ -1,6 +1,6 @@
 {
   "name": "sculpture-preview",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.25.0",
@@ -9,20 +9,23 @@
     "pnpm": "11.25.0"
   },
   "scripts": {
-    "dev": "astro dev --host 127.0.0.1",
-    "build": "node scripts/validate-content.mjs && astro build && node scripts/check-dist.mjs",
+    "dev": "node scripts/prepare-media.mjs && astro dev --host 127.0.0.1",
+    "build": "node scripts/prepare-media.mjs && node scripts/validate-content.mjs && astro build && node scripts/check-dist.mjs",
     "preview": "astro preview --host 127.0.0.1 --port 4321",
-    "check": "astro check && node scripts/validate-content.mjs && node scripts/check-inquiries.mjs && node scripts/validate-docs.mjs",
-    "check:content": "node scripts/validate-content.mjs",
+    "check": "node scripts/prepare-media.mjs && astro check && node scripts/validate-content.mjs && node scripts/check-inquiries.mjs && node scripts/validate-docs.mjs",
+    "prepare:media": "node scripts/prepare-media.mjs",
+    "check:content": "node scripts/prepare-media.mjs && node scripts/validate-content.mjs",
     "check:dist": "node scripts/check-dist.mjs",
     "check:http": "node scripts/check-http.mjs",
+    "check:media": "node scripts/check-media.mjs",
     "check:release": "node scripts/validate-content.mjs --production",
     "build:release": "node scripts/build-release.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "5.3.0",
     "@fontsource/playfair-display": "5.3.0",
-    "astro": "7.4.5"
+    "astro": "7.4.5",
+    "sharp": "0.35.5"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.12",

@@ -35,10 +35,17 @@ for (const file of files.filter(file=>file.endsWith('.html'))) {
     try { await access(target); links++; if(hash && target.endsWith('.html')) {const targetHtml=target===file?html:await readFile(target,'utf8'); if(!targetHtml.includes(`id="${hash}"`)) errors.push(`Missing fragment: ${rel} -> ${href}`);} } catch {errors.push(`Broken generated link: ${rel} -> ${href}`);}
   }
   for(const match of html.matchAll(/<img\b[^>]*>/g)) if(!/\balt="[^"]*"/.test(match[0]) || !/\bwidth="\d+"/.test(match[0]) || !/\bheight="\d+"/.test(match[0])) errors.push(`Image dimensions/alt missing: ${rel}`);
+  for (const match of html.matchAll(/\bsrcset="([^"]+)"/g)) {
+    for (const entry of match[1].split(',')) {
+      const source=entry.trim().split(/\s+/)[0];
+      if(!source?.startsWith('/media/')) {errors.push(`Unexpected responsive image source: ${rel}`);continue;}
+      try {await access(path.join(dist,source));links++;}catch{errors.push(`Missing srcset image: ${rel} -> ${source}`);}
+    }
+  }
 }
 if(scriptGzipBytes+maxInlineScriptGzipBytes>50*1024) errors.push('Combined compressed JavaScript exceeds 50KB.');
 if(isPreview && files.some(file=>/sitemap.*\.xml$/.test(file))) errors.push('Preview must not emit sitemap.');
 if(!isPreview && (!site.canonicalOrigin || !files.includes(path.join(dist,'sitemap.xml')))) errors.push('Production sitemap/origin missing.');
-const report={date:'2026-11-03',timezone:'Asia/Shanghai',mode:isPreview?'preview':'production',node:process.version,htmlPages:files.filter(file=>file.endsWith('.html')).length,checkedLocalLinks:links,externalScriptBytes:scriptBytes,externalScriptGzipBytes:scriptGzipBytes,maxInlineScriptBytes,maxInlineScriptGzipBytes,noindex:isPreview?'all HTML checked':'not applicable',previewSitemap:isPreview?'absent':'not applicable',errors};
+const report={date:new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()),timezone:'Asia/Shanghai',mode:isPreview?'preview':'production',node:process.version,htmlPages:files.filter(file=>file.endsWith('.html')).length,checkedLocalLinks:links,externalScriptBytes:scriptBytes,externalScriptGzipBytes:scriptGzipBytes,maxInlineScriptBytes,maxInlineScriptGzipBytes,noindex:isPreview?'all HTML checked':'not applicable',previewSitemap:isPreview?'absent':'not applicable',errors};
 if(errors.length) {errors.forEach(error=>console.error(error)); process.exitCode=1;}
-else { await mkdir(path.join(root,'docs/qa'),{recursive:true}); await writeFile(path.join(root,'docs/qa/build-report.json'),JSON.stringify(report,null,2)+'\n'); console.log(`PASS static output: ${report.htmlPages} HTML pages, ${links} local links/resources, unique metadata, single H1, preview SEO, ${scriptGzipBytes+maxInlineScriptGzipBytes}B gzip JS per page (inline included). Real images and overseas performance not measured.`); }
+else { await mkdir(path.join(root,'docs/qa'),{recursive:true}); await writeFile(path.join(root,'docs/qa/build-report.json'),JSON.stringify(report,null,2)+'\n'); console.log(`PASS static output: ${report.htmlPages} HTML pages, ${links} local links/resources, unique metadata, single H1, preview SEO, ${scriptGzipBytes+maxInlineScriptGzipBytes}B gzip JS per page (inline included). Image decoding/loading require check:media; overseas performance not measured.`); }

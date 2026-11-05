@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { site, media, materials, isPreview } from '../src/data/site.ts';
 import { cases, visibleCases, casePath } from '../src/data/cases.ts';
+import { presentationImages } from '../src/data/photography.ts';
 import { publicOrigin, inquiryLinks, socialUrl } from '../src/lib/inquiry.ts';
 const release = process.argv.includes('--production') || !isPreview;
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -33,13 +34,17 @@ for (const [key, value] of Object.entries(site.contacts)) {
   if (key === 'instagramUrl') assert(socialUrl(value,'instagram'), 'Instagram must be an HTTPS account URL on instagram.com.');
 }
 if (site.canonicalOrigin) assert(publicOrigin(site.canonicalOrigin), 'Canonical origin must be a public HTTPS origin, not localhost/example/test.');
-const slots = [...Object.entries(media), ...cases.flatMap(item => item.images.map((image,index) => [`${item.id}/${index}`,image]))];
+const slots = [...Object.entries(media), ...presentationImages().map(item => [`presentation/${item.id}`,item.image]), ...cases.flatMap(item => item.images.map((image,index) => [`${item.id}/${index}`,image]))];
 for (const [id,image] of slots) {
   assert(image.width > 0 && image.height > 0 && image.alt.trim(), `Image needs dimensions and alt: ${id}`);
   if (image.source) {
     assert(/^\/media\/[a-zA-Z0-9/_-]+\.(jpg|jpeg|png|webp|avif)$/.test(image.source), `Use a local /media/ image path: ${id}`);
     assert(['owned','licensed'].includes(image.rights) && image.credit, `Image rights/source confirmation required: ${id}`);
     try { await access(path.join(root,'public',image.source)); } catch { errors.push(`Image file missing: ${id}`); }
+    for (const variant of image.variants || []) {
+      assert(variant.width > 0 && variant.source.startsWith('/media/'), `Invalid responsive image variant: ${id}`);
+      try { await access(path.join(root,'public',variant.source)); } catch { errors.push(`Responsive image file missing: ${id}/${variant.width}`); }
+    }
   }
 }
 assert(visibleCases(false).every(item => item.status === 'published'), 'Production must exclude preview and draft cases.');

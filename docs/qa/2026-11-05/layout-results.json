@@ -1,0 +1,1002 @@
+[
+  {
+    "width": 360,
+    "route": "/en/",
+    "brokenLoadedImages": [],
+    "client": 345,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 345,
+    "visiblePhotos": [
+      {
+        "fit": "cover",
+        "height": 193.875,
+        "loading": "eager",
+        "source": "http://127.0.0.1:4321/media/hero-waterfront-480.webp",
+        "width": 344.66668701171875
+      },
+      {
+        "fit": "cover",
+        "height": 207.61459350585935,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/workshop-cnc-480.webp",
+        "width": 290.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-leaf-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-phoenix-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 304.8333435058594,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 122.92708587646484
+      },
+      {
+        "fit": "contain",
+        "height": 344.41668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 122.92708587646484
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "/en/about/",
+    "brokenLoadedImages": [],
+    "client": 345,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 345,
+    "visiblePhotos": [
+      {
+        "fit": "cover",
+        "height": 205.77084350585935,
+        "loading": "eager",
+        "source": "http://127.0.0.1:4321/media/workshop-cnc-480.webp",
+        "width": 308.66668701171875
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "/en/products/",
+    "brokenLoadedImages": [],
+    "client": 345,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 345,
+    "visiblePhotos": [
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-leaf-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-phoenix-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-ring-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-mascot-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-faceted-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-letters-480.webp",
+        "width": 145
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "/en/products/fiberglass/",
+    "brokenLoadedImages": [],
+    "client": 345,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 345,
+    "visiblePhotos": [
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-phoenix-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-mascot-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-letters-480.webp",
+        "width": 145
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "/en/products/stainless-steel/",
+    "brokenLoadedImages": [],
+    "client": 345,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 345,
+    "visiblePhotos": [
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-leaf-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-ring-480.webp",
+        "width": 145
+      },
+      {
+        "fit": "contain",
+        "height": 145,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-faceted-480.webp",
+        "width": 145
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "/en/products/fiberglass/preview-01/",
+    "brokenLoadedImages": [],
+    "client": 345,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 345,
+    "visiblePhotos": []
+  },
+  {
+    "width": 360,
+    "route": "/en/contact/",
+    "brokenLoadedImages": [],
+    "client": 345,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 345,
+    "visiblePhotos": []
+  },
+  {
+    "width": 390,
+    "route": "/en/",
+    "brokenLoadedImages": [],
+    "client": 375,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 375,
+    "visiblePhotos": [
+      {
+        "fit": "cover",
+        "height": 210.75,
+        "loading": "eager",
+        "source": "http://127.0.0.1:4321/media/hero-waterfront-480.webp",
+        "width": 374.6666870117187
+      },
+      {
+        "fit": "cover",
+        "height": 229.0416717529297,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/workshop-cnc-480.webp",
+        "width": 320.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-leaf-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-phoenix-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 304.8333435058594,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 134.92709350585938
+      },
+      {
+        "fit": "contain",
+        "height": 313.91668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 134.92709350585938
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/en/about/",
+    "brokenLoadedImages": [],
+    "client": 375,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 375,
+    "visiblePhotos": [
+      {
+        "fit": "cover",
+        "height": 225.77084350585935,
+        "loading": "eager",
+        "source": "http://127.0.0.1:4321/media/workshop-cnc-480.webp",
+        "width": 338.66668701171875
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/en/products/",
+    "brokenLoadedImages": [],
+    "client": 375,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 375,
+    "visiblePhotos": [
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-leaf-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-phoenix-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-ring-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-mascot-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-faceted-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-letters-480.webp",
+        "width": 160
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/en/products/fiberglass/",
+    "brokenLoadedImages": [],
+    "client": 375,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 375,
+    "visiblePhotos": [
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-phoenix-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-mascot-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-letters-480.webp",
+        "width": 160
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/en/products/stainless-steel/",
+    "brokenLoadedImages": [],
+    "client": 375,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 375,
+    "visiblePhotos": [
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-leaf-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-ring-480.webp",
+        "width": 160
+      },
+      {
+        "fit": "contain",
+        "height": 160,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-faceted-480.webp",
+        "width": 160
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/en/products/fiberglass/preview-01/",
+    "brokenLoadedImages": [],
+    "client": 375,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 375,
+    "visiblePhotos": []
+  },
+  {
+    "width": 390,
+    "route": "/en/contact/",
+    "brokenLoadedImages": [],
+    "client": 375,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 375,
+    "visiblePhotos": []
+  },
+  {
+    "width": 768,
+    "route": "/en/",
+    "brokenLoadedImages": [],
+    "client": 753,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 753,
+    "visiblePhotos": [
+      {
+        "fit": "cover",
+        "height": 486,
+        "loading": "eager",
+        "source": "http://127.0.0.1:4321/media/hero-waterfront-800.webp",
+        "width": 752.6666870117188
+      },
+      {
+        "fit": "cover",
+        "height": 204.14584350585935,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/workshop-cnc-480.webp",
+        "width": 306.21875
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-leaf-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-phoenix-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 186.1041717529297,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 335
+      },
+      {
+        "fit": "contain",
+        "height": 186.1041717529297,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 335
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/en/about/",
+    "brokenLoadedImages": [],
+    "client": 753,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 753,
+    "visiblePhotos": [
+      {
+        "fit": "cover",
+        "height": 226.95834350585935,
+        "loading": "eager",
+        "source": "http://127.0.0.1:4321/media/workshop-cnc-480.webp",
+        "width": 340.4375
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/en/products/",
+    "brokenLoadedImages": [],
+    "client": 753,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 753,
+    "visiblePhotos": [
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-leaf-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-phoenix-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-ring-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-mascot-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-faceted-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-letters-480.webp",
+        "width": 339
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/en/products/fiberglass/",
+    "brokenLoadedImages": [],
+    "client": 753,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 753,
+    "visiblePhotos": [
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-phoenix-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-mascot-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-letters-480.webp",
+        "width": 339
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/en/products/stainless-steel/",
+    "brokenLoadedImages": [],
+    "client": 753,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 753,
+    "visiblePhotos": [
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-leaf-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-ring-480.webp",
+        "width": 339
+      },
+      {
+        "fit": "contain",
+        "height": 339,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-faceted-480.webp",
+        "width": 339
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/en/products/fiberglass/preview-01/",
+    "brokenLoadedImages": [],
+    "client": 753,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 753,
+    "visiblePhotos": []
+  },
+  {
+    "width": 768,
+    "route": "/en/contact/",
+    "brokenLoadedImages": [],
+    "client": 753,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 753,
+    "visiblePhotos": []
+  },
+  {
+    "width": 1440,
+    "route": "/en/",
+    "brokenLoadedImages": [],
+    "client": 1425,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 1425,
+    "visiblePhotos": [
+      {
+        "fit": "cover",
+        "height": 586,
+        "loading": "eager",
+        "source": "http://127.0.0.1:4321/media/hero-waterfront-1600.webp",
+        "width": 1424.666748046875
+      },
+      {
+        "fit": "cover",
+        "height": 348.97918701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/workshop-cnc-800.webp",
+        "width": 523.46875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-leaf-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-phoenix-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 313.0625,
+        "loading": "lazy",
+        "source": "",
+        "width": 250.5416717529297
+      },
+      {
+        "fit": "contain",
+        "height": 313.0625,
+        "loading": "lazy",
+        "source": "",
+        "width": 250.5416717529297
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/en/about/",
+    "brokenLoadedImages": [],
+    "client": 1425,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 1425,
+    "visiblePhotos": [
+      {
+        "fit": "cover",
+        "height": 379.0208435058594,
+        "loading": "eager",
+        "source": "http://127.0.0.1:4321/media/workshop-cnc-800.webp",
+        "width": 568.53125
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/en/products/",
+    "brokenLoadedImages": [],
+    "client": 1425,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 1425,
+    "visiblePhotos": [
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-leaf-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-phoenix-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-ring-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-mascot-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-faceted-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-letters-480.webp",
+        "width": 280.66668701171875
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/en/products/fiberglass/",
+    "brokenLoadedImages": [],
+    "client": 1425,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 1425,
+    "visiblePhotos": [
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-qilin-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-phoenix-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-mascot-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/frp-letters-480.webp",
+        "width": 280.66668701171875
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/en/products/stainless-steel/",
+    "brokenLoadedImages": [],
+    "client": 1425,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 1425,
+    "visiblePhotos": [
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-wings-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-leaf-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-ring-480.webp",
+        "width": 280.66668701171875
+      },
+      {
+        "fit": "contain",
+        "height": 280.66668701171875,
+        "loading": "lazy",
+        "source": "http://127.0.0.1:4321/media/steel-faceted-480.webp",
+        "width": 280.66668701171875
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/en/products/fiberglass/preview-01/",
+    "brokenLoadedImages": [],
+    "client": 1425,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 1425,
+    "visiblePhotos": []
+  },
+  {
+    "width": 1440,
+    "route": "/en/contact/",
+    "brokenLoadedImages": [],
+    "client": 1425,
+    "h1": 1,
+    "overflow": false,
+    "scroll": 1425,
+    "visiblePhotos": []
+  }
+]

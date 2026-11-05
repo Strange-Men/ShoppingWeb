@@ -7,6 +7,8 @@ export interface MediaSlot {
   alt: string;
   rights: 'pending' | 'owned' | 'licensed';
   credit: string;
+  variants?: { source: string; width: number }[];
+  focalPoint?: string;
 }
 export interface CaseLocale {
   slug: string;

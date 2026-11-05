@@ -1,10 +1,11 @@
 ---
 import type { MediaSlot } from '../data/types';
-interface Props { image: MediaSlot; label?: string; eager?: boolean; class?: string }
-const { image, label = 'Owner-supplied image pending', eager = false, class: className = '' } = Astro.props;
+interface Props { image: MediaSlot; label?: string; eager?: boolean; class?: string; sizes?: string }
+const { image, label = 'Owner-supplied image pending', eager = false, class: className = '', sizes = '(max-width: 599px) 100vw, (max-width: 999px) 50vw, 600px' } = Astro.props;
+const srcset = image.variants?.map(item => `${item.source} ${item.width}w`).join(', ');
 ---
 <div class:list={['media-slot', className, { 'has-image': image.source }]} style={`--media-ratio:${image.width}/${image.height}`}>
-  {image.source ? <img src={image.source} width={image.width} height={image.height} alt={image.alt} loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : 'auto'} /> :
+  {image.source ? <img src={image.source} srcset={srcset} sizes={srcset ? sizes : undefined} width={image.width} height={image.height} style={`object-position:${image.focalPoint || '50% 50%'}`} alt={image.alt} loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : 'auto'} /> :
     <div class="empty-media" role="img" aria-label={image.alt}>
       <span class="slot-corners" aria-hidden="true"></span>
       <span class="slot-caption"><span class="slot-mark" aria-hidden="true">＋</span>{label}</span>
