@@ -1,0 +1,207 @@
+{
+  "origin": "https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site",
+  "source": "45cbbe3d9fc3f3b6f4d3360608be26c28064c4a6",
+  "deployment": "appgdep_6af3df955a28819199816f5c0112735b",
+  "pages": [
+    {
+      "route": "/en/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 6
+    },
+    {
+      "route": "/en/about/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 0
+    },
+    {
+      "route": "/en/contact/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 0
+    },
+    {
+      "route": "/en/products/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 9
+    },
+    {
+      "route": "/en/products/fiberglass/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 3
+    },
+    {
+      "route": "/en/products/stainless-steel/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 3
+    },
+    {
+      "route": "/en/products/bottle-props/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 3
+    },
+    {
+      "route": "/en/products/design/concept-steel-cover/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 2
+    },
+    {
+      "route": "/en/products/design/concept-frp-cover/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 2
+    },
+    {
+      "route": "/en/products/design/concept-bottle-cover/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 2
+    },
+    {
+      "route": "/en/products/design/concept-steel-wave/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 2
+    },
+    {
+      "route": "/en/products/design/concept-frp-crane/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 2
+    },
+    {
+      "route": "/en/products/design/concept-bottle-perfume/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 2
+    },
+    {
+      "route": "/en/products/design/concept-steel-lattice/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 2
+    },
+    {
+      "route": "/en/products/design/concept-frp-manta/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 2
+    },
+    {
+      "route": "/en/products/design/concept-bottle-pump/",
+      "status": 200,
+      "noindex": true,
+      "hostingScript": true,
+      "matchesBuild": true,
+      "cards": 2
+    }
+  ],
+  "images": [
+    {
+      "source": "/media/concept-hero-1600.webp",
+      "status": 200,
+      "width": 1600,
+      "bytes": 73338,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/concept-steel-cover-1200.webp",
+      "status": 200,
+      "width": 1200,
+      "bytes": 124026,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/concept-frp-cover-1200.webp",
+      "status": 200,
+      "width": 1200,
+      "bytes": 151918,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/concept-bottle-cover-1200.webp",
+      "status": 200,
+      "width": 1200,
+      "bytes": 81046,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/concept-steel-wave-1200.webp",
+      "status": 200,
+      "width": 1200,
+      "bytes": 126124,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/concept-frp-crane-1200.webp",
+      "status": 200,
+      "width": 1200,
+      "bytes": 85528,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/concept-bottle-perfume-1200.webp",
+      "status": 200,
+      "width": 1200,
+      "bytes": 49530,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/concept-steel-lattice-1200.webp",
+      "status": 200,
+      "width": 1200,
+      "bytes": 107984,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/concept-frp-manta-1200.webp",
+      "status": 200,
+      "width": 1200,
+      "bytes": 50198,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/concept-bottle-pump-1200.webp",
+      "status": 200,
+      "width": 1200,
+      "bytes": 37902,
+      "matchesBuild": true
+    }
+  ]
+}

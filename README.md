@@ -8,7 +8,7 @@ v0.3.1 公司标更新：已按业主要求设计“铸形 NX”，替换页头�
 
 2026-11-05 后续授权：业主要求上线供同事查看的分享预览，覆盖此前“仅本地”的托管限制；仍保持 noindex，不采购域名／服务器，不启用正式案例或正式 SEO。部署状态及换电脑步骤见 [分享预览](docs/SHARED_PREVIEW.md)。
 
-同事查看：[线上英文预览](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/)，持链接可访问，无需启动本地终端。已实际通过 62 项线上页面／图片检查。
+同事可直接访问 [线上英文预览](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/)。本次发布核对了 16 个线上页面与 10 张新图片。
 
 ## 本地启动
 

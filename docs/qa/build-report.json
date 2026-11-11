@@ -2,7 +2,7 @@
   "date": "2026-11-11",
   "timezone": "Asia/Shanghai",
   "mode": "preview",
-  "node": "v26.13.0",
+  "node": "v24.22.1",
   "htmlPages": 27,
   "checkedLocalLinks": 1377,
   "externalScriptBytes": 0,
