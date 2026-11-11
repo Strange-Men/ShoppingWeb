@@ -224,5 +224,112 @@
     "tool": "Codex built-in image_gen",
     "modelVersion": "not exposed",
     "authorizationDate": "2026-11-05"
+  },
+  {
+    "id": "concept-hero",
+    "width": 1600,
+    "height": 900,
+    "alt": "Mirror-polished steel crescents outside an illustrative workshop, AI-generated design concept",
+    "kind": "concept",
+    "editing": "New image generated from NanXuan product categories. Wide landscape 16:9 website banner. One monumental mirror polished stainless steel sculpture consisting of three tapered hollow crescents rising diagonally in an asymmetrical fan, completely original silhouette, grounded in limestone at right. Premium architectural photography, contemporary quiet industrial fabrication building exterior behind the artwork, warm morning directional light, cool blue-gray sky, realistic surroundings reflected in metal. Artwork contained in right half with generous breathing space (especially top, bottom and right); entire left half quiet facade and sky for HTML text. This is an illustrative generic workshop setting, not a specific identifiable place. No other sculpture, people, text or logo.",
+    "focalPoint": "70% 50%",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed"
+  },
+  {
+    "id": "concept-steel-cover",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Three folded stainless steel fins, AI-generated design concept",
+    "kind": "concept",
+    "editing": "New image generated from NanXuan product categories. Square premium sculpture catalog photograph. One tall abstract mirror-polished stainless steel sculpture made of three staggered wedge-like fins folded in different directions, distinct angular silhouette. Full object and square plinth in frame, photographed in warm morning light outside a quiet grey industrial fabrication workshop. Strong but physically plausible reflections, subdued surroundings, clean architectural composition. No text or logos.",
+    "focalPoint": "50% 50%",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed"
+  },
+  {
+    "id": "concept-frp-cover",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Slate blue fiberglass hare, AI-generated design concept",
+    "kind": "concept",
+    "editing": "New image generated from NanXuan product categories. Square premium sculpture catalog photograph, full object in frame. A large original fiberglass sculpture of a seated hare with sweeping ears and broad stylized surfaces in matte slate blue, facing left, understated rounded faceted geometry and carefully finished painted surface, on a small stone base at the entrance of an understated modern workshop. Editorial natural daylight, no people, no words or logos.",
+    "focalPoint": "50% 50%",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed"
+  },
+  {
+    "id": "concept-bottle-cover",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Terracotta and sage oversized bottle props, AI-generated design concept",
+    "kind": "concept",
+    "editing": "New image generated from NanXuan product categories. Square premium retail fabrication catalog photograph, full objects in frame. Two oversized sculptural bottle props, one flat oval flask in opaque muted terracotta with an exaggerated cream cap, the other a slim fluted column bottle in pale sage with a domed cap. Art-directed on a concrete floor in a tidy workshop showroom with bright natural side light and soft shadows. Props are opaque fabricated display objects, with impeccable finish and clean silhouettes. Unbranded, no label, no text.",
+    "focalPoint": "50% 50%",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed"
+  },
+  {
+    "id": "concept-steel-wave",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Brushed stainless steel wave sculpture, AI-generated design concept",
+    "kind": "concept",
+    "editing": "New image generated from NanXuan product categories. Square luxury fabrication catalog photograph. Full view of a single low wide sculpture formed of two brushed stainless steel tapered waves that curl upward at opposite ends, with visible fine directional brushing and carefully polished edges. On flat concrete in quiet fabrication workshop yard, soft overcast daylight, thoughtful architectural framing, premium realistic finish. No letters, people or logos.",
+    "focalPoint": "50% 50%",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed"
+  },
+  {
+    "id": "concept-frp-crane",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Ivory fiberglass crane sculpture, AI-generated design concept",
+    "kind": "concept",
+    "editing": "New image generated from NanXuan product categories. Square premium custom fabrication catalog photo. Full view of one oversized original sculptural fiberglass red-crowned crane with a dramatically curved neck and tucked wings, ivory painted body with charcoal detailing and subdued rust red crown, restrained stylized geometry. On a dark discrete plinth in a neutral quiet fabrication workshop entrance, soft morning light, entire wings and base visible. No people, text or logos.",
+    "focalPoint": "50% 50%",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed"
+  },
+  {
+    "id": "concept-bottle-perfume",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Oversized satin black perfume bottle prop with a gold cap, AI-generated design concept",
+    "kind": "concept",
+    "editing": "New image generated from NanXuan product categories. Square luxury display-prop catalog photograph. One giant geometric perfume bottle prop, broad asymmetric polygon in opaque satin black painted finish, oversized brushed-gold sculptural cap, matching floor plinth, photographed against the tall clean pale concrete wall of a fabrication showroom. Fashion editorial soft directional light, realistic seams and finish. Full object including base, no label, no words, no logos.",
+    "focalPoint": "50% 50%",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed"
+  },
+  {
+    "id": "concept-steel-lattice",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Open lattice steel sculpture, AI-generated design concept",
+    "kind": "concept",
+    "editing": "New image generated from NanXuan product categories. Square high-end sculptural product photograph. Single vertical open lattice sculpture made from thick mirror-polished stainless steel tubular elements, branching like a stylized geometric tree with three large asymmetrical interlocking open cells, freestanding on a flush low square base. Entire outline and base in the middle of the frame with negative space on all sides. Grounded outdoors on concrete in a quiet modern fabrication yard, lightly ribbed industrial architecture softly out of focus, crisp natural daylight, believable metal reflections. No text, people or logos.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed"
+  },
+  {
+    "id": "concept-frp-manta",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Petrol-blue manta ray sculpture, AI-generated design concept",
+    "kind": "concept",
+    "editing": "New image generated from NanXuan product categories. Square high-end custom fabrication photograph. One large original fiberglass manta ray sculpture with raised swept wings, matte muted petrol-blue top and soft cream underside. Rounded fluid forms, a single simple charcoal display mount, full form including wing tips in frame. Bright modern fabrication showroom with understated pale concrete backdrop, large indirect window light, premium contemporary painted surface. No other sculpture, people, text or logos.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed"
+  },
+  {
+    "id": "concept-bottle-pump",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Oversized olive pump bottle prop, AI-generated design concept",
+    "kind": "concept",
+    "editing": "New image generated from NanXuan product categories. Square high-end product fabrication photograph. Single oversized olive-green oval pump bottle prop with a shallow diagonal ribbed relief and an exaggerated warm ivory pump top. The object is an opaque human-scale display prop with satin painted finish, clean silhouette and no lettering. Freestanding on a very low stone platform in a warm-toned architectural fabrication showroom, indirect skylight, soft credible shadows. Full object with good padding, no logos, brands or people.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed"
   }
 ]

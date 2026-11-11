@@ -1,24 +1,23 @@
 ---
-import type { PresentationImage } from '../data/photography';
+import { productPath, type PresentationImage } from '../data/photography';
 import { productCategories } from '../data/site';
 import Media from './Media.astro';
-interface Props { items: PresentationImage[]; id: string }
-const { items, id } = Astro.props;
-const thumbnailSizes = `(max-width: 999px) 50vw, ${items.length === 3 ? '400px' : '300px'}`;
+interface Props { items: PresentationImage[]; threeColumns?: boolean }
+const { items, threeColumns = items.length === 3 } = Astro.props;
+const thumbnailSizes = `(max-width: 999px) 50vw, ${threeColumns || items.length === 2 ? '400px' : '300px'}`;
 ---
-<div class="presentation-gallery" data-presentation-gallery>
-  <div class:list={['sculpture-grid', { 'sculpture-grid-three': items.length === 3 }]}>
-    {items.map((item,index) => <figure class="sculpture-tile">
-      <button type="button" class="presentation-open" data-index={index} aria-label={`Enlarge ${item.title}`} aria-controls={`${id}-dialog`}>
+<div class:list={['sculpture-grid', { 'sculpture-grid-three': threeColumns, 'sculpture-grid-two': items.length === 2 }]}>
+  {items.map(item => (
+    <article class="sculpture-tile">
+      <a class="product-card" href={productPath(item)}>
         <Media image={item.image} sizes={thumbnailSizes} />
-        <span class="photo-zoom" aria-hidden="true">＋</span>
-      </button>
-      <figcaption><span class="eyebrow">{productCategories.find(category => category.id === item.category)?.title}</span><h3>{item.title}</h3></figcaption>
-    </figure>)}
-  </div>
-  <dialog class="presentation-dialog" id={`${id}-dialog`} aria-label="Product image viewer">
-    <div class="gallery-toolbar"><span class="eyebrow">Product presentation</span><button class="icon-button presentation-close" aria-label="Close image" type="button">×</button></div>
-    {items.map((item,index) => <figure data-presentation-slide={index} hidden={index !== 0}><Media image={item.image} sizes="(max-width: 999px) 90vw, 850px" /><figcaption><h3>{item.title}</h3><p>Retouched presentation image · Project case studies to follow</p></figcaption></figure>)}
-    <div class="gallery-controls"><button class="button button-outline presentation-prev" type="button" aria-label="Previous image">← Previous</button><span class="presentation-count" aria-live="polite">1 / {items.length}</span><button class="button button-outline presentation-next" type="button" aria-label="Next image">Next →</button></div>
-  </dialog>
+        <div class="product-card-body">
+          <span class="eyebrow">{productCategories.find(category => category.id === item.category)?.title}</span>
+          <h3>{item.title}</h3>
+          {item.concept && <span class="product-image-note">AI-generated design concept</span>}
+          <span class="text-link">View Details <span aria-hidden="true">↗</span></span>
+        </div>
+      </a>
+    </article>
+  ))}
 </div>

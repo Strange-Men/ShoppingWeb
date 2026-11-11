@@ -1,5 +1,9 @@
 # 参考站公开代码与结构分析
 
+## 2026-11-11 英文文案与页面跳转
+
+复查公开首页、产品总览、单品、关于及联系页。首页使用 Featured Products、Our Product Categories、Why Choose 和询价入口。产品卡进入详情，详情提供 Related Products 和 Request a Quote；页头 Get Quote 指向联系页。楠轩按这个顺序梳理英文短标题、按钮及路由，使用自身的三个分类、公司信息、工艺及 WhatsApp／邮箱。同行页面见 [首页](https://tongmeisculpture.com/)、[产品总览](https://tongmeisculpture.com/products/)、[单品页](https://tongmeisculpture.com/products/weather-resistant-stainless-steel-sculpture-for-urban-landscape/)、[关于](https://tongmeisculpture.com/about-us/) 和 [联系](https://tongmeisculpture.com/contact-us/)。
+
 ## 2026-11-05 素材接入后的补充观察
 
 再次用浏览器查看 [参考站](https://tongmeisculpture.com/) 的照片呈现：列表图框为方形，观察到约 334×334px；横幅图框另有约 394×185px。尺寸属于当时实际布局，不代表所有屏宽固定如此。继续沿用此前桌面 1440px／手机 390px 的页头、菜单与主色观察，不复制其照片或品牌。

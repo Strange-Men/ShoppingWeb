@@ -18,19 +18,19 @@ export const site = {
 };
 export const displayBrand = site.brandName || 'SCULPTURE STUDIO';
 export const media: Record<'hero' | 'workshop' | ProductCategoryId, MediaSlot> = {
-  hero: photo('hero-waterfront'),
+  hero: photo('concept-hero'),
   workshop: photo('workshop-cnc'),
-  fiberglass: photo('frp-qilin'),
-  'stainless-steel': photo('steel-wings'),
-  'bottle-props': photo('bottle-pastel'),
+  fiberglass: photo('concept-frp-cover'),
+  'stainless-steel': photo('concept-steel-cover'),
+  'bottle-props': photo('concept-bottle-cover'),
 };
 export const materials = [
-  { id: 'fiberglass', title: 'Fiberglass / FRP', heading: 'Fiberglass / FRP Sculptures', short: 'Fiberglass', description: 'Custom fiberglass sculptures, developed around your reference and project requirements.' },
-  { id: 'stainless-steel', title: 'Stainless Steel', heading: 'Stainless Steel Sculptures', short: 'Stainless steel', description: 'Custom stainless steel sculpture through forging, assembly, grinding and polishing. Form, scale and finish are discussed for each project.' },
+  { id: 'fiberglass', title: 'Fiberglass / FRP Sculptures', heading: 'Fiberglass / FRP Sculptures', short: 'Fiberglass', description: 'Custom fiberglass sculptures made to your design, dimensions and finish.' },
+  { id: 'stainless-steel', title: 'Stainless Steel Sculptures', heading: 'Stainless Steel Sculptures', short: 'Stainless steel', description: 'Custom stainless steel sculpture with forging, assembly, grinding and polishing.' },
 ] as const;
 export const productCategories = [
   ...materials,
-  { id: 'bottle-props', title: 'Bottle Props', heading: 'Custom Bottle Props', description: 'Oversized bottle, cup and container props for displays and events. Share the packaging reference, dimensions and finish you have in mind.' },
+  { id: 'bottle-props', title: 'Bottle Props', heading: 'Custom Bottle Props', description: 'Oversized bottle, cup and container props made to your packaging reference.' },
 ] as const;
 export const companyFacts = [
   { value: '2012', label: 'Established' },
@@ -51,8 +51,8 @@ export const services = [
   { title: 'Installation guidance', text: 'Discuss site requirements and the installation guidance needed for your sculpture.' },
 ];
 export const capabilities = [
-  { number: '01', title: 'Made to your reference', text: 'Bring an image, drawing or concept as the starting point for a custom sculpture.' },
-  { number: '02', title: 'Sculptures and display props', text: 'Explore fiberglass / FRP sculptures, stainless steel sculptures and custom bottle props.' },
-  { number: '03', title: 'Design through production', text: 'Coordinate design, 3D modeling, sampling and production within an agreed scope.' },
-  { number: '04', title: 'Beyond the workshop', text: 'Plan packaging, shipping and installation guidance as part of the project conversation.' },
+  { title: 'Custom Manufacturing', text: 'Share a drawing or reference image. We discuss the form, dimensions and finish for your project.' },
+  { title: 'Sculptures and Display Props', text: 'Choose from fiberglass sculptures, stainless steel sculptures and oversized bottle props.' },
+  { title: 'Design and Production', text: 'Services include design, 3D modeling, sampling and fabrication.' },
+  { title: 'Shipping and Installation Guidance', text: 'Discuss packing, shipping and installation guidance for your project.' },
 ];

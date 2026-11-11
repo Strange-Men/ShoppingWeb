@@ -13,6 +13,11 @@ let links=0, scriptBytes=0, scriptGzipBytes=0, maxInlineScriptBytes=0, maxInline
 for (const file of files.filter(file=>file.endsWith('.js'))) { const data=await readFile(file); scriptBytes+=data.length; scriptGzipBytes+=gzipSync(data).length; }
 for (const file of files.filter(file=>file.endsWith('.html'))) {
   const html=await readFile(file,'utf8'); const rel=path.relative(dist,file);
+  if (rel.replaceAll('\\','/') === 'en/index.html') {
+    const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1] || '';
+    const images = [...main.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map(match => match[1]);
+    if (images.length !== new Set(images).size) errors.push('Homepage repeats a product image.');
+  }
   const inlineScripts=[...html.matchAll(/<script\b(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/g)].map(match=>match[1]).join('\n');
   maxInlineScriptBytes=Math.max(maxInlineScriptBytes,Buffer.byteLength(inlineScripts));
   maxInlineScriptGzipBytes=Math.max(maxInlineScriptGzipBytes,inlineScripts ? gzipSync(inlineScripts).length : 0);

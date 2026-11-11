@@ -1,8 +1,8 @@
 # 定制雕塑海外官网
 
-楠轩雕塑面向欧美、中亚、印度和港澳台的玻璃钢与不锈钢定制雕塑展示及询盘网站。英文品牌 **NanXuan**，WhatsApp 与邮箱已配置。已接入业主授权 Alan 文件夹中的 10 张优化素材，包含宣传册提取图片；正式案例首发按业主要求暂缓。先交付英文版，再推进繁体中文与阿拉伯语。域名与服务器尚未购买。
+楠轩雕塑的定制雕塑与瓶子道具展示及询盘网站。英文品牌 **NanXuan**，WhatsApp 与邮箱已配置。当前包含 17 张授权照片母版和 10 张 AI 生成设计示意图。英文版已上线分享预览，繁中和阿语预留。
 
-当前阶段：P1 英文素材预览版，v0.3.3，2026-11-05（Asia/Shanghai）。完整英文页面、真实素材处理和排版调整已完成。最新分享版本更新了首页的制造能力与已确认数据。整体 noindex；未采购域名／服务器或正式获客发布。仓库名 ShoppingWeb 不代表购物商城需求。
+当前阶段为 P1 英文素材预览版，更新日期 2026-11-11（Asia/Shanghai）。首页更新了 10 张不同造型图片，产品卡进入对应详情，再连接联系页询价。详细检查见 [本次验收](docs/qa/2026-11-11/README.md)。
 
 v0.3.1 公司标更新：已按业主要求设计“铸形 NX”，替换页头、页脚和浏览器图标，网站整体 UI 保持原样。[设计方案、官方参考与透明文件](docs/BRAND_IDENTITY.md)；需重新导出标志时运行 `pnpm prepare:brand`。
 
@@ -28,8 +28,8 @@ pnpm preview
 | --- | --- |
 | `pnpm check` | Astro／TypeScript、内容、咨询链接断言、文档完整性 |
 | `pnpm build` | 占位版构建，随后检查静态内链、元信息、noindex、JS 预算 |
-| `pnpm check:http` | 预览运行时检查 16 个页面入口和 5 个 404 路径 |
-| `pnpm prepare:media` | 从 10 张已审核 WebP 母版生成 35 张响应式派生图 |
+| `pnpm check:http` | 预览运行时检查 26 个页面入口和 5 个 404 路径 |
+| `pnpm prepare:media` | 从 27 张 WebP 母版生成 87 张响应式派生图 |
 | `pnpm check:media` | 构建并启动预览后检查图片尺寸、体积和 HTTP 加载 |
 | `pnpm check:release` | 正式资料检查；当前应失败并列出缺失项 |
 | `pnpm build:release` | 以正式模式检查后构建；当前被资料门槛阻止，不执行部署 |
@@ -38,7 +38,7 @@ pnpm preview
 
 ## 已实现页面与配置
 
-首页 `/en/`、关于 `/en/about/`、案例总览 `/en/products/`、玻璃钢 `/en/products/fiberglass/`、不锈钢 `/en/products/stainless-steel/`、每类 `preview-01/` 至 `preview-04/` 详情、联系 `/en/contact/`、隐私 `/en/privacy/`。根路径提供英文入口；未知地址真实返回 404。
+首页 `/en/`、关于 `/en/about/`、产品总览 `/en/products/`、玻璃钢 `/en/products/fiberglass/`、不锈钢 `/en/products/stainless-steel/`、瓶子道具 `/en/products/bottle-props/`、9 个产品展示详情 `/en/products/design/[id]/`、8 个原有案例模板、联系 `/en/contact/` 和隐私 `/en/privacy/`。
 
 - [品牌、图片、账号和服务范围](src/data/site.ts)：NanXuan 与主要咨询账号已确认；其他空值保留占位。
 - [图片清单](src/data/photography.json)和[素材处理说明](docs/IMAGE_ASSETS.md)：来源、尺寸、编辑记录及焦点集中维护；[母版目录](src/assets/photos)随 Git 提交。`dev`、`check`、`build` 自动生成 `public/media/`，派生图不入库；克隆后不需要访问原始 Alan 文件夹。

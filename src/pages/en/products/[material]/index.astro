@@ -16,16 +16,15 @@ const photos = presentationImages(category.id);
 const cases = visibleCases().filter(item => item.material === category.id);
 ---
 <SiteLayout title={category.heading} description={category.description}>
-  <PageHeading eyebrow="Made to order / Products" title={category.heading} description={category.description} />
+  <PageHeading eyebrow="Made to Order" title={category.heading} description={category.description} />
   <section class="section listing-section">
     <div class="container">
       <nav class="material-tabs" aria-label="Browse by category">
-        <a href="/en/products/">All work</a>
+        <a href="/en/products/">All Products</a>
         {productCategories.map(entry => <a href={`/en/products/${entry.id}/`} aria-current={entry.id === category.id ? 'page' : undefined}>{entry.title}</a>)}
       </nav>
-      <div class="listing-meta"><p>{photos.length} product presentations</p><a href="/en/contact/" class="text-link">Discuss a project ↗</a></div>
-      <SculptureGallery items={photos} id={`${category.id}-gallery`} />
-      <p class="gallery-disclosure">Retouched presentation imagery. Discuss the form, material and finish for your own project.</p>
+      <div class="listing-meta"><p>{photos.length} products</p><a href="/en/contact/" class="text-link">Get Quote <span aria-hidden="true">↗</span></a></div>
+      <SculptureGallery items={photos} />
       {isPreview && cases.length > 0 && <details class="case-previews"><summary>Case detail previews · Unpublished</summary><div class="case-grid">{cases.map(item => <CaseCard item={item} />)}</div></details>}
       <div class="material-note"><h2>{copy.work.materialNoteTitle}</h2><p>{copy.work.materialNote}</p></div>
     </div>

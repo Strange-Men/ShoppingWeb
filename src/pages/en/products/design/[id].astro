@@ -1,0 +1,58 @@
+---
+import SiteLayout from '../../../../layouts/SiteLayout.astro';
+import Media from '../../../../components/Media.astro';
+import SculptureGallery from '../../../../components/SculptureGallery.astro';
+import { productCategories } from '../../../../data/site';
+import { presentationImages } from '../../../../data/photography';
+import { copy } from '../../../../i18n/en';
+
+export function getStaticPaths() {
+  return presentationImages().map(item => ({ params: { id: item.id }, props: { item } }));
+}
+
+const { item } = Astro.props;
+const category = productCategories.find(entry => entry.id === item.category)!;
+const categoryPath = `/en/products/${category.id}/`;
+const related = presentationImages(item.category).filter(entry => entry.id !== item.id).slice(0, 3);
+---
+<SiteLayout title={item.title} description={`${item.title} from NanXuan. ${category.description}`} noindex>
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/en/">Home</a><span aria-hidden="true">/</span>
+      <a href="/en/products/">Products</a><span aria-hidden="true">/</span>
+      <a href={categoryPath}>{category.title}</a><span aria-hidden="true">/</span>
+      <span aria-current="page">{item.title}</span>
+    </nav>
+  </div>
+  <section class="section case-detail">
+    <div class="container detail-grid">
+      <figure class="product-image">
+        <a href={item.image.source!} aria-label={`View full image of ${item.title}`}>
+          <Media image={item.image} eager sizes="(max-width: 899px) 100vw, 620px" />
+        </a>
+        <figcaption>{item.concept ? 'AI-generated design concept' : 'Retouched product photograph'}</figcaption>
+      </figure>
+      <div class="detail-copy">
+        <p class="eyebrow">{category.title}</p>
+        <h1>{item.title}</h1>
+        <p class="lead">{category.description}</p>
+        <h2>Request a Quote</h2>
+        <p>{copy.work.materialNote}</p>
+        <a href="/en/contact/" class="button button-gold">Get Quote <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-heading"><h2>Related Products</h2></div>
+      <SculptureGallery items={related} />
+      <div class="section-action"><a href={categoryPath} class="text-link">View Category <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </section>
+</SiteLayout>
+
+<style>
+  .product-image a { display:block; cursor:zoom-in; }
+  .product-image figcaption { margin-block-start:10px; font-size:12px; color:var(--muted); }
+  .detail-copy .button { margin-block-start:20px; }
+</style>

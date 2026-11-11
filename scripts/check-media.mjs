@@ -34,5 +34,7 @@ const staticFiles=await readdir('dist/_astro');
 const cssBytes=(await Promise.all(staticFiles.filter(name=>name.endsWith('.css')).map(name=>stat(path.join('dist/_astro',name))))).reduce((sum,item)=>sum+item.size,0);
 const fontWoff2Bytes=(await Promise.all(staticFiles.filter(name=>name.endsWith('.woff2')).map(name=>stat(path.join('dist/_astro',name))))).reduce((sum,item)=>sum+item.size,0);
 const report={date,timezone:'Asia/Shanghai',environment:'Local loopback HTTP; unthrottled Windows; no overseas or field CWV claim',reviewedMasters:records.length,derivatives:variants.length,largestDerivativeBytes:Math.max(...variants.map(item=>item.bytes)),cssBytes,fontWoff2Bytes,pages,localResponseMedianMs:times[Math.floor(times.length/2)],localResponseMaxMs:Math.max(...times),variants,requests};
-await mkdir('docs/qa/2026-11-05',{recursive:true});await writeFile('docs/qa/2026-11-05/media-report.json',JSON.stringify(report,null,2)+'\n');
+const reportDirectory = `docs/qa/${date}`;
+await mkdir(reportDirectory,{recursive:true});
+await writeFile(path.join(reportDirectory,'media-report.json'),JSON.stringify(report,null,2)+'\n');
 console.log(`PASS media: ${records.length} masters, ${variants.length} WebP derivatives, ${requests.length} HTTP 200 responses. Homepage largest-fallback images ${pages[0].largestFallbackImageBytes}B. Local median ${report.localResponseMedianMs}ms; not overseas performance.`);

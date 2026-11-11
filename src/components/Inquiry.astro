@@ -3,5 +3,5 @@ import { copy } from '../i18n/en';
 import ContactActions from './ContactActions.astro';
 ---
 <section class="inquiry-section">
-  <div class="container inquiry-inner"><div><p class="eyebrow">{copy.inquiry.eyebrow}</p><h2>{copy.inquiry.title}</h2><p>{copy.inquiry.paragraphs[0]}<br />{copy.inquiry.paragraphs[1]}</p></div><div><ContactActions /><a class="text-link light-link" href="/en/contact/">How to prepare your inquiry <span aria-hidden="true">↗</span></a></div></div>
+  <div class="container inquiry-inner"><div><h2>{copy.inquiry.title}</h2><p>{copy.inquiry.text}</p></div><div><ContactActions /><a class="text-link light-link" href="/en/contact/">Contact Us <span aria-hidden="true">↗</span></a></div></div>
 </section>
