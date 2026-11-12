@@ -331,5 +331,65 @@
     "editing": "New image generated from NanXuan product categories. Square high-end product fabrication photograph. Single oversized olive-green oval pump bottle prop with a shallow diagonal ribbed relief and an exaggerated warm ivory pump top. The object is an opaque human-scale display prop with satin painted finish, clean silhouette and no lettering. Freestanding on a very low stone platform in a warm-toned architectural fabrication showroom, indirect skylight, soft credible shadows. Full object with good padding, no logos, brands or people.",
     "tool": "Codex built-in image_gen",
     "modelVersion": "not exposed"
+  },
+  {
+    "id": "workshop-steel-rings",
+    "width": 1448,
+    "height": 1086,
+    "alt": "Mirror-polished steel rings on supports inside the Zhaoqing workshop",
+    "sourceFile": "codex-clipboard-c12cabe8-087d-42ce-b49b-3db136c452b8.jpg",
+    "sourceSha256": "06f1dac98cc2e56c190545b2b72987b01ceefb33b49545db6c212c1ed739d11c",
+    "editing": "Edit the supplied actual NanXuan workshop photograph for its B2B website. Aim for clean, restrained editorial industrial photography: neutral slightly warm whites, even exposure, recover bright ceiling highlights, lift shadows moderately, mild noise reduction and natural contrast. This is documentary retouching only: preserve original framing, exact scene content and geometry, sculpture shapes and existing finish, people and their positions, equipment, fixtures, safety signs, floor and visible working conditions. Do not replace people, signs, scenery, architecture, tools or products, do not stage or add anything, no new lettering, no fake blur or glossy showroom effect. Wide landscape 4:3; preserve all mirror-polished rings and their supports, protective plastic, workers and roof perspective.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12"
+  },
+  {
+    "id": "workshop-metalwork",
+    "width": 1447,
+    "height": 1087,
+    "alt": "Craftspeople shaping metal parts at benches beside a curved template",
+    "sourceFile": "codex-clipboard-4ece2f4a-0101-4008-a3aa-3ebe0f0f893a.jpg",
+    "sourceSha256": "a27c0402b420551c134c1707556d514fbcdceb91545658c4b12184c9c4ac1b2d",
+    "editing": "Edit the supplied actual NanXuan workshop photograph for its B2B website. Aim for clean, restrained editorial industrial photography: neutral slightly warm whites, even exposure, recover bright ceiling highlights, lift shadows moderately, mild noise reduction and natural contrast. This is documentary retouching only: preserve original framing, exact scene content and geometry, sculpture shapes and existing finish, people and their positions, equipment, fixtures, safety signs, floor and visible working conditions. Do not replace people, signs, scenery, architecture, tools or products, do not stage or add anything, no new lettering, no fake blur or glossy showroom effect. Wide landscape 4:3; preserve the two foreground craftspeople, curved marked template and benches, metal forms, tools and shop arrangement.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12"
+  },
+  {
+    "id": "workshop-sculpture-assembly",
+    "width": 1087,
+    "height": 1447,
+    "alt": "Workshop team working on a tall stainless steel figure",
+    "sourceFile": "codex-clipboard-3d15140d-8e20-47d0-8ec0-e2b02cb1a3dd.jpg",
+    "sourceSha256": "70bf063dab8019dd02d20fac1dba05cd72447c612d33d1504390f906c9b9e9ef",
+    "editing": "Edit the supplied actual NanXuan workshop photograph for its B2B website. Aim for clean, restrained editorial industrial photography: neutral slightly warm whites, even exposure, recover bright ceiling highlights, lift shadows moderately, mild noise reduction and natural contrast. This is documentary retouching only: preserve original framing, exact scene content and geometry, sculpture shapes and existing finish, people and their positions, equipment, fixtures, safety signs, floor and visible working conditions. Do not replace people, signs, scenery, architecture, tools or products, do not stage or add anything, no new lettering, no fake blur or glossy showroom effect. Portrait 3:4; retain the complete tall silver figure, hoist chains, sculpture base and all workers in their original poses.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12"
+  },
+  {
+    "id": "workshop-ring-fitting",
+    "width": 1086,
+    "height": 1448,
+    "alt": "Workers beside a lit circular sculpture in the fabrication workshop",
+    "sourceFile": "codex-clipboard-1e07554f-8b5b-41d3-9271-64f0d8b05d81.jpg",
+    "sourceSha256": "787d8502e503fbbeb0dd70f996be4f94268911ca2c5c1736463ef582a8787a09",
+    "editing": "Edit the supplied actual NanXuan workshop photograph for its B2B website. Aim for clean, restrained editorial industrial photography: neutral slightly warm whites, even exposure, recover bright ceiling highlights, lift shadows moderately, mild noise reduction and natural contrast. This is documentary retouching only: preserve original framing, exact scene content and geometry, sculpture shapes and existing finish, people and their positions, equipment, fixtures, safety signs, floor and visible working conditions. Do not replace people, signs, scenery, architecture, tools or products, do not stage or add anything, no new lettering, no fake blur or glossy showroom effect. Portrait 3:4; retain the complete illuminated circular piece, exactly the same platform, workers, working positions and visible protective gear. Preserve points of light on the piece and lift only the deep shadows.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12"
+  },
+  {
+    "id": "workshop-display-props",
+    "width": 1448,
+    "height": 1086,
+    "alt": "Oversized ice cream display props and colorful figures in the workshop",
+    "sourceFile": "codex-clipboard-3f2332c9-0b06-4cb0-9d57-17d54468a590.jpg",
+    "sourceSha256": "31700ac0ffb9ffac31d6ee0063cb8e18ed311c7cfdf1af0782ffcda2bff3b264",
+    "editing": "Edit the supplied actual NanXuan workshop photograph for its B2B website. Aim for clean, restrained editorial industrial photography: neutral slightly warm whites, even exposure, recover bright ceiling highlights, lift shadows moderately, mild noise reduction and natural contrast. This is documentary retouching only: preserve original framing, exact scene content and geometry, sculpture shapes and existing finish, people and their positions, equipment, fixtures, safety signs, floor and visible working conditions. Do not replace people, signs, scenery, architecture, tools or products, do not stage or add anything, no new lettering, no fake blur or glossy showroom effect. Wide landscape 4:3; preserve the exact series of cream ice-cream display props, colorful figures behind, workers, workbench and room arrangement. Keep cream and pastel colors accurate.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12"
   }
 ]

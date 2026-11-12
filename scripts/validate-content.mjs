@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { site, media, materials, productCategories, isPreview } from '../src/data/site.ts';
 import { cases, visibleCases, casePath } from '../src/data/cases.ts';
-import { presentationImages } from '../src/data/photography.ts';
+import { presentationImages, workshopPhotos } from '../src/data/photography.ts';
 import { publicOrigin, inquiryLinks, socialUrl } from '../src/lib/inquiry.ts';
 const release = process.argv.includes('--production') || !isPreview;
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -38,7 +38,12 @@ for (const [key, value] of Object.entries(site.contacts)) {
   if (key === 'instagramUrl') assert(socialUrl(value,'instagram'), 'Instagram must be an HTTPS account URL on instagram.com.');
 }
 if (site.canonicalOrigin) assert(publicOrigin(site.canonicalOrigin), 'Canonical origin must be a public HTTPS origin, not localhost/example/test.');
-const slots = [...Object.entries(media), ...presentationImages().map(item => [`presentation/${item.id}`,item.image]), ...cases.flatMap(item => item.images.map((image,index) => [`${item.id}/${index}`,image]))];
+const slots = [
+  ...Object.entries(media),
+  ...workshopPhotos().map(item => [item.id, item.image]),
+  ...presentationImages().map(item => [`presentation/${item.id}`, item.image]),
+  ...cases.flatMap(item => item.images.map((image,index) => [`${item.id}/${index}`,image])),
+];
 for (const [id,image] of slots) {
   assert(image.width > 0 && image.height > 0 && image.alt.trim(), `Image needs dimensions and alt: ${id}`);
   if (image.source) {

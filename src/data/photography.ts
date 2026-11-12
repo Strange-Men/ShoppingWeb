@@ -10,6 +10,7 @@ export interface PhotoRecord {
   pdfPage?: number;
   editing: string;
   focalPoint?: string;
+  authorizationDate?: string;
   kind?: 'concept';
 }
 export const photoRecords = manifest as PhotoRecord[];
@@ -24,10 +25,22 @@ export function photo(id: string): MediaSlot {
     alt: record.alt, rights: 'licensed',
     credit: record.kind === 'concept'
       ? 'AI-generated design concept based on NanXuan product categories.'
-      : 'Owner-supplied Alan assets; website use and built-in image retouching authorized 2026-11-05.',
+      : `Owner-supplied photograph; website use and built-in image retouching authorized ${record.authorizationDate ?? '2026-11-05'}.`,
     variants: widths.map(value => ({ source: `/media/${id}-${value}.webp`, width: value })),
     focalPoint: record.focalPoint || '50% 50%',
   };
+}
+
+const workshopEntries = [
+  { id: 'workshop-steel-rings', title: 'Polished Steel Rings', caption: 'Mirror-polished rings on their supports in the fabrication area.' },
+  { id: 'workshop-metalwork', title: 'Metalwork in Progress', caption: 'Craftspeople shape metal sections beside templates and workbenches.' },
+  { id: 'workshop-sculpture-assembly', title: 'Large Sculpture Assembly', caption: 'The team works on a tall stainless steel figure in the workshop.' },
+  { id: 'workshop-ring-fitting', title: 'Fitting an Illuminated Ring', caption: 'A workshop view of the circular sculpture with its lighting switched on.' },
+  { id: 'workshop-display-props', title: 'Oversized Display Props', caption: 'Ice cream display props lined up alongside colorful figures.' },
+];
+
+export function workshopPhotos() {
+  return workshopEntries.map(entry => ({ ...entry, image: photo(entry.id) }));
 }
 export interface PresentationImage { id: string; category: ProductCategoryId; title: string; image: MediaSlot; concept: boolean }
 const galleryEntries = [

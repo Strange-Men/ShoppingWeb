@@ -1,0 +1,127 @@
+---
+import { workshopPhotos } from '../data/photography';
+import Media from './Media.astro';
+
+const photos = workshopPhotos();
+const format = (value: number) => String(value).padStart(2, '0');
+---
+<section id="our-workshop" class="section workshop" aria-labelledby="workshop-heading" data-workshop-gallery>
+  <div class="container">
+    <div class="workshop-heading">
+      <h2 id="workshop-heading">Our Workshop</h2>
+      <p>Inside our fabrication workshop in Zhaoqing, Guangdong.</p>
+    </div>
+    <div class="workshop-panel">
+      <div class="workshop-track" id="workshop-photos" role="group" aria-label="Workshop photos" tabindex="0">
+        {photos.map(({ image, title, caption }, index) => (
+          <figure class="workshop-slide" data-workshop-slide aria-label={`${index + 1} of ${photos.length}`}>
+            <Media image={image} sizes="(max-width: 699px) 100vw, (max-width: 1240px) 65vw, 800px" />
+            <figcaption>
+              <h3>{title}</h3>
+              <p>{caption}</p>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+      <div class="workshop-controls" data-workshop-controls hidden>
+        <div class="workshop-thumbnails" role="group" aria-label="Choose a workshop photo">
+          {photos.map(({ image, title }) => (
+            <button type="button" aria-controls="workshop-photos" data-workshop-thumb aria-label={`Show ${title}`}>
+              <img src={image.variants?.[0]?.source} alt="" width="76" height="56" loading="lazy" decoding="async" />
+            </button>
+          ))}
+        </div>
+        <div class="workshop-navigation">
+          <p class="workshop-count" role="status" aria-atomic="true">
+            <span class="sr-only" data-workshop-announcement>{photos[0].title}</span>
+            <span data-workshop-count>{format(1)} / {format(photos.length)}</span>
+          </p>
+          <button type="button" class="workshop-arrow" data-workshop-prev aria-controls="workshop-photos" aria-label="Previous workshop photo"><span aria-hidden="true">←</span></button>
+          <button type="button" class="workshop-arrow" data-workshop-next aria-controls="workshop-photos" aria-label="Next workshop photo"><span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const gallery = document.querySelector<HTMLElement>('[data-workshop-gallery]');
+  if (gallery) {
+    const track = gallery.querySelector<HTMLElement>('.workshop-track')!;
+    const slides = [...track.querySelectorAll<HTMLElement>('[data-workshop-slide]')];
+    const thumbs = [...gallery.querySelectorAll<HTMLButtonElement>('[data-workshop-thumb]')];
+    const controls = gallery.querySelector<HTMLElement>('[data-workshop-controls]')!;
+    const previous = gallery.querySelector<HTMLButtonElement>('[data-workshop-prev]')!;
+    const next = gallery.querySelector<HTMLButtonElement>('[data-workshop-next]')!;
+    const count = gallery.querySelector<HTMLElement>('[data-workshop-count]')!;
+    const announcement = gallery.querySelector<HTMLElement>('[data-workshop-announcement]')!;
+    let active = -1;
+
+    function sync() {
+      if (!track.clientWidth) return;
+      const index = Math.max(0, Math.min(slides.length - 1, Math.round(track.scrollLeft / track.clientWidth)));
+      if (index === active) return;
+      active = index;
+      slides.forEach((slide, i) => slide.setAttribute('aria-hidden', String(i !== index)));
+      thumbs.forEach((thumb, i) => thumb.setAttribute('aria-current', i === index ? 'true' : 'false'));
+      previous.setAttribute('aria-disabled', String(index === 0));
+      next.setAttribute('aria-disabled', String(index === slides.length - 1));
+      count.textContent = `${String(index + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+      announcement.textContent = slides[index].querySelector('h3')!.textContent;
+    }
+
+    function show(index: number) {
+      const slide = slides[index];
+      if (slide) track.scrollTo({ left: slide.offsetLeft });
+    }
+
+    previous.addEventListener('click', () => show(active - 1));
+    next.addEventListener('click', () => show(active + 1));
+    thumbs.forEach((thumb, index) => thumb.addEventListener('click', () => show(index)));
+    track.addEventListener('scroll', sync, { passive: true });
+    gallery.addEventListener('keydown', event => {
+      if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      const targets: Record<string, number> = { ArrowLeft: active - 1, ArrowRight: active + 1, Home: 0, End: slides.length - 1 };
+      if (!Object.hasOwn(targets, event.key)) return;
+      event.preventDefault();
+      show(targets[event.key]);
+    });
+    sync();
+    controls.hidden = false;
+    gallery.setAttribute('aria-roledescription', 'carousel');
+  }
+</script>
+
+<style>
+  .workshop { background:var(--paper); padding-block-start:54px; }
+  .workshop-heading { margin-block-end:28px; }
+  .workshop-heading p { margin-block-start:10px; color:var(--muted); }
+  .workshop-panel { border-radius:var(--radius); overflow:hidden; background:var(--navy); color:white; }
+  .workshop-track { display:flex; position:relative; overflow-x:auto; overscroll-behavior-inline:contain; scroll-snap-type:x mandatory; scroll-behavior:smooth; }
+  .workshop-track:focus-visible { outline-offset:-4px; }
+  .workshop[data-workshop-gallery][aria-roledescription] .workshop-track { scrollbar-width:none; }
+  .workshop[data-workshop-gallery][aria-roledescription] .workshop-track::-webkit-scrollbar { display:none; }
+  .workshop-slide { display:grid; grid-template-columns:2fr 1fr; flex:0 0 100%; min-inline-size:0; scroll-snap-align:start; }
+  .workshop-slide :global(.media-slot) { aspect-ratio:4/3; background:#11111d; }
+  .workshop-slide :global(img) { display:block; object-fit:contain; }
+  .workshop-slide figcaption { align-self:center; min-inline-size:0; padding:clamp(22px,4vw,56px); }
+  .workshop-slide h3 { font-size:clamp(24px,3.4vw,48px); color:#fff; }
+  .workshop-slide p { margin-block-start:14px; color:#d9d6e1; font-size:14px; }
+  .workshop-controls:not([hidden]) { display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px; align-items:center; padding:16px clamp(14px,3vw,28px); border-block-start:1px solid #ffffff26; }
+  .workshop-thumbnails { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:6px; inline-size:min(100%,410px); }
+  .workshop-thumbnails button { min-inline-size:0; padding:2px; border:2px solid transparent; background:transparent; cursor:pointer; }
+  .workshop-thumbnails button[aria-current="true"] { border-color:var(--gold); }
+  .workshop-thumbnails img { display:block; inline-size:100%; block-size:auto; aspect-ratio:4/3; object-fit:cover; border-radius:2px; }
+  .workshop-navigation { display:flex; align-items:center; gap:8px; margin-inline-start:auto; }
+  .workshop-count { margin-inline-end:10px; color:#e2c48b; font-size:13px; font-variant-numeric:tabular-nums; }
+  .workshop-arrow { display:grid; place-items:center; inline-size:44px; block-size:44px; border:1px solid #ffffff58; background:transparent; color:white; cursor:pointer; font-size:22px; }
+  .workshop-arrow:hover:not([aria-disabled="true"]) { background:var(--gold); color:var(--navy); }
+  .workshop-arrow[aria-disabled="true"] { opacity:.45; cursor:default; }
+  @media (max-width:699px) {
+    .workshop-slide { grid-template-columns:1fr; grid-template-rows:auto 1fr; }
+    .workshop-slide figcaption { align-self:start; padding:18px; }
+    .workshop-slide p { margin-block-start:6px; font-size:13px; }
+    .workshop-thumbnails { inline-size:100%; }
+  }
+  @media (prefers-reduced-motion:reduce) { .workshop-track { scroll-behavior:auto; } }
+</style>
