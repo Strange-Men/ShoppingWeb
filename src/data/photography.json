@@ -138,199 +138,120 @@
     "id": "bottle-pastel",
     "width": 1200,
     "height": 1200,
-    "alt": "Five pastel bottle and jar props in pink, purple and yellow, retouched presentation image",
+    "alt": "Five pastel bottle and jar props in pink, purple and yellow",
     "sourceFile": "官网图片/瓶子/f8b957d1-8186-4af5-8173-42a6664f2fd8.jpg",
     "sourceSha256": "467de35d65217ff105d37032963558ce6e92ffbd5c8e5454f6c1918a4dd835ec",
     "editing": "Square composition, lighting and background retouch from owner-supplied photo.",
     "focalPoint": "50% 50%",
     "tool": "Codex built-in image_gen",
     "modelVersion": "not exposed",
-    "authorizationDate": "2026-11-05"
+    "authorizationDate": "2026-11-05",
+    "product": {
+      "category": "bottle-props",
+      "title": "Pastel Bottle and Jar Props"
+    }
   },
   {
     "id": "bottle-display",
     "width": 1200,
     "height": 1200,
-    "alt": "Four oversized black, cream and blue bottle and container props, retouched presentation image",
+    "alt": "Four oversized black, cream and blue bottle and container props",
     "sourceFile": "官网图片/瓶子/fb604f8a-e2cd-409e-b162-8cad59465818.jpg",
     "sourceSha256": "59c7e222b2815a90e01dd3c30de4788bf2e1b021e494c61d9fccb4bfae624da4",
     "editing": "Square composition, lighting and background retouch from owner-supplied photo.",
     "focalPoint": "50% 50%",
     "tool": "Codex built-in image_gen",
     "modelVersion": "not exposed",
-    "authorizationDate": "2026-11-05"
+    "authorizationDate": "2026-11-05",
+    "product": {
+      "category": "bottle-props",
+      "title": "Oversized Bottle and Container Props"
+    }
   },
   {
     "id": "bottle-cups",
     "width": 1200,
     "height": 1200,
-    "alt": "Three oversized lidded drink cup props with floral designs, retouched presentation image",
+    "alt": "Three oversized lidded drink cup props with floral designs",
     "sourceFile": "官网图片/瓶子/bcc291bc-68d4-44e0-b630-0662dfa2283e.jpg",
     "sourceSha256": "cb9d6a71f7f9b59c4b725430f5cbf5499d6f8c088a5853458f2de33211bdbe77",
     "editing": "Square composition, lighting and background retouch from owner-supplied photo.",
     "focalPoint": "50% 50%",
     "tool": "Codex built-in image_gen",
     "modelVersion": "not exposed",
-    "authorizationDate": "2026-11-05"
+    "authorizationDate": "2026-11-05",
+    "product": {
+      "category": "bottle-props",
+      "title": "Oversized Lidded Cup Props"
+    }
   },
   {
     "id": "steel-ribbon",
     "width": 1200,
     "height": 1200,
-    "alt": "Twisting mirror polished steel ribbon sculpture with a circular base, retouched presentation image",
+    "alt": "Twisting mirror polished steel ribbon sculpture with a circular base",
     "sourceFile": "官网图片/不锈钢/微信图片_20261105131632_142_5.jpg",
     "sourceSha256": "0a5ae6a82d14f0a784e7ff69809217768c5835d63d31a34c2cc63dd6eb431070",
     "editing": "Square composition, lighting and background retouch from owner-supplied photo.",
     "focalPoint": "50% 50%",
     "tool": "Codex built-in image_gen",
     "modelVersion": "not exposed",
-    "authorizationDate": "2026-11-05"
+    "authorizationDate": "2026-11-05",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Twisting Steel Ribbon Sculpture"
+    }
   },
   {
     "id": "steel-orbits",
     "width": 1200,
     "height": 1200,
-    "alt": "A group of polished steel bird forms on a round platform, retouched presentation image",
+    "alt": "A group of polished steel bird forms on a round platform",
     "sourceFile": "官网图片/不锈钢/微信图片_20261105131528_136_5.jpg",
     "sourceSha256": "bab294fbe838e0445e3d891408b2c4ca6c52faff59ed129c1c0fc64dfed24fd8",
     "editing": "Square composition, lighting and background retouch from owner-supplied photo.",
     "focalPoint": "50% 50%",
     "tool": "Codex built-in image_gen",
     "modelVersion": "not exposed",
-    "authorizationDate": "2026-11-05"
+    "authorizationDate": "2026-11-05",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Polished Steel Bird Forms"
+    }
   },
   {
     "id": "frp-mosaic",
     "width": 1200,
     "height": 1200,
-    "alt": "Colorful patchwork dolphin sculpture on a striped pedestal, retouched presentation image",
+    "alt": "Colorful patchwork dolphin sculpture on a striped pedestal",
     "sourceFile": "官网图片/卡通/cff84243-a3af-452c-8e8b-9bb3b6d04417.jpg",
     "sourceSha256": "f15a41219d0d52d0727da3a63289aa87203e533e618b58532fa06c18a118ef90",
     "editing": "Square composition, lighting and background retouch from owner-supplied photo.",
     "focalPoint": "50% 50%",
     "tool": "Codex built-in image_gen",
     "modelVersion": "not exposed",
-    "authorizationDate": "2026-11-05"
+    "authorizationDate": "2026-11-05",
+    "product": {
+      "category": "fiberglass",
+      "title": "Patchwork Dolphin Sculpture"
+    }
   },
   {
     "id": "frp-woodland",
     "width": 1200,
     "height": 1200,
-    "alt": "Two rounded fiberglass characters with textured brown surrounds, retouched presentation image",
+    "alt": "Two rounded fiberglass characters with textured brown surrounds",
     "sourceFile": "官网图片/卡通/43-1.jpg",
     "sourceSha256": "bb85413433d3be69c38afdb6961a35a083bf5b76f7a05899f719f8982b4cdca2",
     "editing": "Square composition, lighting and background retouch from owner-supplied photo.",
     "focalPoint": "50% 50%",
     "tool": "Codex built-in image_gen",
     "modelVersion": "not exposed",
-    "authorizationDate": "2026-11-05"
-  },
-  {
-    "id": "concept-hero",
-    "width": 1600,
-    "height": 900,
-    "alt": "Mirror-polished steel crescents outside an illustrative workshop, AI-generated design concept",
-    "kind": "concept",
-    "editing": "New image generated from NanXuan product categories. Wide landscape 16:9 website banner. One monumental mirror polished stainless steel sculpture consisting of three tapered hollow crescents rising diagonally in an asymmetrical fan, completely original silhouette, grounded in limestone at right. Premium architectural photography, contemporary quiet industrial fabrication building exterior behind the artwork, warm morning directional light, cool blue-gray sky, realistic surroundings reflected in metal. Artwork contained in right half with generous breathing space (especially top, bottom and right); entire left half quiet facade and sky for HTML text. This is an illustrative generic workshop setting, not a specific identifiable place. No other sculpture, people, text or logo.",
-    "focalPoint": "70% 50%",
-    "tool": "Codex built-in image_gen",
-    "modelVersion": "not exposed"
-  },
-  {
-    "id": "concept-steel-cover",
-    "width": 1200,
-    "height": 1200,
-    "alt": "Three folded stainless steel fins, AI-generated design concept",
-    "kind": "concept",
-    "editing": "New image generated from NanXuan product categories. Square premium sculpture catalog photograph. One tall abstract mirror-polished stainless steel sculpture made of three staggered wedge-like fins folded in different directions, distinct angular silhouette. Full object and square plinth in frame, photographed in warm morning light outside a quiet grey industrial fabrication workshop. Strong but physically plausible reflections, subdued surroundings, clean architectural composition. No text or logos.",
-    "focalPoint": "50% 50%",
-    "tool": "Codex built-in image_gen",
-    "modelVersion": "not exposed"
-  },
-  {
-    "id": "concept-frp-cover",
-    "width": 1200,
-    "height": 1200,
-    "alt": "Slate blue fiberglass hare, AI-generated design concept",
-    "kind": "concept",
-    "editing": "New image generated from NanXuan product categories. Square premium sculpture catalog photograph, full object in frame. A large original fiberglass sculpture of a seated hare with sweeping ears and broad stylized surfaces in matte slate blue, facing left, understated rounded faceted geometry and carefully finished painted surface, on a small stone base at the entrance of an understated modern workshop. Editorial natural daylight, no people, no words or logos.",
-    "focalPoint": "50% 50%",
-    "tool": "Codex built-in image_gen",
-    "modelVersion": "not exposed"
-  },
-  {
-    "id": "concept-bottle-cover",
-    "width": 1200,
-    "height": 1200,
-    "alt": "Terracotta and sage oversized bottle props, AI-generated design concept",
-    "kind": "concept",
-    "editing": "New image generated from NanXuan product categories. Square premium retail fabrication catalog photograph, full objects in frame. Two oversized sculptural bottle props, one flat oval flask in opaque muted terracotta with an exaggerated cream cap, the other a slim fluted column bottle in pale sage with a domed cap. Art-directed on a concrete floor in a tidy workshop showroom with bright natural side light and soft shadows. Props are opaque fabricated display objects, with impeccable finish and clean silhouettes. Unbranded, no label, no text.",
-    "focalPoint": "50% 50%",
-    "tool": "Codex built-in image_gen",
-    "modelVersion": "not exposed"
-  },
-  {
-    "id": "concept-steel-wave",
-    "width": 1200,
-    "height": 1200,
-    "alt": "Brushed stainless steel wave sculpture, AI-generated design concept",
-    "kind": "concept",
-    "editing": "New image generated from NanXuan product categories. Square luxury fabrication catalog photograph. Full view of a single low wide sculpture formed of two brushed stainless steel tapered waves that curl upward at opposite ends, with visible fine directional brushing and carefully polished edges. On flat concrete in quiet fabrication workshop yard, soft overcast daylight, thoughtful architectural framing, premium realistic finish. No letters, people or logos.",
-    "focalPoint": "50% 50%",
-    "tool": "Codex built-in image_gen",
-    "modelVersion": "not exposed"
-  },
-  {
-    "id": "concept-frp-crane",
-    "width": 1200,
-    "height": 1200,
-    "alt": "Ivory fiberglass crane sculpture, AI-generated design concept",
-    "kind": "concept",
-    "editing": "New image generated from NanXuan product categories. Square premium custom fabrication catalog photo. Full view of one oversized original sculptural fiberglass red-crowned crane with a dramatically curved neck and tucked wings, ivory painted body with charcoal detailing and subdued rust red crown, restrained stylized geometry. On a dark discrete plinth in a neutral quiet fabrication workshop entrance, soft morning light, entire wings and base visible. No people, text or logos.",
-    "focalPoint": "50% 50%",
-    "tool": "Codex built-in image_gen",
-    "modelVersion": "not exposed"
-  },
-  {
-    "id": "concept-bottle-perfume",
-    "width": 1200,
-    "height": 1200,
-    "alt": "Oversized satin black perfume bottle prop with a gold cap, AI-generated design concept",
-    "kind": "concept",
-    "editing": "New image generated from NanXuan product categories. Square luxury display-prop catalog photograph. One giant geometric perfume bottle prop, broad asymmetric polygon in opaque satin black painted finish, oversized brushed-gold sculptural cap, matching floor plinth, photographed against the tall clean pale concrete wall of a fabrication showroom. Fashion editorial soft directional light, realistic seams and finish. Full object including base, no label, no words, no logos.",
-    "focalPoint": "50% 50%",
-    "tool": "Codex built-in image_gen",
-    "modelVersion": "not exposed"
-  },
-  {
-    "id": "concept-steel-lattice",
-    "width": 1200,
-    "height": 1200,
-    "alt": "Open lattice steel sculpture, AI-generated design concept",
-    "kind": "concept",
-    "editing": "New image generated from NanXuan product categories. Square high-end sculptural product photograph. Single vertical open lattice sculpture made from thick mirror-polished stainless steel tubular elements, branching like a stylized geometric tree with three large asymmetrical interlocking open cells, freestanding on a flush low square base. Entire outline and base in the middle of the frame with negative space on all sides. Grounded outdoors on concrete in a quiet modern fabrication yard, lightly ribbed industrial architecture softly out of focus, crisp natural daylight, believable metal reflections. No text, people or logos.",
-    "tool": "Codex built-in image_gen",
-    "modelVersion": "not exposed"
-  },
-  {
-    "id": "concept-frp-manta",
-    "width": 1200,
-    "height": 1200,
-    "alt": "Petrol-blue manta ray sculpture, AI-generated design concept",
-    "kind": "concept",
-    "editing": "New image generated from NanXuan product categories. Square high-end custom fabrication photograph. One large original fiberglass manta ray sculpture with raised swept wings, matte muted petrol-blue top and soft cream underside. Rounded fluid forms, a single simple charcoal display mount, full form including wing tips in frame. Bright modern fabrication showroom with understated pale concrete backdrop, large indirect window light, premium contemporary painted surface. No other sculpture, people, text or logos.",
-    "tool": "Codex built-in image_gen",
-    "modelVersion": "not exposed"
-  },
-  {
-    "id": "concept-bottle-pump",
-    "width": 1200,
-    "height": 1200,
-    "alt": "Oversized olive pump bottle prop, AI-generated design concept",
-    "kind": "concept",
-    "editing": "New image generated from NanXuan product categories. Square high-end product fabrication photograph. Single oversized olive-green oval pump bottle prop with a shallow diagonal ribbed relief and an exaggerated warm ivory pump top. The object is an opaque human-scale display prop with satin painted finish, clean silhouette and no lettering. Freestanding on a very low stone platform in a warm-toned architectural fabrication showroom, indirect skylight, soft credible shadows. Full object with good padding, no logos, brands or people.",
-    "tool": "Codex built-in image_gen",
-    "modelVersion": "not exposed"
+    "authorizationDate": "2026-11-05",
+    "product": {
+      "category": "fiberglass",
+      "title": "Woodland Character Sculptures"
+    }
   },
   {
     "id": "workshop-steel-rings",
@@ -391,5 +312,613 @@
     "tool": "Codex built-in image_gen",
     "modelVersion": "not exposed",
     "authorizationDate": "2026-11-12"
+  },
+  {
+    "id": "lucky-cat",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Lucky Cat Sculpture",
+    "sourceFile": "官网图片/玻璃钢图片/微信图片_20261112163446_184_32.jpg",
+    "sourceSha256": "43a5561fa9ffc7783b242ce235baeb33e49ec06f2740f58d9fa1ffcea8f6acce",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Lucky Cat Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "Lucky Cat Sculpture"
+    }
+  },
+  {
+    "id": "red-elephant",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Red Elephant Sculpture",
+    "sourceFile": "官网图片/玻璃钢图片/微信图片_20261112163446_185_32.jpg",
+    "sourceSha256": "9a59abe287e167fe9b04125fc85108ca1f56ef73844457a12315922ecddc8004",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Red Elephant Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "Red Elephant Sculpture"
+    }
+  },
+  {
+    "id": "outdoor-qilin",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Outdoor Qilin Sculpture",
+    "sourceFile": "官网图片/玻璃钢图片/微信图片_20261112163446_186_32.jpg",
+    "sourceSha256": "1d509d26103174416521f9b75f2950ab5e31147bc235a10a63e80fc64c84a5a9",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Outdoor Qilin Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "Outdoor Qilin Sculpture"
+    }
+  },
+  {
+    "id": "silver-astronaut",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Seated Astronaut Sculpture",
+    "sourceFile": "官网图片/玻璃钢图片/微信图片_20261112163446_191_32.jpg",
+    "sourceSha256": "43e5652194b38636cd1d48ace4343413e9c7e97a9c26e6ec71a78d54adbea6a0",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Seated Astronaut Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "Seated Astronaut Sculpture"
+    }
+  },
+  {
+    "id": "robot-quartet",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Colorful Robot Figures",
+    "sourceFile": "官网图片/玻璃钢图片/微信图片_20261112163452_193_32.jpg",
+    "sourceSha256": "9c65a66609851b40176d505f1bab85800c7ae755f35d66ca15599ee49d86ffaf",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Colorful Robot Figures.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "Colorful Robot Figures"
+    }
+  },
+  {
+    "id": "crowned-character",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Crowned Character Sculpture",
+    "sourceFile": "官网图片/卡通/1.jpg",
+    "sourceSha256": "a1c8cb9ea4c85c774afa914d4f55456b734bf60e388ae697f7e3b167547f7567",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Crowned Character Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "Crowned Character Sculpture"
+    }
+  },
+  {
+    "id": "sailor-characters",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Sailor Character Figures",
+    "sourceFile": "官网图片/卡通/42.jpg",
+    "sourceSha256": "e5df96fdfb6b3650bd92a54c5bcfb5a21b0c87fece9c8c76d34bcb5dffcee2aa",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Sailor Character Figures.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "Sailor Character Figures"
+    }
+  },
+  {
+    "id": "decorative-bee",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Decorative Bee Sculpture",
+    "sourceFile": "官网图片/卡通/45be27f4-2097-43e5-8f0c-544dd26fb212.jpg",
+    "sourceSha256": "910d06763acb0cfc62f7d6305c42c989bbde9c3083b91dd75eaf0c4605ca958e",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Decorative Bee Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "Decorative Bee Sculpture"
+    }
+  },
+  {
+    "id": "diamond-jester",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Diamond Pattern Jester",
+    "sourceFile": "官网图片/卡通/5.jpg",
+    "sourceSha256": "067237db6a3223c9efd6e58e94ef7f88646a754ef263a2e4ca691a29ba46d9a3",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Diamond Pattern Jester.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "Diamond Pattern Jester"
+    }
+  },
+  {
+    "id": "winged-horse",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Red Winged Horse Sculpture",
+    "sourceFile": "官网图片/卡通/5fdd6295-c822-4e51-9b3c-873521e92547.jpg",
+    "sourceSha256": "000b74ff369b83b04cb91012a10b7b1d195c7787d3f73304229096fd0091f59b",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Red Winged Horse Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "Red Winged Horse Sculpture"
+    }
+  },
+  {
+    "id": "dinosaur-figures",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Dinosaur Sculptures",
+    "sourceFile": "官网图片/卡通/60bc4e49-a179-407d-9273-9c0f3f09d474.jpg",
+    "sourceSha256": "e870398c7538682bf92259b3fef85794fd4657e6364038bd6594627262064a63",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Dinosaur Sculptures.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "Dinosaur Sculptures"
+    }
+  },
+  {
+    "id": "patterned-eggs",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Patterned Egg Sculptures",
+    "sourceFile": "官网图片/卡通/6fa59fbe-7312-4f77-9793-cba3614fe5d6.jpg",
+    "sourceSha256": "0fbcb1f41eb861e7698ecc4eb9fc287e423b4961702ad841e5a559c8aa6e2eaf",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Patterned Egg Sculptures.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "Patterned Egg Sculptures"
+    }
+  },
+  {
+    "id": "white-lion",
+    "width": 1200,
+    "height": 1200,
+    "alt": "White Lion Sculpture",
+    "sourceFile": "官网图片/卡通/cc1f5c8b-ca78-4031-855f-5aec3a9f1f17.jpg",
+    "sourceSha256": "b49d3d763e82620cedd6a72f2c9db26605030d9e9298799bfa48be9c6ac909e0",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: White Lion Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "fiberglass",
+      "title": "White Lion Sculpture"
+    }
+  },
+  {
+    "id": "courtyard-fountain",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Courtyard Sculpture Fountain",
+    "sourceFile": "官网图片/不锈钢/不锈钢图片/微信图片_20261112161437_131_32.jpg",
+    "sourceSha256": "24d3a125de5a2575f240f3cecc24eb2e291de003cd0b3fbbc8688aa6b1700ce5",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Courtyard Sculpture Fountain.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Courtyard Sculpture Fountain"
+    }
+  },
+  {
+    "id": "flowing-lines",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Flowing Line Sculpture",
+    "sourceFile": "官网图片/不锈钢/不锈钢图片/微信图片_20261112161437_132_32.jpg",
+    "sourceSha256": "12ede46b2cffeb27bae107448fc89bc25f62cb63d545f6b995800d03bc96cd95",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Flowing Line Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Flowing Line Sculpture"
+    }
+  },
+  {
+    "id": "antler-form",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Branching Steel Sculpture",
+    "sourceFile": "官网图片/不锈钢/不锈钢图片/微信图片_20261112161437_135_32.jpg",
+    "sourceSha256": "bb33782e4480f9aad37b263450a8c1953358f02ff60f6114737cff72a33cff8e",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Branching Steel Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Branching Steel Sculpture"
+    }
+  },
+  {
+    "id": "nested-arches",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Nested Arch Fountain",
+    "sourceFile": "官网图片/不锈钢/不锈钢图片/微信图片_20261112161437_141_32.jpg",
+    "sourceSha256": "3b1af2ebb8cd7df0bed3c8f770e02cfcb2219c0e067d48ed4004b441270138be",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Nested Arch Fountain.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Nested Arch Fountain"
+    }
+  },
+  {
+    "id": "branching-tree",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Branching Steel Tree",
+    "sourceFile": "官网图片/不锈钢/不锈钢图片/微信图片_20261112161437_144_32.jpg",
+    "sourceSha256": "6044ea750cb5885dde881ad9ab6c33a88b414fa6c8670cdfcdce54c785181ec6",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Branching Steel Tree.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Branching Steel Tree"
+    }
+  },
+  {
+    "id": "metal-leaves",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Steel Leaf Cluster Fountain",
+    "sourceFile": "官网图片/不锈钢/不锈钢图片/微信图片_20261112161437_145_32.jpg",
+    "sourceSha256": "e0bcbe86ea40f4194ffc0494f57085d28549f3226145516a7ba8807d29bf877c",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Steel Leaf Cluster Fountain.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Steel Leaf Cluster Fountain"
+    }
+  },
+  {
+    "id": "layered-leaf",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Layered Leaf Sculpture",
+    "sourceFile": "官网图片/不锈钢/不锈钢图片/微信图片_20261112161437_146_32.jpg",
+    "sourceSha256": "ba9a174da70cf7cb1ff6e58f1bf4d534728254c5d71c7ad145f3866e860561c6",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Layered Leaf Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Layered Leaf Sculpture"
+    }
+  },
+  {
+    "id": "sweeping-fountain",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Sweeping Steel Fountain",
+    "sourceFile": "官网图片/不锈钢/不锈钢图片/微信图片_20261112161437_147_32.jpg",
+    "sourceSha256": "fab12e72197157c848a6f7ddf45aecd9fd7db09c43650bf58ece79c20bf940b4",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Sweeping Steel Fountain.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Sweeping Steel Fountain"
+    }
+  },
+  {
+    "id": "arched-waterfall",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Arch Waterfall Sculpture",
+    "sourceFile": "官网图片/不锈钢/不锈钢图片/微信图片_20261112161437_148_32.jpg",
+    "sourceSha256": "08c9971770c29c0f76968ab4132e37416d1e8c8e1f040bcfece3d57fabe7c49e",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Arch Waterfall Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Arch Waterfall Sculpture"
+    }
+  },
+  {
+    "id": "sphere-spiral",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Spiral and Sphere Fountain",
+    "sourceFile": "官网图片/不锈钢/微信图片_20261105131336_130_5.jpg",
+    "sourceSha256": "952d498e80c43d4e498ff74e632eabd7b79773c0f5f6003dd8843c2be6528cf7",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Spiral and Sphere Fountain.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Spiral and Sphere Fountain"
+    }
+  },
+  {
+    "id": "twin-waves",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Twin Wave Sculpture",
+    "sourceFile": "官网图片/不锈钢/微信图片_20261105131458_418_1.jpg",
+    "sourceSha256": "88df052e5fe33f118a5d00f0a5309c42c0235fd30344bbc98aa1cdf8586577bc",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Twin Wave Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Twin Wave Sculpture"
+    }
+  },
+  {
+    "id": "plaza-ring",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Plaza Ring Sculpture",
+    "sourceFile": "官网图片/不锈钢/微信图片_20261105131501_421_1.jpg",
+    "sourceSha256": "7dca7e0142cbd2d23d10aa2bbddb18c9a3dbcf1678a3f1085f0d29dca4c27290",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Plaza Ring Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Plaza Ring Sculpture"
+    }
+  },
+  {
+    "id": "globe-ring",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Globe and Ring Sculpture",
+    "sourceFile": "官网图片/不锈钢/微信图片_20261105131601_140_5.jpg",
+    "sourceSha256": "de82f03d859b5ffe698e27d984e79b7786405f1f9a4783782bcfa13f7279832c",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Globe and Ring Sculpture.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "stainless-steel",
+      "title": "Globe and Ring Sculpture"
+    }
+  },
+  {
+    "id": "tube-display",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Oversized Tube and Bottle Set",
+    "sourceFile": "官网图片/瓶子/49.jpg",
+    "sourceSha256": "52f0c50969fe77339caa6f4dc38f32aff960678e661cba16e5eb28d39aab1103",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Oversized Tube and Bottle Set.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "bottle-props",
+      "title": "Oversized Tube and Bottle Set"
+    }
+  },
+  {
+    "id": "tall-bottle",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Tall Bottle Display Prop",
+    "sourceFile": "官网图片/瓶子/4e6b1c5e-d11e-4666-be02-22c5976940fb.jpg",
+    "sourceSha256": "e629f404e48287b6b16cbdfba9a6c1618e5d151c678277d8c9c18ee0e59139a3",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Tall Bottle Display Prop.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "bottle-props",
+      "title": "Tall Bottle Display Prop"
+    }
+  },
+  {
+    "id": "dropper-pair",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Oversized Dropper Bottle Pair",
+    "sourceFile": "官网图片/瓶子/5db3acba-8292-4a03-9438-bd7010aa8f8d.jpg",
+    "sourceSha256": "c09a070c22e0705d11cb84f901472f5993364fd1e8cb41a1c6fc95114dd7ffd9",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Oversized Dropper Bottle Pair.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "bottle-props",
+      "title": "Oversized Dropper Bottle Pair"
+    }
+  },
+  {
+    "id": "colored-jars",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Oversized Colored Jar Props",
+    "sourceFile": "官网图片/瓶子/6661b265-b66a-42ab-a4a6-65cbf0f3f783.jpg",
+    "sourceSha256": "b33c2a0dbc027b98e77bfb2dd660e0b8bde5ea2d6b347ad81a1cd6e40538042e",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Oversized Colored Jar Props.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "bottle-props",
+      "title": "Oversized Colored Jar Props"
+    }
+  },
+  {
+    "id": "red-cylinder",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Red Cylindrical Bottle Prop",
+    "sourceFile": "官网图片/瓶子/835817e5e52d6db132007b0c94678ba3(1).jpg",
+    "sourceSha256": "a36dbfe198e042364a7cca1e491edadbe9b2853c870c5d4bbea3a38e1fe1dc1f",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Red Cylindrical Bottle Prop.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "bottle-props",
+      "title": "Red Cylindrical Bottle Prop"
+    }
+  },
+  {
+    "id": "blue-jar-set",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Blue Jar Display Set",
+    "sourceFile": "官网图片/瓶子/8db04541-2cac-4f3c-a533-fc2ad1ab2956.jpg",
+    "sourceSha256": "65e44fcef28acca7dfce0c6037a8a62b6c6276edfedf641623f6e4040a1cc2d8",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Blue Jar Display Set.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "bottle-props",
+      "title": "Blue Jar Display Set"
+    }
+  },
+  {
+    "id": "pump-and-jars",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Pump Bottle and Jar Props",
+    "sourceFile": "官网图片/瓶子/9504975d-0817-4da8-83e9-8f30891050c7.jpg",
+    "sourceSha256": "89525671997ede8b147293b19c0ed7d88ca689ae11d2d9675f1db19d5fe8791d",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Pump Bottle and Jar Props.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "bottle-props",
+      "title": "Pump Bottle and Jar Props"
+    }
+  },
+  {
+    "id": "sculpted-cap",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Bottle Props with Sculpted Caps",
+    "sourceFile": "官网图片/瓶子/瓶子图片/微信图片_20261112161814_154_32.jpg",
+    "sourceSha256": "b2f4cbe7c056fc3caf7f1c9e32ec54e11f212ed7b83cdeabe13ca1776e0d4c83",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Bottle Props with Sculpted Caps.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "bottle-props",
+      "title": "Bottle Props with Sculpted Caps"
+    }
+  },
+  {
+    "id": "red-blue-containers",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Red and Blue Container Props",
+    "sourceFile": "官网图片/瓶子/瓶子图片/微信图片_20261112161814_155_32.jpg",
+    "sourceSha256": "ddc715614b06156ada5daf608e5ab83c43a00ba332197d3a7a1cfb8e4681cc6f",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Red and Blue Container Props.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "bottle-props",
+      "title": "Red and Blue Container Props"
+    }
+  },
+  {
+    "id": "tube-and-bottle",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Tube and Bottle Display",
+    "sourceFile": "官网图片/瓶子/瓶子图片/微信图片_20261112161814_158_32.jpg",
+    "sourceSha256": "443dc9e11cbc8a7582b99b019094656dfdcee6d8670611779d66560f91e2cb55",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Tube and Bottle Display.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "bottle-props",
+      "title": "Tube and Bottle Display"
+    }
+  },
+  {
+    "id": "silver-pump",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Silver Pump Bottle Prop",
+    "sourceFile": "官网图片/瓶子/瓶子图片/微信图片_20261112162315_162_32.jpg",
+    "sourceSha256": "359e65b9e78bcb1bd12442f5e8951357d44d04f5bbd872290a2dbe85b7348789",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Silver Pump Bottle Prop.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "bottle-props",
+      "title": "Silver Pump Bottle Prop"
+    }
+  },
+  {
+    "id": "purple-bottles",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Purple Bottle Display Set",
+    "sourceFile": "官网图片/瓶子/bbc54acb-4a26-45b5-8cc0-03fd7b3dc1f0.jpg",
+    "sourceSha256": "687944c37703e45b488e9b7f4f0a56d61959a6cbf7aa4d217cdefa911dfd0dcd",
+    "editing": "Retouch this owner-supplied photograph of a real fabricated product for a sculpture manufacturer's product catalogue. Use a clean, restrained industrial editorial look, square composition, full product in frame with balanced margins, natural even light, neutral white balance, recover glare and shadows, improve clarity. Keep the exact sculpture or prop, proportions, pose, material, colors, finish, bases, count and all existing product artwork and labels. Do not invent logos, shapes, text, features, environments or install sites. Keep the authentic photographed setting, quiet distracting background by subtle tonal cleanup and remove only incidental clutter outside the product. Keep existing project context and don't add people. Do not redraw or redesign the subject. Subject to preserve: Purple Bottle Display Set.",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not exposed",
+    "authorizationDate": "2026-11-12",
+    "product": {
+      "category": "bottle-props",
+      "title": "Purple Bottle Display Set"
+    }
   }
 ]

@@ -13,6 +13,7 @@ let links=0, scriptBytes=0, scriptGzipBytes=0, maxInlineScriptBytes=0, maxInline
 for (const file of files.filter(file=>file.endsWith('.js'))) { const data=await readFile(file); scriptBytes+=data.length; scriptGzipBytes+=gzipSync(data).length; }
 for (const file of files.filter(file=>file.endsWith('.html'))) {
   const html=await readFile(file,'utf8'); const rel=path.relative(dist,file);
+  if (/\bAI[\s-]+generated\b|\/media\/concept-/i.test(html)) errors.push(`Archived design concept leaked into public HTML: ${rel}`);
   if (rel.replaceAll('\\','/') === 'en/index.html') {
     const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1] || '';
     const images = [...main.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map(match => match[1]);

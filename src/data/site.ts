@@ -18,11 +18,11 @@ export const site = {
 };
 export const displayBrand = site.brandName || 'SCULPTURE STUDIO';
 export const media: Record<'hero' | 'workshop' | ProductCategoryId, MediaSlot> = {
-  hero: photo('concept-hero'),
+  hero: photo('hero-waterfront'),
   workshop: photo('workshop-cnc'),
-  fiberglass: photo('concept-frp-cover'),
-  'stainless-steel': photo('concept-steel-cover'),
-  'bottle-props': photo('concept-bottle-cover'),
+  fiberglass: photo('frp-woodland'),
+  'stainless-steel': photo('steel-orbits'),
+  'bottle-props': photo('bottle-pastel'),
 };
 export const materials = [
   { id: 'fiberglass', title: 'Fiberglass / FRP Sculptures', heading: 'Fiberglass / FRP Sculptures', short: 'Fiberglass', description: 'Custom fiberglass sculptures made to your design, dimensions and finish.' },

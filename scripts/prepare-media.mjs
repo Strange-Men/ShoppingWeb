@@ -4,12 +4,14 @@ import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 const root = fileURLToPath(new URL('../',import.meta.url));
 const manifest = JSON.parse(await readFile(path.join(root,'src/data/photography.json'),'utf8'));
+const masters = path.join(root,'src/assets/photos');
+const masterIds = new Set((await readdir(masters)).filter(name => name.endsWith('.webp')).map(name => path.parse(name).name));
 const output = path.join(root,'public/media');
 await mkdir(output,{recursive:true});
 let count=0;
 const expected = new Set();
 for (const item of manifest) {
-  const input=path.join(root,'src/assets/photos',`${item.id}.webp`);
+  const input=path.join(masters,`${item.id}.webp`);
   const metadata=await sharp(input).metadata();
   if(metadata.width!==item.width || metadata.height!==item.height) throw new Error(`Photo dimensions do not match manifest: ${item.id}`);
   const widths=[...new Set([480,800,1200,1600].map(width=>Math.min(width,item.width)))];
@@ -20,9 +22,10 @@ for (const item of manifest) {
     await access(dest);count++;
   }
 }
-// Remove only obsolete generated variants for IDs managed by this manifest.
+// Remove obsolete generated variants, including variants of retired masters.
 for(const name of await readdir(output)) {
-  if (!manifest.some(item => name.startsWith(`${item.id}-`)) || !/^[a-z0-9-]+-\d+\.webp$/.test(name) || expected.has(name)) continue;
+  const match = name.match(/^([a-z0-9-]+)-\d+\.webp$/);
+  if (!match || !masterIds.has(match[1]) || expected.has(name)) continue;
   const obsolete=path.resolve(output,name);
   if(!obsolete.startsWith(path.resolve(output)+path.sep)) throw new Error('Generated media path escaped output directory');
   await unlink(obsolete);

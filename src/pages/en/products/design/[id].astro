@@ -26,12 +26,11 @@ const related = presentationImages(item.category).filter(entry => entry.id !== i
   </div>
   <section class="section case-detail">
     <div class="container detail-grid">
-      <figure class="product-image">
+      <div class="product-image">
         <a href={item.image.source!} aria-label={`View full image of ${item.title}`}>
           <Media image={item.image} eager sizes="(max-width: 899px) 100vw, 620px" />
         </a>
-        <figcaption>{item.concept ? 'AI-generated design concept' : 'Retouched product photograph'}</figcaption>
-      </figure>
+      </div>
       <div class="detail-copy">
         <p class="eyebrow">{category.title}</p>
         <h1>{item.title}</h1>
@@ -53,6 +52,5 @@ const related = presentationImages(item.category).filter(entry => entry.id !== i
 
 <style>
   .product-image a { display:block; cursor:zoom-in; }
-  .product-image figcaption { margin-block-start:10px; font-size:12px; color:var(--muted); }
   .detail-copy .button { margin-block-start:20px; }
 </style>

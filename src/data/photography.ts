@@ -11,7 +11,7 @@ export interface PhotoRecord {
   editing: string;
   focalPoint?: string;
   authorizationDate?: string;
-  kind?: 'concept';
+  product?: { category: ProductCategoryId; title: string };
 }
 export const photoRecords = manifest as PhotoRecord[];
 export function photo(id: string): MediaSlot {
@@ -23,9 +23,7 @@ export function photo(id: string): MediaSlot {
     source: `/media/${id}-${width}.webp`, width,
     height: Math.round(record.height * width / record.width),
     alt: record.alt, rights: 'licensed',
-    credit: record.kind === 'concept'
-      ? 'AI-generated design concept based on NanXuan product categories.'
-      : `Owner-supplied photograph; website use and built-in image retouching authorized ${record.authorizationDate ?? '2026-11-05'}.`,
+    credit: `Owner-supplied photograph; website use authorized ${record.authorizationDate ?? '2026-11-05'}.`,
     variants: widths.map(value => ({ source: `/media/${id}-${value}.webp`, width: value })),
     focalPoint: record.focalPoint || '50% 50%',
   };
@@ -42,24 +40,11 @@ const workshopEntries = [
 export function workshopPhotos() {
   return workshopEntries.map(entry => ({ ...entry, image: photo(entry.id) }));
 }
-export interface PresentationImage { id: string; category: ProductCategoryId; title: string; image: MediaSlot; concept: boolean }
-const galleryEntries = [
-  { id: 'concept-steel-wave', category: 'stainless-steel', title: 'Brushed Stainless Steel Wave Sculpture' },
-  { id: 'concept-frp-crane', category: 'fiberglass', title: 'Fiberglass Crane Sculpture' },
-  { id: 'concept-bottle-perfume', category: 'bottle-props', title: 'Oversized Perfume Bottle Prop' },
-  { id: 'concept-steel-lattice', category: 'stainless-steel', title: 'Open Lattice Stainless Steel Sculpture' },
-  { id: 'concept-frp-manta', category: 'fiberglass', title: 'Fiberglass Manta Ray Sculpture' },
-  { id: 'concept-bottle-pump', category: 'bottle-props', title: 'Oversized Pump Bottle Prop' },
-  { id: 'concept-steel-cover', category: 'stainless-steel', title: 'Folded Stainless Steel Sculpture' },
-  { id: 'concept-frp-cover', category: 'fiberglass', title: 'Geometric Fiberglass Hare Sculpture' },
-  { id: 'concept-bottle-cover', category: 'bottle-props', title: 'Oversized Bottle Display Props' },
-] as const;
+export interface PresentationImage { id: string; category: ProductCategoryId; title: string; image: MediaSlot }
 export function presentationImages(category?: ProductCategoryId): PresentationImage[] {
-  return galleryEntries.filter(item => !category || item.category === category).map(item => ({
-    ...item,
-    image: photo(item.id),
-    concept: photoRecords.find(record => record.id === item.id)?.kind === 'concept',
-  }));
+  return photoRecords.flatMap(({ id, product }) =>
+    product && (!category || product.category === category) ? [{ id, ...product, image: photo(id) }] : []
+  );
 }
 
 export function productPath(item: PresentationImage) {

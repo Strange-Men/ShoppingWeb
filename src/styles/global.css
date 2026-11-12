@@ -370,7 +370,6 @@
   .sculpture-tile .eyebrow { font-size:8px; }
   .sculpture-tile h3 { font-size:21px; }
   .product-card-body .text-link { margin-block-start:auto; padding-block-start:6px; font-size:10px; gap:8px; }
-  .product-image-note { color:var(--muted); font-size:11px; line-height:1.4; }
   .case-previews { margin-block-start:40px; border-block-start:1px solid var(--line); padding-block-start:20px; }
   .case-previews > summary { cursor:pointer; font-size:11px; color:var(--muted); padding-block:12px; }
   .case-previews .case-grid { margin-block-start:20px; }

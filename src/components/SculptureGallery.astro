@@ -14,7 +14,6 @@ const thumbnailSizes = `(max-width: 999px) 50vw, ${threeColumns || items.length 
         <div class="product-card-body">
           <span class="eyebrow">{productCategories.find(category => category.id === item.category)?.title}</span>
           <h3>{item.title}</h3>
-          {item.concept && <span class="product-image-note">AI-generated design concept</span>}
           <span class="text-link">View Details <span aria-hidden="true">↗</span></span>
         </div>
       </a>
