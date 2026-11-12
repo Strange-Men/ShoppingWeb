@@ -1,14 +1,14 @@
 # 定制雕塑海外官网
 
-楠轩雕塑的定制雕塑与瓶子道具展示及询盘网站。英文品牌 **NanXuan**，WhatsApp 与邮箱已配置。当前包含 17 张授权照片母版和 10 张 AI 生成设计示意图。英文版已上线分享预览，繁中和阿语预留。
+楠轩雕塑的定制雕塑与瓶子道具展示及询盘网站。英文品牌 **NanXuan**，WhatsApp 与邮箱已配置。当前包含 22 张授权照片母版和 10 张 AI 生成设计示意图。英文版已上线分享预览，繁中和阿语预留。
 
-当前阶段为 P1 英文素材预览版，更新日期 2026-11-11（Asia/Shanghai）。首页更新了 10 张不同造型图片，产品卡进入对应详情，再连接联系页询价。详细检查见 [本次验收](docs/qa/2026-11-11/README.md)。
+当前阶段为 P1 英文素材预览版。2026-11-12 在关于页新增五张车间实拍和手动图库。详细检查见 [车间图库验收](docs/qa/2026-11-12/README.md)。
 
 v0.3.1 公司标更新：已按业主要求设计“铸形 NX”，替换页头、页脚和浏览器图标，网站整体 UI 保持原样。[设计方案、官方参考与透明文件](docs/BRAND_IDENTITY.md)；需重新导出标志时运行 `pnpm prepare:brand`。
 
 2026-11-05 后续授权：业主要求上线供同事查看的分享预览，覆盖此前“仅本地”的托管限制；仍保持 noindex，不采购域名／服务器，不启用正式案例或正式 SEO。部署状态及换电脑步骤见 [分享预览](docs/SHARED_PREVIEW.md)。
 
-同事可直接访问 [线上英文预览](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/)。本次发布核对了 16 个线上页面与 10 张新图片。
+同事可直接访问 [线上英文预览](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/) 和 [车间图库](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/about/#our-workshop)。
 
 ## 本地启动
 
@@ -29,7 +29,7 @@ pnpm preview
 | `pnpm check` | Astro／TypeScript、内容、咨询链接断言、文档完整性 |
 | `pnpm build` | 占位版构建，随后检查静态内链、元信息、noindex、JS 预算 |
 | `pnpm check:http` | 预览运行时检查 26 个页面入口和 5 个 404 路径 |
-| `pnpm prepare:media` | 从 27 张 WebP 母版生成 87 张响应式派生图 |
+| `pnpm prepare:media` | 从 32 张 WebP 母版生成 105 张响应式派生图 |
 | `pnpm check:media` | 构建并启动预览后检查图片尺寸、体积和 HTTP 加载 |
 | `pnpm check:release` | 正式资料检查；当前应失败并列出缺失项 |
 | `pnpm build:release` | 以正式模式检查后构建；当前被资料门槛阻止，不执行部署 |

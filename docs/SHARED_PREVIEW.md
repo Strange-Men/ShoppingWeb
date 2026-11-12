@@ -6,7 +6,7 @@
 
 源码位于 [Strange-Men/ShoppingWeb](https://github.com/Strange-Men/ShoppingWeb)，当前开发分支 `codex/p1-english-preview`。公司标完成提交为 `7ebe5e720685cf954e8ef9396b7df4fd14ae27c9`；该提交已同步远端，尚未合并 main。后续发布配置与记录随同一分支提交。
 
-27 张图片母版在 `src/assets/photos/`，公司标母版在 `src/assets/brand/`，网页标志与图标在 `public/brand/`，均由 Git 跟踪。构建自动生成 87 张 `public/media/` 派生图。授权照片和生成图的来源及处理方式记录在 `src/data/photography.json`。
+32 张图片母版在 `src/assets/photos/`，公司标母版在 `src/assets/brand/`，网页标志与图标在 `public/brand/`，均由 Git 跟踪。构建自动生成 105 张 `public/media/` 派生图。授权照片和生成图的来源及处理方式记录在 `src/data/photography.json`。
 
 已实际从 GitHub 全新克隆到独立目录，执行 `pnpm install --frozen-lockfile` 与 `pnpm build`：生成 35 张图片、17 HTML，859 个本地链接／资源通过，无旧目录生成文件依赖。本次环境为 Windows、Node 24.22.1、pnpm 11.25.0，不把它写成所有操作系统的兼容性验收。
 
@@ -30,7 +30,9 @@ pnpm preview
 
 **已上线，可直接发给同事：[NanXuan 英文分享预览](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/)**。Sites 部署工具实际返回 succeeded，并在无登录 cookie／token 的 HTTP 和浏览器中确认可访问，不以预期域名代替发布证明。
 
-当前发布版本 **4**，源码提交 `45cbbe3d9fc3f3b6f4d3360608be26c28064c4a6`，部署 ID `appgdep_6af3df955a28819199816f5c0112735b`。首页有 10 张不同的图片，产品目录有 9 个展示详情，三个分类各 3 款。16 个线上页面均返回 200 并保留 noindex，10 张新图可解码且与构建内容逐字节一致。见 [线上结果](qa/2026-11-11/online.json) 与 [本次验收](qa/2026-11-11/README.md)。
+当前发布版本 **5**，源码提交 `e31f590352eceb82c4b8534a8b8220320f60759b`，部署 ID `appgdep_6af577fb45c881919148dabf968f76b7`。关于页包含五张车间实拍和手动轮播。线上关于页返回 200 并保留 noindex，18 张新增 WebP 派生图与本地构建逐字节一致。[车间图库验收](qa/2026-11-12/README.md)。
+
+版本 **4** 更新了首页图与产品详情，源码提交 `45cbbe3d9fc3f3b6f4d3360608be26c28064c4a6`，部署 ID `appgdep_6af3df955a28819199816f5c0112735b`。[版本 4 验收](qa/2026-11-11/README.md)。
 
 版本 3 增加瓶子道具分类及原照片图库，源码提交 `e19172e18993ae22d172bf389e22d28ff93c7098`，部署 ID `appgdep_6aec2f0e4f28819184b5fb489b9c75a4`。[旧版分类截图](qa/2026-11-05/bottle-props.jpg)。
 

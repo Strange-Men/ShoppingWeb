@@ -1,0 +1,139 @@
+{
+  "origin": "https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site",
+  "source": "e31f590352eceb82c4b8534a8b8220320f60759b",
+  "deployment": "appgdep_6af577fb45c881919148dabf968f76b7",
+  "route": "/en/about/",
+  "status": 200,
+  "noindex": true,
+  "hostingScript": true,
+  "matchesBuild": true,
+  "slides": 5,
+  "images": [
+    {
+      "source": "/media/workshop-steel-rings-480.webp",
+      "status": 200,
+      "width": 480,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-steel-rings-800.webp",
+      "status": 200,
+      "width": 800,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-steel-rings-1200.webp",
+      "status": 200,
+      "width": 1200,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-steel-rings-1448.webp",
+      "status": 200,
+      "width": 1448,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-metalwork-480.webp",
+      "status": 200,
+      "width": 480,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-metalwork-800.webp",
+      "status": 200,
+      "width": 800,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-metalwork-1200.webp",
+      "status": 200,
+      "width": 1200,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-metalwork-1447.webp",
+      "status": 200,
+      "width": 1447,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-sculpture-assembly-480.webp",
+      "status": 200,
+      "width": 480,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-sculpture-assembly-800.webp",
+      "status": 200,
+      "width": 800,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-sculpture-assembly-1087.webp",
+      "status": 200,
+      "width": 1087,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-ring-fitting-480.webp",
+      "status": 200,
+      "width": 480,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-ring-fitting-800.webp",
+      "status": 200,
+      "width": 800,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-ring-fitting-1086.webp",
+      "status": 200,
+      "width": 1086,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-display-props-480.webp",
+      "status": 200,
+      "width": 480,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-display-props-800.webp",
+      "status": 200,
+      "width": 800,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-display-props-1200.webp",
+      "status": 200,
+      "width": 1200,
+      "valid": true,
+      "matchesBuild": true
+    },
+    {
+      "source": "/media/workshop-display-props-1448.webp",
+      "status": 200,
+      "width": 1448,
+      "valid": true,
+      "matchesBuild": true
+    }
+  ]
+}
