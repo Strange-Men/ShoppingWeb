@@ -1,0 +1,157 @@
+{
+  "origin": "https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site",
+  "source": "6be9e57888fb7a30551d9798ebd2218424d05265",
+  "deployment": "appgdep_6af5823654248191b72d26bd5426dae6",
+  "pages": [
+    {
+      "route": "/en/products/",
+      "status": 200,
+      "products": 0,
+      "categories": 3,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/fiberglass/",
+      "status": 200,
+      "products": 18,
+      "categories": 0,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/stainless-steel/",
+      "status": 200,
+      "products": 19,
+      "categories": 0,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/bottle-props/",
+      "status": 200,
+      "products": 18,
+      "categories": 0,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/design/concept-frp-cover/",
+      "status": 200,
+      "products": 3,
+      "categories": 0,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/design/concept-frp-crane/",
+      "status": 200,
+      "products": 3,
+      "categories": 0,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/design/concept-frp-manta/",
+      "status": 200,
+      "products": 3,
+      "categories": 0,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/design/concept-hero/",
+      "status": 200,
+      "products": 3,
+      "categories": 0,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/design/concept-steel-cover/",
+      "status": 200,
+      "products": 3,
+      "categories": 0,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/design/concept-steel-wave/",
+      "status": 200,
+      "products": 3,
+      "categories": 0,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/design/concept-steel-lattice/",
+      "status": 200,
+      "products": 3,
+      "categories": 0,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/design/concept-bottle-cover/",
+      "status": 200,
+      "products": 3,
+      "categories": 0,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/design/concept-bottle-perfume/",
+      "status": 200,
+      "products": 3,
+      "categories": 0,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/design/concept-bottle-pump/",
+      "status": 200,
+      "products": 3,
+      "categories": 0,
+      "matchesBuild": true
+    }
+  ],
+  "images": [
+    {
+      "route": "/media/concept-frp-cover-1200.webp",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/concept-frp-crane-1200.webp",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/concept-frp-manta-1200.webp",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/concept-hero-1600.webp",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/concept-steel-cover-1200.webp",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/concept-steel-wave-1200.webp",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/concept-steel-lattice-1200.webp",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/concept-bottle-cover-1200.webp",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/concept-bottle-perfume-1200.webp",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/concept-bottle-pump-1200.webp",
+      "status": 200,
+      "matchesBuild": true
+    }
+  ]
+}
