@@ -2,24 +2,31 @@
 import { copy } from '../../../i18n/en';
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import PageHeading from '../../../components/PageHeading.astro';
-import CaseCard from '../../../components/CaseCard.astro';
 import Inquiry from '../../../components/Inquiry.astro';
-import SculptureGallery from '../../../components/SculptureGallery.astro';
-import { presentationImages } from '../../../data/photography';
-import { visibleCases } from '../../../data/cases';
-import { productCategories, isPreview } from '../../../data/site';
+import ProductCategoryGrid from '../../../components/ProductCategoryGrid.astro';
 ---
 <SiteLayout title={copy.work.title} description={copy.work.description}>
   <PageHeading eyebrow={copy.work.eyebrow} title={copy.work.heading} description={copy.work.lead} />
-  <section class="section listing-section">
+  <section class="section materials-section category-overview">
     <div class="container">
-      <nav class="material-tabs" aria-label="Browse by category">
-        <a href="/en/products/" aria-current="page">All Products</a>
-        {productCategories.map(category => <a href={`/en/products/${category.id}/`}>{category.title}</a>)}
-      </nav>
-      <SculptureGallery items={presentationImages()} threeColumns />
-      {isPreview && <details class="case-previews"><summary>Case detail previews · Unpublished</summary><div class="case-grid">{visibleCases().map(item => <CaseCard item={item} />)}</div></details>}
+      <h2 class="sr-only">Product Categories</h2>
+      <ProductCategoryGrid />
     </div>
   </section>
   <Inquiry />
 </SiteLayout>
+
+<style>
+  @media (max-width:599px) {
+    .category-overview { padding-block:28px; }
+    .category-overview :global(.material-grid) { gap:12px; }
+    .category-overview :global(.material-card) {
+      grid-template-columns:clamp(76px,24vw,112px) minmax(0,1fr);
+      grid-template-rows:auto;
+      align-items:center;
+    }
+    .category-overview :global(.material-card-body) { padding:14px; }
+    .category-overview :global(.material-card h3) { margin-block:0 6px; font-size:19px; }
+    .category-overview :global(.material-card .text-link) { margin-block-start:8px; }
+  }
+</style>

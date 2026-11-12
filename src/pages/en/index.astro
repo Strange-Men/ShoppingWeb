@@ -1,7 +1,7 @@
 ---
 import { copy } from '../../i18n/en';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import Media from '../../components/Media.astro';
+import ProductCategoryGrid from '../../components/ProductCategoryGrid.astro';
 import SculptureGallery from '../../components/SculptureGallery.astro';
 import Inquiry from '../../components/Inquiry.astro';
 import Process from '../../components/Process.astro';
@@ -34,18 +34,7 @@ const gallery = productCategories.flatMap(({ id }) => presentationImages(id)
   <section class="section materials-section">
     <div class="container">
       <div class="section-heading"><h2>{copy.home.materials}</h2><div class="gold-rule"></div></div>
-      <div class="material-grid">
-        {productCategories.map(category => (
-          <a href={`/en/products/${category.id}/`} class="material-card">
-            <Media image={media[category.id]} sizes="(max-width: 599px) 100vw, (max-width: 1199px) 33vw, 400px" />
-            <div class="material-card-body">
-              <h3>{category.title}</h3>
-              <p>{category.description}</p>
-              <span class="text-link">View Products <span aria-hidden="true">↗</span></span>
-            </div>
-          </a>
-        ))}
-      </div>
+      <ProductCategoryGrid />
     </div>
   </section>
   <section class="section capabilities-section">

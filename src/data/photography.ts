@@ -11,6 +11,7 @@ export interface PhotoRecord {
   editing: string;
   focalPoint?: string;
   authorizationDate?: string;
+  kind?: 'concept';
   product?: { category: ProductCategoryId; title: string };
 }
 export const photoRecords = manifest as PhotoRecord[];
@@ -23,7 +24,9 @@ export function photo(id: string): MediaSlot {
     source: `/media/${id}-${width}.webp`, width,
     height: Math.round(record.height * width / record.width),
     alt: record.alt, rights: 'licensed',
-    credit: `Owner-supplied photograph; website use authorized ${record.authorizationDate ?? '2026-11-05'}.`,
+    credit: record.kind === 'concept'
+      ? 'NanXuan product visualization.'
+      : `Owner-supplied photograph; website use authorized ${record.authorizationDate ?? '2026-11-05'}.`,
     variants: widths.map(value => ({ source: `/media/${id}-${value}.webp`, width: value })),
     focalPoint: record.focalPoint || '50% 50%',
   };

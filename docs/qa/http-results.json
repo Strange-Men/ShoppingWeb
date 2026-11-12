@@ -81,6 +81,66 @@
       "pass": true
     },
     {
+      "route": "/en/products/design/concept-bottle-cover/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/design/concept-bottle-perfume/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/design/concept-bottle-pump/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/design/concept-frp-cover/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/design/concept-frp-crane/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/design/concept-frp-manta/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/design/concept-hero/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/design/concept-steel-cover/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/design/concept-steel-lattice/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/en/products/design/concept-steel-wave/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
       "route": "/en/products/design/courtyard-fountain/",
       "status": 200,
       "actual": 200,

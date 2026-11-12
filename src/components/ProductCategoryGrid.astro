@@ -1,0 +1,17 @@
+---
+import { media, productCategories } from '../data/site';
+import { presentationImages } from '../data/photography';
+import Media from './Media.astro';
+---
+<nav class="material-grid" aria-label="Product categories">
+  {productCategories.map(category => (
+    <a href={`/en/products/${category.id}/`} class="material-card">
+      <Media image={media[category.id]} sizes="(max-width: 599px) 100vw, (max-width: 1199px) 33vw, 400px" />
+      <div class="material-card-body">
+        <h3>{category.title}</h3>
+        <p>{category.description}</p>
+        <span class="text-link">View {presentationImages(category.id).length} Products <span aria-hidden="true">↗</span></span>
+      </div>
+    </a>
+  ))}
+</nav>

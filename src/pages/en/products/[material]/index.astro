@@ -20,7 +20,7 @@ const cases = visibleCases().filter(item => item.material === category.id);
   <section class="section listing-section">
     <div class="container">
       <nav class="material-tabs" aria-label="Browse by category">
-        <a href="/en/products/">All Products</a>
+        <a href="/en/products/">Product Categories</a>
         {productCategories.map(entry => <a href={`/en/products/${entry.id}/`} aria-current={entry.id === category.id ? 'page' : undefined}>{entry.title}</a>)}
       </nav>
       <div class="listing-meta"><p>{photos.length} products</p><a href="/en/contact/" class="text-link">Get Quote <span aria-hidden="true">↗</span></a></div>
