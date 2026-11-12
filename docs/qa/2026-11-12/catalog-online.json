@@ -1,0 +1,315 @@
+{
+  "origin": "https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site",
+  "source": "f90e0808637dfb5da439556bdfc0b851adb7c177",
+  "deployment": "appgdep_6af57efbe1ec81919849d26ea655cb60",
+  "pages": [
+    {
+      "route": "/en/",
+      "status": 200,
+      "cards": 6,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/",
+      "status": 200,
+      "cards": 45,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/fiberglass/",
+      "status": 200,
+      "cards": 15,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/stainless-steel/",
+      "status": 200,
+      "cards": 15,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/bottle-props/",
+      "status": 200,
+      "cards": 15,
+      "matchesBuild": true
+    },
+    {
+      "route": "/en/products/design/tube-display/",
+      "status": 200,
+      "cards": 3,
+      "matchesBuild": true
+    }
+  ],
+  "photos": [
+    {
+      "route": "/media/bottle-pastel-1200.webp",
+      "status": 200,
+      "bytes": 31108,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/bottle-display-1200.webp",
+      "status": 200,
+      "bytes": 71522,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/bottle-cups-1200.webp",
+      "status": 200,
+      "bytes": 87826,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/steel-ribbon-1200.webp",
+      "status": 200,
+      "bytes": 217986,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/steel-orbits-1200.webp",
+      "status": 200,
+      "bytes": 254004,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/frp-mosaic-1200.webp",
+      "status": 200,
+      "bytes": 117624,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/frp-woodland-1200.webp",
+      "status": 200,
+      "bytes": 61410,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/lucky-cat-1200.webp",
+      "status": 200,
+      "bytes": 242212,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/red-elephant-1200.webp",
+      "status": 200,
+      "bytes": 281596,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/outdoor-qilin-1200.webp",
+      "status": 200,
+      "bytes": 223594,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/silver-astronaut-1200.webp",
+      "status": 200,
+      "bytes": 94898,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/robot-quartet-1200.webp",
+      "status": 200,
+      "bytes": 130818,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/crowned-character-1200.webp",
+      "status": 200,
+      "bytes": 149814,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/sailor-characters-1200.webp",
+      "status": 200,
+      "bytes": 152434,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/decorative-bee-1200.webp",
+      "status": 200,
+      "bytes": 110822,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/diamond-jester-1200.webp",
+      "status": 200,
+      "bytes": 119558,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/winged-horse-1200.webp",
+      "status": 200,
+      "bytes": 151604,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/dinosaur-figures-1200.webp",
+      "status": 200,
+      "bytes": 108654,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/patterned-eggs-1200.webp",
+      "status": 200,
+      "bytes": 113302,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/white-lion-1200.webp",
+      "status": 200,
+      "bytes": 89298,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/courtyard-fountain-1200.webp",
+      "status": 200,
+      "bytes": 218270,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/flowing-lines-1200.webp",
+      "status": 200,
+      "bytes": 335320,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/antler-form-1200.webp",
+      "status": 200,
+      "bytes": 180690,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/nested-arches-1200.webp",
+      "status": 200,
+      "bytes": 279536,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/branching-tree-1200.webp",
+      "status": 200,
+      "bytes": 209624,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/metal-leaves-1200.webp",
+      "status": 200,
+      "bytes": 183946,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/layered-leaf-1200.webp",
+      "status": 200,
+      "bytes": 239428,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/sweeping-fountain-1200.webp",
+      "status": 200,
+      "bytes": 163252,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/arched-waterfall-1200.webp",
+      "status": 200,
+      "bytes": 224698,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/sphere-spiral-1200.webp",
+      "status": 200,
+      "bytes": 273254,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/twin-waves-1200.webp",
+      "status": 200,
+      "bytes": 174538,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/plaza-ring-1200.webp",
+      "status": 200,
+      "bytes": 181378,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/globe-ring-1200.webp",
+      "status": 200,
+      "bytes": 237094,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/tube-display-1200.webp",
+      "status": 200,
+      "bytes": 135544,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/tall-bottle-1200.webp",
+      "status": 200,
+      "bytes": 75560,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/dropper-pair-1200.webp",
+      "status": 200,
+      "bytes": 72896,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/colored-jars-1200.webp",
+      "status": 200,
+      "bytes": 104426,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/red-cylinder-1200.webp",
+      "status": 200,
+      "bytes": 71238,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/blue-jar-set-1200.webp",
+      "status": 200,
+      "bytes": 134690,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/pump-and-jars-1200.webp",
+      "status": 200,
+      "bytes": 107218,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/sculpted-cap-1200.webp",
+      "status": 200,
+      "bytes": 104182,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/red-blue-containers-1200.webp",
+      "status": 200,
+      "bytes": 61060,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/tube-and-bottle-1200.webp",
+      "status": 200,
+      "bytes": 94016,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/silver-pump-1200.webp",
+      "status": 200,
+      "bytes": 90940,
+      "matchesBuild": true
+    },
+    {
+      "route": "/media/purple-bottles-1200.webp",
+      "status": 200,
+      "bytes": 126920,
+      "matchesBuild": true
+    }
+  ]
+}
