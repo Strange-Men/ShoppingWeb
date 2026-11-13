@@ -1,11 +1,13 @@
 import manifest from './photography.json' with { type: 'json' };
 import type { MediaSlot, ProductCategoryId } from './types';
 export const fiberglassGroups = [
+  { id: 'other', title: 'Character Figures & Other Sculptures' },
+  { id: 'robots', title: 'Fiberglass Robots' },
   { id: 'electroplated', title: 'Electroplated Fiberglass' },
   { id: 'bronze-finish', title: 'Bronze Finish Fiberglass' },
-  { id: 'robots', title: 'Fiberglass Robots' },
-  { id: 'other', title: 'Other Fiberglass Sculptures' },
 ] as const;
+
+export const fiberglassLeadFigures = ['sailor-characters', 'frp-woodland', 'rabbit-and-duck', 'crowned-character'] as const;
 
 interface ProductPhoto {
   category: ProductCategoryId;

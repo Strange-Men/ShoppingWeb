@@ -5,7 +5,7 @@ import PageHeading from '../../../../components/PageHeading.astro';
 import CaseCard from '../../../../components/CaseCard.astro';
 import Inquiry from '../../../../components/Inquiry.astro';
 import SculptureGallery from '../../../../components/SculptureGallery.astro';
-import { fiberglassGroups, presentationImages } from '../../../../data/photography';
+import { fiberglassGroups, fiberglassLeadFigures, presentationImages } from '../../../../data/photography';
 import { productCategories, isPreview } from '../../../../data/site';
 import { visibleCases } from '../../../../data/cases';
 export function getStaticPaths() {
@@ -14,8 +14,11 @@ export function getStaticPaths() {
 const { category } = Astro.props;
 const photos = presentationImages(category.id);
 const cases = visibleCases().filter(item => item.material === category.id);
+const leadOrder = new Map<string, number>(fiberglassLeadFigures.map((id, index) => [id, index]));
+const rank = (id: string) => leadOrder.get(id) ?? leadOrder.size;
+const fiberglassPhotos = category.id === 'fiberglass' ? photos.toSorted((a, b) => rank(a.id) - rank(b.id)) : [];
 const groups = category.id === 'fiberglass'
-  ? fiberglassGroups.map(group => ({ ...group, items: photos.filter(item => (item.finish ?? 'other') === group.id) })).filter(group => group.items.length)
+  ? fiberglassGroups.map(group => ({ ...group, items: fiberglassPhotos.filter(item => (item.finish ?? 'other') === group.id) })).filter(group => group.items.length)
   : [{ id: 'product-gallery', title: 'Product Gallery', items: photos }];
 const views = [
   { id: 'factory', title: 'Product & Factory Photos' },
