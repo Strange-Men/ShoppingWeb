@@ -28,9 +28,11 @@ pnpm preview
 
 采用 Sites 静态托管，项目 ID 为 `appgprj_6aebf877e3008191b2b13be49d44e610`，配置见 [.openai/hosting.json](../.openai/hosting.json)。权限为 public，即持链接可访问；noindex 是索引控制，不是访问密码。没有发送邀请、询盘或邮件。
 
-**已上线，可直接发给同事：[NanXuan 英文分享预览](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/)**。Sites 部署工具实际返回 succeeded，并在无登录 cookie／token 的 HTTP 和浏览器中确认可访问，不以预期域名代替发布证明。
+**已上线，可直接发给同事。** [双语入口](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/) · [English](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/) · [繁體中文](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/zh-hant/)
 
-当前发布版本 **8**，源码提交 `d0a57640964e0fdb72e2765a73e4fa5784cacfea`，部署 ID `appgdep_6af6751ca4a48191a05d2ff9da751ff1`。三个分类共 232 个产品展示条目，含 99 项现场照片。线上检查覆盖产品总览、三个分类、四个玻璃钢分组、八个应用示意及代表性图片。[产品图库验收](qa/2026-11-13/catalog-expansion.md) · [线上记录](qa/2026-11-13/catalog-online.json)
+当前发布版本 **9**，源码提交 `ae41e162934682ff09eb7931225b24d16a280053`，部署 ID `appgdep_6af6b7908448819198a6250390795ba4`。英文和繁体中文可在对应页面之间切换，包含新标志、浏览器图标和产品卡片对齐修正。匿名 HTTP 检查覆盖 9 个页面和 3 个图片资源。[双语验收](qa/2026-11-13/bilingual-preview.md) · [线上记录](qa/2026-11-13/bilingual-online.json)
+
+版本 **8** 扩充了三个分类，合计 232 个产品展示条目，含 99 项现场照片。源码提交 `d0a57640964e0fdb72e2765a73e4fa5784cacfea`，部署 ID `appgdep_6af6751ca4a48191a05d2ff9da751ff1`。[产品图库验收](qa/2026-11-13/catalog-expansion.md) · [线上记录](qa/2026-11-13/catalog-online.json)
 
 版本 **7** 将 Products 总览改为三个分类入口，分类页共有 55 张图。源码提交 `6be9e57888fb7a30551d9798ebd2218424d05265`，部署 ID `appgdep_6af5823654248191b72d26bd5426dae6`。[产品图库验收](qa/2026-11-12/catalog.md)。
 

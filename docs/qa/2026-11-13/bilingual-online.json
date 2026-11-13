@@ -1,0 +1,86 @@
+{
+  "origin": "https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site",
+  "checkedAt": "2026-11-13T07:09:45.943Z",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "lang": "en",
+      "oppositePath": "/zh-hant/",
+      "noindex": true
+    },
+    {
+      "path": "/en/",
+      "status": 200,
+      "lang": "en",
+      "oppositePath": "/zh-hant/",
+      "noindex": true
+    },
+    {
+      "path": "/zh-hant/",
+      "status": 200,
+      "lang": "zh-Hant",
+      "oppositePath": "/en/",
+      "noindex": true
+    },
+    {
+      "path": "/en/products/",
+      "status": 200,
+      "lang": "en",
+      "oppositePath": "/zh-hant/products/",
+      "noindex": true
+    },
+    {
+      "path": "/zh-hant/products/",
+      "status": 200,
+      "lang": "zh-Hant",
+      "oppositePath": "/en/products/",
+      "noindex": true
+    },
+    {
+      "path": "/zh-hant/products/fiberglass/",
+      "status": 200,
+      "lang": "zh-Hant",
+      "oppositePath": "/en/products/fiberglass/",
+      "noindex": true
+    },
+    {
+      "path": "/en/products/design/bottle-pastel/",
+      "status": 200,
+      "lang": "en",
+      "oppositePath": "/zh-hant/products/design/bottle-pastel/",
+      "noindex": true
+    },
+    {
+      "path": "/zh-hant/products/design/bottle-pastel/",
+      "status": 200,
+      "lang": "zh-Hant",
+      "oppositePath": "/en/products/design/bottle-pastel/",
+      "noindex": true
+    },
+    {
+      "path": "/zh-hant/contact/",
+      "status": 200,
+      "lang": "zh-Hant",
+      "oppositePath": "/en/contact/",
+      "noindex": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/brand/nanxuan-favicon-32.png",
+      "status": 200,
+      "sha256": "3b659fbbf8a98a53ea3fba3f8ccb94d6575e5a902bcd80d400d0790f819ff939"
+    },
+    {
+      "path": "/brand/nx-mark-128.webp",
+      "status": 200,
+      "sha256": "2c63ec056ba6fc3c84b96b953eef8eafa2843904e3b662541826a8d148825f4d"
+    },
+    {
+      "path": "/media/frp-woodland-480.webp",
+      "status": 200,
+      "sha256": "712de7d83fc9a528ed8bfba05ba526c9dd811b93007d0a27ba7fd573e0d6d91d"
+    }
+  ]
+}
