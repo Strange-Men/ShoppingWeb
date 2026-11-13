@@ -4,7 +4,7 @@
 
 ## 仓库与图片完整性
 
-源码位于 [Strange-Men/ShoppingWeb](https://github.com/Strange-Men/ShoppingWeb)，当前开发分支 `codex/p1-english-preview`。公司标完成提交为 `7ebe5e720685cf954e8ef9396b7df4fd14ae27c9`；该提交已同步远端，尚未合并 main。后续发布配置与记录随同一分支提交。
+源码位于 [Strange-Men/ShoppingWeb](https://github.com/Strange-Men/ShoppingWeb)，默认分支 `main` 包含双语站点和完整开发历史。每次开发完成并通过相关检查后，提交改动并推送到 GitHub；通过开发分支交付时，将已验收的改动合入 `main`。
 
 252 张在用图片母版位于 `src/assets/photos/`，公司标母版位于 `src/assets/brand/`，网页标志与图标位于 `public/brand/`，均由 Git 跟踪。构建自动生成 773 张 `public/media/` 派生图。图片来源记录在 `src/data/photography.json`。
 
@@ -15,14 +15,20 @@
 新电脑安装上述 Node／pnpm 后：
 
 ```powershell
-git clone --branch codex/p1-english-preview --single-branch https://github.com/Strange-Men/ShoppingWeb.git ShoppingWeb
+git clone https://github.com/Strange-Men/ShoppingWeb.git ShoppingWeb
 Set-Location ShoppingWeb
 pnpm install --frozen-lockfile
 pnpm build
 pnpm preview
 ```
 
-打开 `http://127.0.0.1:4321/en/`。已有 checkout 则先确认分支并正常 pull，不覆盖未提交改动。开发时可用 `pnpm dev`，也会先生成图片。不要只拉 main 后误以为最新网页丢失。
+打开 `http://127.0.0.1:4321/en/`。已有 checkout 可在 `main` 上运行 `git pull --ff-only`。开发时可用 `pnpm dev`，也会先生成图片。
+
+## Netlify 分享部署
+
+2026-11-13 已将提交 `cb5d629` 的双语静态产物发布到 Netlify 免费团队。[双语入口](https://nanxuan-sculpture.netlify.app/) · [English](https://nanxuan-sculpture.netlify.app/en/) · [繁體中文](https://nanxuan-sculpture.netlify.app/zh-hant/) · [部署记录](https://app.netlify.com/projects/nanxuan-sculpture/deploys/6af6be7be4619553381a7579)
+
+公开访问检查通过，覆盖根路径、双语首页、产品总览、联系页及一张产品图片。两个联系页均包含 WhatsApp 链接。Netlify 使用手动部署，GitHub push 后需另行发布新的 `dist/`。
 
 ## 分享部署
 
