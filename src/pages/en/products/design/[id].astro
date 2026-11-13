@@ -3,7 +3,7 @@ import SiteLayout from '../../../../layouts/SiteLayout.astro';
 import Media from '../../../../components/Media.astro';
 import SculptureGallery from '../../../../components/SculptureGallery.astro';
 import { productCategories } from '../../../../data/site';
-import { presentationImages } from '../../../../data/photography';
+import { applicationImages, presentationImages } from '../../../../data/photography';
 import { copy } from '../../../../i18n/en';
 
 export function getStaticPaths() {
@@ -14,6 +14,7 @@ const { item } = Astro.props;
 const category = productCategories.find(entry => entry.id === item.category)!;
 const categoryPath = `/en/products/${category.id}/`;
 const related = presentationImages(item.category).filter(entry => entry.id !== item.id).slice(0, 3);
+const scenes = applicationImages(item.id);
 ---
 <SiteLayout title={item.title} description={`${item.title} from NanXuan. ${category.description}`} noindex>
   <div class="container">
@@ -41,6 +42,21 @@ const related = presentationImages(item.category).filter(entry => entry.id !== i
       </div>
     </div>
   </section>
+  {scenes.length > 0 && (
+    <section class="section application-section">
+      <div class="container">
+        <div class="section-heading"><h2>Application Ideas</h2></div>
+        {scenes.map(scene => (
+          <figure>
+            <a href={scene.source!} aria-label={`View full image: ${scene.alt}`}>
+              <Media image={scene} sizes="(max-width: 899px) 100vw, 1080px" />
+            </a>
+            <figcaption>{scene.alt}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  )}
   <section class="section">
     <div class="container">
       <div class="section-heading"><h2>Related Products</h2></div>
@@ -51,6 +67,10 @@ const related = presentationImages(item.category).filter(entry => entry.id !== i
 </SiteLayout>
 
 <style>
+  .application-section { background:var(--paper); }
+  .application-section figure { max-inline-size:1080px; margin-inline:auto; }
+  .application-section a { display:block; cursor:zoom-in; }
+  .application-section figcaption { margin-block-start:12px; color:var(--muted); }
   .product-image a { display:block; cursor:zoom-in; }
   .detail-copy .button { margin-block-start:20px; }
 </style>

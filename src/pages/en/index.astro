@@ -9,7 +9,7 @@ import HomeHero from '../../components/HomeHero.astro';
 import { media, productCategories, capabilities, site } from '../../data/site';
 import { presentationImages } from '../../data/photography';
 const gallery = productCategories.flatMap(({ id }) => presentationImages(id)
-  .filter(item => item.image.source !== media[id].source)
+  .filter(item => item.image.source !== media[id].source && item.image.source !== media.hero.source)
   .slice(0, 2));
 ---
 <SiteLayout title={copy.home.title} description={copy.home.description}>

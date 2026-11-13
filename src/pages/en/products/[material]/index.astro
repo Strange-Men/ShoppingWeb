@@ -5,7 +5,7 @@ import PageHeading from '../../../../components/PageHeading.astro';
 import CaseCard from '../../../../components/CaseCard.astro';
 import Inquiry from '../../../../components/Inquiry.astro';
 import SculptureGallery from '../../../../components/SculptureGallery.astro';
-import { presentationImages } from '../../../../data/photography';
+import { fiberglassGroups, presentationImages } from '../../../../data/photography';
 import { productCategories, isPreview } from '../../../../data/site';
 import { visibleCases } from '../../../../data/cases';
 export function getStaticPaths() {
@@ -14,6 +14,21 @@ export function getStaticPaths() {
 const { category } = Astro.props;
 const photos = presentationImages(category.id);
 const cases = visibleCases().filter(item => item.material === category.id);
+const groups = category.id === 'fiberglass'
+  ? fiberglassGroups.map(group => ({ ...group, items: photos.filter(item => (item.finish ?? 'other') === group.id) })).filter(group => group.items.length)
+  : [{ id: 'product-gallery', title: 'Product Gallery', items: photos }];
+const views = [
+  { id: 'factory', title: 'Product & Factory Photos' },
+  { id: 'site', title: 'On-site Photos' },
+] as const;
+const galleryGroups = groups.map(group => ({
+  ...group,
+  views: views.map(view => ({
+    ...view,
+    anchor: `${group.id}-${view.id}`,
+    items: group.items.filter(item => (item.view ?? 'factory') === view.id),
+  })).filter(view => view.items.length),
+}));
 ---
 <SiteLayout title={category.heading} description={category.description}>
   <PageHeading eyebrow="Made to Order" title={category.heading} description={category.description} />
@@ -24,10 +39,40 @@ const cases = visibleCases().filter(item => item.material === category.id);
         {productCategories.map(entry => <a href={`/en/products/${entry.id}/`} aria-current={entry.id === category.id ? 'page' : undefined}>{entry.title}</a>)}
       </nav>
       <div class="listing-meta"><p>{photos.length} products</p><a href="/en/contact/" class="text-link">Get Quote <span aria-hidden="true">↗</span></a></div>
-      <SculptureGallery items={photos} />
+      {category.id === 'fiberglass' && (
+        <nav class="material-tabs gallery-navigation" aria-label="Fiberglass product groups">
+          {groups.map(group => <a href={`#${group.id}`}>{group.title}</a>)}
+        </nav>
+      )}
+      {galleryGroups.map(group => (
+        <section class="catalog-group" id={group.id} aria-labelledby={`${group.id}-heading`}>
+          <h2 id={`${group.id}-heading`}>{group.title}</h2>
+          {group.views.length > 1 && (
+            <nav class="view-navigation" aria-label={`${group.title} photo types`}>
+              {group.views.map(view => <a href={`#${view.anchor}`}>{view.title} ({view.items.length})</a>)}
+            </nav>
+          )}
+          {group.views.map(view => (
+            <div class="catalog-view" id={view.anchor}>
+              <h3>{view.title}</h3>
+              <SculptureGallery items={view.items} headingLevel={4} />
+            </div>
+          ))}
+        </section>
+      ))}
       {isPreview && cases.length > 0 && <details class="case-previews"><summary>Case detail previews · Unpublished</summary><div class="case-grid">{cases.map(item => <CaseCard item={item} />)}</div></details>}
       <div class="material-note"><h2>{copy.work.materialNoteTitle}</h2><p>{copy.work.materialNote}</p></div>
     </div>
   </section>
   <Inquiry />
 </SiteLayout>
+
+<style>
+  .gallery-navigation { justify-content:flex-start; }
+  .catalog-group { margin-block:44px; }
+  .catalog-group + .catalog-group { border-block-start:1px solid var(--line); padding-block-start:44px; }
+  .catalog-view { margin-block-start:24px; }
+  .catalog-view > h3 { margin-block-end:16px; }
+  .view-navigation { display:flex; flex-wrap:wrap; gap:8px 18px; margin-block-start:12px; font-size:14px; }
+  .view-navigation a { text-decoration:underline; text-underline-offset:4px; }
+</style>

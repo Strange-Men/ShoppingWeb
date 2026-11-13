@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { site, media, materials, productCategories, isPreview } from '../src/data/site.ts';
 import { cases, visibleCases, casePath } from '../src/data/cases.ts';
-import { presentationImages, workshopPhotos } from '../src/data/photography.ts';
+import { applicationImages, photoRecords, presentationImages, workshopPhotos } from '../src/data/photography.ts';
 import { publicOrigin, inquiryLinks, socialUrl } from '../src/lib/inquiry.ts';
 const release = process.argv.includes('--production') || !isPreview;
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -41,9 +41,17 @@ if (site.canonicalOrigin) assert(publicOrigin(site.canonicalOrigin), 'Canonical 
 const slots = [
   ...Object.entries(media),
   ...workshopPhotos().map(item => [item.id, item.image]),
-  ...presentationImages().map(item => [`presentation/${item.id}`, item.image]),
+  ...presentationImages().flatMap(item => [
+    [`presentation/${item.id}`, item.image],
+    ...applicationImages(item.id).map(image => [`application/${item.id}`, image]),
+  ]),
   ...cases.flatMap(item => item.images.map((image,index) => [`${item.id}/${index}`,image])),
 ];
+const productSources = photoRecords.filter(item => item.product && item.sourceSha256).map(item => item.sourceSha256);
+assert(new Set(productSources).size === productSources.length, 'Duplicate source photo in product catalog.');
+for (const item of photoRecords.filter(record => record.sceneFor)) {
+  assert(photoRecords.some(record => record.id === item.sceneFor && record.product), `Unlinked application image: ${item.id}`);
+}
 for (const [id,image] of slots) {
   assert(image.width > 0 && image.height > 0 && image.alt.trim(), `Image needs dimensions and alt: ${id}`);
   if (image.source) {

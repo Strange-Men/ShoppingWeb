@@ -2,7 +2,7 @@
 
 楠轩雕塑的定制雕塑与瓶子道具展示及询盘网站。英文品牌 **NanXuan**，WhatsApp 与邮箱已配置。英文版已上线分享预览，繁中和阿语预留。
 
-当前阶段为 P1 英文素材预览版。Products 总览提供三个分类入口，分类页展示玻璃钢 18 张、不锈钢 19 张、瓶子道具 18 张。验收见 [产品图库](docs/qa/2026-11-12/catalog.md) 和 [车间图库](docs/qa/2026-11-12/README.md)。
+当前阶段为 P1 英文素材预览版。Products 总览提供三个分类入口，分类页展示玻璃钢 149 项、不锈钢 43 项、瓶子道具 40 项。玻璃钢可按电镀、仿铜、机器人及其他造型浏览，各类图库区分产品及工厂照片与现场照片。验收见 [产品图库](docs/qa/2026-11-13/catalog-expansion.md) 和 [车间图库](docs/qa/2026-11-12/README.md)。
 
 v0.3.1 公司标更新：已按业主要求设计“铸形 NX”，替换页头、页脚和浏览器图标，网站整体 UI 保持原样。[设计方案、官方参考与透明文件](docs/BRAND_IDENTITY.md)；需重新导出标志时运行 `pnpm prepare:brand`。
 
@@ -28,8 +28,8 @@ pnpm preview
 | --- | --- |
 | `pnpm check` | Astro／TypeScript、内容、咨询链接断言、文档完整性 |
 | `pnpm build` | 占位版构建，随后检查静态内链、元信息、noindex、JS 预算 |
-| `pnpm check:http` | 预览运行时检查 72 个页面入口和 5 个 404 路径 |
-| `pnpm prepare:media` | 从 70 张在用 WebP 母版生成 219 张响应式派生图 |
+| `pnpm check:http` | 预览运行时检查 249 个页面入口和 5 个 404 路径 |
+| `pnpm prepare:media` | 从 252 张在用 WebP 母版生成 773 张响应式派生图 |
 | `pnpm check:media` | 构建并启动预览后检查图片尺寸、体积和 HTTP 加载 |
 | `pnpm check:release` | 正式资料检查；当前应失败并列出缺失项 |
 | `pnpm build:release` | 以正式模式检查后构建；当前被资料门槛阻止，不执行部署 |
@@ -38,7 +38,7 @@ pnpm preview
 
 ## 已实现页面与配置
 
-首页 `/en/`、关于 `/en/about/`、产品分类总览 `/en/products/`、玻璃钢 `/en/products/fiberglass/`、不锈钢 `/en/products/stainless-steel/`、瓶子道具 `/en/products/bottle-props/`、55 个产品展示详情 `/en/products/design/[id]/`、8 个原有案例模板、联系 `/en/contact/` 和隐私 `/en/privacy/`。
+首页 `/en/`、关于 `/en/about/`、产品分类总览 `/en/products/`、玻璃钢 `/en/products/fiberglass/`、不锈钢 `/en/products/stainless-steel/`、瓶子道具 `/en/products/bottle-props/`、232 个产品展示详情 `/en/products/design/[id]/`、8 个原有案例模板、联系 `/en/contact/` 和隐私 `/en/privacy/`。
 
 - [品牌、图片、账号和服务范围](src/data/site.ts)：NanXuan 与主要咨询账号已确认；其他空值保留占位。
 - [图片清单](src/data/photography.json)和[素材处理说明](docs/IMAGE_ASSETS.md)：来源、尺寸、编辑记录及焦点集中维护；[母版目录](src/assets/photos)随 Git 提交。`dev`、`check`、`build` 自动生成 `public/media/`，派生图不入库；克隆后不需要访问原始 Alan 文件夹。
@@ -72,7 +72,7 @@ pnpm preview
 
 Astro 7.4.5 静态生成 + TypeScript 6.0.3 + 原生 CSS + 仓库内类型化内容数据；已提交 pnpm 锁文件。未来由腾讯云 Linux 与 Nginx 提供静态产物，运行时不需要业务后端、数据库、WordPress 或 Node 服务。版本依据和取舍见[架构](docs/ARCHITECTURE.md)。
 
-第一版仅本地预览 `/en/`；繁中与阿语在语言卡片中标明尚未上线，译文完成后独立发布。两类材料为 Fiberglass / FRP 与 Stainless Steel，不添加价格、购物车和支付。
+英文版 `/en/` 支持本地和线上分享预览。繁中与阿语在语言卡片中标明尚未上线，译文完成后独立发布。两类材料为 Fiberglass / FRP 与 Stainless Steel，另设瓶子道具分类。
 
 ## 文档检查与研究复现
 

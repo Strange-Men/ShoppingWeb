@@ -1,5 +1,19 @@
 import manifest from './photography.json' with { type: 'json' };
 import type { MediaSlot, ProductCategoryId } from './types';
+export const fiberglassGroups = [
+  { id: 'electroplated', title: 'Electroplated Fiberglass' },
+  { id: 'bronze-finish', title: 'Bronze Finish Fiberglass' },
+  { id: 'robots', title: 'Fiberglass Robots' },
+  { id: 'other', title: 'Other Fiberglass Sculptures' },
+] as const;
+
+interface ProductPhoto {
+  category: ProductCategoryId;
+  title: string;
+  finish?: typeof fiberglassGroups[number]['id'];
+  view?: 'factory' | 'site';
+}
+
 export interface PhotoRecord {
   id: string;
   width: number;
@@ -11,8 +25,9 @@ export interface PhotoRecord {
   editing: string;
   focalPoint?: string;
   authorizationDate?: string;
-  kind?: 'concept';
-  product?: { category: ProductCategoryId; title: string };
+  kind?: 'concept' | 'scene';
+  sceneFor?: string;
+  product?: ProductPhoto;
 }
 export const photoRecords = manifest as PhotoRecord[];
 export function photo(id: string): MediaSlot {
@@ -24,7 +39,7 @@ export function photo(id: string): MediaSlot {
     source: `/media/${id}-${width}.webp`, width,
     height: Math.round(record.height * width / record.width),
     alt: record.alt, rights: 'licensed',
-    credit: record.kind === 'concept'
+    credit: record.kind
       ? 'NanXuan product visualization.'
       : `Owner-supplied photograph; website use authorized ${record.authorizationDate ?? '2026-11-05'}.`,
     variants: widths.map(value => ({ source: `/media/${id}-${value}.webp`, width: value })),
@@ -43,11 +58,15 @@ const workshopEntries = [
 export function workshopPhotos() {
   return workshopEntries.map(entry => ({ ...entry, image: photo(entry.id) }));
 }
-export interface PresentationImage { id: string; category: ProductCategoryId; title: string; image: MediaSlot }
+export interface PresentationImage extends ProductPhoto { id: string; image: MediaSlot }
 export function presentationImages(category?: ProductCategoryId): PresentationImage[] {
   return photoRecords.flatMap(({ id, product }) =>
     product && (!category || product.category === category) ? [{ id, ...product, image: photo(id) }] : []
   );
+}
+
+export function applicationImages(productId: string) {
+  return photoRecords.filter(record => record.sceneFor === productId).map(record => photo(record.id));
 }
 
 export function productPath(item: PresentationImage) {
