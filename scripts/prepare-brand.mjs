@@ -15,6 +15,6 @@ for (const size of [32, 192, 180]) {
   const inset = size === 32 ? 2 : Math.round(size * 0.12);
   const symbol = await sharp(mark).resize({ width: size - inset * 2, height: size - inset * 2, fit: 'inside' }).png().toBuffer();
   await sharp({ create: { width: size, height: size, channels: 4, background: '#1a1a2e' } })
-    .composite([{ input: symbol, gravity: 'centre' }]).png().toFile(`${output}/${size === 180 ? 'apple-touch-icon' : `favicon-${size}`}.png`);
+    .composite([{ input: symbol, gravity: 'centre' }]).png().toFile(`${output}/nanxuan-${size === 180 ? 'apple-touch-icon' : `favicon-${size}`}.png`);
 }
 console.log('Prepared NanXuan NX mark, responsive UI assets and browser/touch icons.');

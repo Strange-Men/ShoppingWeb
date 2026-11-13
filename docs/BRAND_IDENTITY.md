@@ -26,7 +26,7 @@
 - [透明原始母版](../src/assets/brand/nx-carved-master.png)：内置 image_gen 生成，模型版本接口未暴露。
 - [裁切后的透明 PNG](../public/brand/nx-mark.png)：用于单独取用公司标；保留透明度。
 - [128px 网页标志](../public/brand/nx-mark-128.webp)／[256px 网页标志](../public/brand/nx-mark-256.webp)：页头、页脚共用，srcset 提供高清选择。
-- [32px 浏览器图标](../public/brand/favicon-32.png)／[192px 图标](../public/brand/favicon-192.png)／[180px Apple 图标](../public/brand/apple-touch-icon.png)：深蓝底配金色 NX。
+- [32px 浏览器图标](../public/brand/nanxuan-favicon-32.png)／[192px 图标](../public/brand/nanxuan-favicon-192.png)／[180px Apple 图标](../public/brand/nanxuan-apple-touch-icon.png)：深蓝底配金色 NX。
 - [Brand.astro](../src/components/Brand.astro) 统一品牌链接；图形为装饰图，链接可访问名称为 NanXuan home，文字名保持真实文本。
 
 桌面图形宽 46px，手机宽 36px，按原比例显示；不旋转、不拉伸、不套用额外高光或阴影。`pnpm prepare:brand` 可从母版重新生成本目录网页资源，脚本见 [prepare-brand.mjs](../scripts/prepare-brand.mjs)。产物随 Git 提交，普通启动与构建无需重新生成公司标。现有照片处理管线不变。
