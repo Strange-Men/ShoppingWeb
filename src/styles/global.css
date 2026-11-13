@@ -215,6 +215,9 @@
   .contact-grid h2 { margin-block:15px 24px; }
   .contact-panel > p:not(.eyebrow) { color:var(--muted); font-size:13px; }
   .contact-panel .contact-actions { margin-block:30px; }
+  .contact-alternatives { color:var(--muted); font-size:13px; }
+  .contact-alternatives p + p { margin-block-start:8px; }
+  .contact-alternatives a { text-decoration:underline; text-underline-offset:3px; }
   .contact-panel .preview-note { margin-block-start:20px; }
   .contact-information { margin-block:30px; }
   .brief-panel { background:var(--paper); padding:42px; border-block-start:2px solid var(--gold); }

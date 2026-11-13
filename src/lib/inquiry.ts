@@ -24,5 +24,8 @@ export function inquiryLinks(contacts: ContactConfig, origin: string, title: str
     : [`Hello, I would like to discuss: ${subject}.`, ...reference, 'Dimensions:', 'Quantity:', 'Project location:', 'Reference / requirements:']).join('\n');
   const whatsapp = /^\d{8,15}$/.test(contacts.whatsappDigits) ? `https://wa.me/${contacts.whatsappDigits}?text=${encodeURIComponent(message)}` : null;
   const email = /^[^\s@?&#]+@[^\s@?&#]+\.[^\s@?&#]+$/.test(contacts.email) ? `mailto:${contacts.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}` : null;
-  return { whatsapp, email };
+  const emailWeb = email ? `https://mail.google.com/mail/?${new URLSearchParams({
+    view: 'cm', fs: '1', to: contacts.email, su: subject, body: message,
+  })}` : null;
+  return { whatsapp, email, emailWeb };
 }

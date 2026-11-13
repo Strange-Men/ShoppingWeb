@@ -1,12 +1,17 @@
 ---
 import { site } from '../data/site';
 import { inquiryLinks } from '../lib/inquiry';
-interface Props { title?: string; path?: string }
+interface Props { title?: string; path?: string; showAlternatives?: boolean }
 import { localize } from "../i18n/content";
 const { t, chinese, path: localPath } = localize(Astro.url.pathname);
 const links = inquiryLinks(site.contacts, site.canonicalOrigin, Astro.props.title, Astro.props.path ?? localPath("/en/contact/"), chinese);
+const { showAlternatives = false } = Astro.props;
 ---
 <div class="contact-actions">
   {links.whatsapp ? <a class="button button-gold" href={links.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a> : <span class="contact-pending"><strong>WhatsApp</strong><small>{t("Account to be added", "帳號待補充")}</small></span>}
-  {links.email ? <a class="button button-outline" href={links.email}>{t("Send an email", "傳送電子郵件")} <span aria-hidden="true">↗</span></a> : <span class="contact-pending"><strong>{t("Email", "電子郵件")}</strong><small>{t("Address to be added", "信箱待補充")}</small></span>}
+  {links.emailWeb ? <a class="button button-outline" href={links.emailWeb} target="_blank" rel="noopener noreferrer">{t("Compose in Gmail", "使用 Gmail 撰寫")} <span aria-hidden="true">↗</span></a> : <span class="contact-pending"><strong>{t("Email", "電子郵件")}</strong><small>{t("Address to be added", "信箱待補充")}</small></span>}
 </div>
+{showAlternatives && (links.whatsapp || links.email) && <div class="contact-alternatives">
+  {links.whatsapp && <p>{t("If WhatsApp doesn’t open, add the number below in the app or in ", "若連結無法開啟，請在應用程式或 ")}<a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">WhatsApp Web</a>{t(". If WhatsApp is unavailable, use email.", " 新增下方號碼。若仍無法使用 WhatsApp，請改用電子郵件。")}</p>}
+  {links.email && <p><a href={links.email}>{t("Open your email app", "開啟郵件應用程式")}</a>{t(" or copy the address below into any email service.", "，或將下方地址複製到您慣用的電子郵件服務。")}</p>}
+</div>}
