@@ -55,6 +55,13 @@ const workshopEntries = [
   { id: 'workshop-sculpture-assembly', title: 'Large Sculpture Assembly', caption: 'The team works on a tall stainless steel figure in the workshop.' },
   { id: 'workshop-ring-fitting', title: 'Fitting an Illuminated Ring', caption: 'A workshop view of the circular sculpture with its lighting switched on.' },
   { id: 'workshop-display-props', title: 'Oversized Display Props', caption: 'Ice cream display props lined up alongside colorful figures.' },
+  { id: 'workshop-fiberglass-finishing', title: 'Fiberglass Surface Preparation', caption: 'The team works on unfinished fiberglass forms in the workshop.' },
+  { id: 'workshop-sculpture-floor', title: 'Sculptures on the Workshop Floor', caption: 'A tall yellow piece stands among figures at different stages of production.' },
+  { id: 'workshop-festive-rabbits', title: 'Festive Rabbit Figures', caption: 'Five painted rabbit figures line up on their display bases.' },
+  { id: 'workshop-faceted-animals', title: 'Faceted Animal Sculptures', caption: 'Turquoise and pink geometric figures stand on rolling platforms.' },
+  { id: 'workshop-dispatch-area', title: 'Dispatch Area', caption: 'Protective wrapping covers sculptures gathered in the dispatch area.' },
+  { id: 'workshop-crate-packing', title: 'Packing Sculptures', caption: 'Cushioned sculptures are placed inside fitted wooden crates.' },
+  { id: 'workshop-crates-ready', title: 'Crates Outside the Workshop', caption: 'Closed wooden crates are lined up outside the workshop.' },
 ];
 
 export function workshopPhotos() {
@@ -65,6 +72,19 @@ export function presentationImages(category?: ProductCategoryId): PresentationIm
   return photoRecords.flatMap(({ id, product }) =>
     product && (!category || product.category === category) ? [{ id, ...product, image: photo(id) }] : []
   );
+}
+
+export function homepageProducts() {
+  const products = new Map(presentationImages().map(item => [item.id, item]));
+  const rows = [
+    ['steel-ribbon', 'steel-faceted', 'plaza-ring'],
+    ['frp-painted-elephant-pair', 'frp-red-yellow-character', 'frp-plaza-guardian'],
+  ];
+  return rows.map(row => row.map(id => {
+    const item = products.get(id);
+    if (!item) throw new Error(`Missing featured product: ${id}`);
+    return item;
+  }));
 }
 
 export function applicationImages(productId: string) {

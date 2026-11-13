@@ -8,6 +8,13 @@ const captions = [
   ['大型雕塑組裝', '團隊在車間製作大型不鏽鋼人形雕塑。'],
   ['發光圓環安裝', '車間內的圓形雕塑已點亮。'],
   ['大型展示道具', '大型冰淇淋道具與彩色公仔並排陳列。'],
+  ['玻璃纖維表面修整', '師傅在車間修整尚未完成的玻璃纖維造型。'],
+  ['車間雕塑一覽', '大型黃色雕塑旁陳列著不同製作階段的作品。'],
+  ['節慶兔公仔', '五件彩繪兔公仔在展示底座上並排陳列。'],
+  ['幾何動物雕塑', '青綠色和粉紅色的多面體雕塑放在移動平台上。'],
+  ['出貨區', '包上保護材料的雕塑集中在出貨區。'],
+  ['雕塑裝箱', '包覆緩衝材料的雕塑放進木箱。'],
+  ['車間外的木箱', '封好的木箱在車間外排列。'],
 ];
 const format = (value: number) => String(value).padStart(2, '0');
 import { localize } from "../i18n/content";
@@ -117,7 +124,7 @@ const photos = workshopPhotos().map((photo, index) => chinese ? { ...photo, titl
   .workshop-slide h3 { font-size:clamp(24px,3.4vw,48px); color:#fff; }
   .workshop-slide p { margin-block-start:14px; color:#d9d6e1; font-size:14px; }
   .workshop-controls:not([hidden]) { display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px; align-items:center; padding:16px clamp(14px,3vw,28px); border-block-start:1px solid #ffffff26; }
-  .workshop-thumbnails { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:6px; inline-size:min(100%,410px); }
+  .workshop-thumbnails { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:6px; inline-size:min(100%,480px); }
   .workshop-thumbnails button { min-inline-size:0; padding:2px; border:2px solid transparent; background:transparent; cursor:pointer; }
   .workshop-thumbnails button[aria-current="true"] { border-color:var(--gold); }
   .workshop-thumbnails img { display:block; inline-size:100%; block-size:auto; aspect-ratio:4/3; object-fit:cover; border-radius:2px; }

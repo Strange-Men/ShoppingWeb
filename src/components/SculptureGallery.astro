@@ -2,8 +2,8 @@
 import { productPath, type PresentationImage } from '../data/photography';
 import { localizedTitle } from '../i18n/photos';
 import Media from './Media.astro';
-interface Props { items: PresentationImage[]; threeColumns?: boolean; headingLevel?: 3 | 4 }
-const { items, threeColumns = items.length === 3, headingLevel = 3 } = Astro.props;
+interface Props { items: PresentationImage[]; threeColumns?: boolean; headingLevel?: 3 | 4; sizes?: string }
+const { items, threeColumns = items.length === 3, headingLevel = 3, sizes } = Astro.props;
 const Heading = headingLevel === 4 ? 'h4' : 'h3';
 const thumbnailSizes = `(max-width: 999px) 50vw, ${threeColumns || items.length === 2 ? '400px' : '300px'}`;
 import { localize } from "../i18n/content";
@@ -13,7 +13,7 @@ const { t, path, categories, chinese } = localize(Astro.url.pathname);
   {items.map(item => (
     <article class="sculpture-tile">
       <a class="product-card" href={path(productPath(item))}>
-        <Media image={item.image} sizes={thumbnailSizes} />
+        <Media image={item.image} sizes={sizes ?? thumbnailSizes} />
         <div class="product-card-body">
           <span class="eyebrow">{categories.find(category => category.id === item.category)?.title}</span>
           <Heading class="product-title">{localizedTitle(item, chinese)}</Heading>

@@ -4182,5 +4182,130 @@
       "title": "Red Spray Bottle Prop",
       "view": "factory"
     }
+  },
+  {
+    "id": "frp-painted-elephant-pair",
+    "width": 1254,
+    "height": 1254,
+    "alt": "Two brightly painted fiberglass elephants in a shopping centre",
+    "sourceFile": "codex-clipboard-25b7e61e-e7a6-41a6-ad24-9e98a6906960.jpg",
+    "sourceSha256": "ab2f643580f2f81e3acedbf121e846257cdf0d4aea6bbad20efb157c7803ac6f",
+    "authorizationDate": "2026-11-13",
+    "editing": "Conservative colour and exposure correction and subject-led crop for web display.",
+    "tool": "Codex built-in image_gen",
+    "product": {
+      "category": "fiberglass",
+      "title": "Painted Elephant Pair",
+      "view": "site"
+    }
+  },
+  {
+    "id": "frp-red-yellow-character",
+    "width": 1254,
+    "height": 1254,
+    "alt": "Red and yellow fiberglass figure with mirror-finish accents outside a building",
+    "sourceFile": "codex-clipboard-3f970a76-cfdc-453a-8ef7-038ea42fb8bf.jpg",
+    "sourceSha256": "f9f2c149c65fac1409b17e6351fe2f5eeb5c557bd514458967911211b7005463",
+    "authorizationDate": "2026-11-13",
+    "editing": "Conservative colour and exposure correction and subject-led crop for web display.",
+    "tool": "Codex built-in image_gen",
+    "product": {
+      "category": "fiberglass",
+      "title": "Red and Yellow Character Sculpture",
+      "view": "site"
+    }
+  },
+  {
+    "id": "frp-plaza-guardian",
+    "width": 1086,
+    "height": 1086,
+    "alt": "Red, white and gold fiberglass guardian figure in an urban plaza",
+    "sourceFile": "codex-clipboard-b7b60ab2-4ca7-49f2-9102-0a30972d86a5.jpg",
+    "sourceSha256": "43db01cab9cb70a0553ccaff7a956fa10d20b0f038f55a07bf95eccea3d4c5ec",
+    "authorizationDate": "2026-11-13",
+    "editing": "Conservative colour and exposure correction and subject-led crop for web display.",
+    "tool": "Codex built-in image_gen",
+    "product": {
+      "category": "fiberglass",
+      "title": "Plaza Guardian Sculpture",
+      "view": "site"
+    }
+  },
+  {
+    "id": "workshop-fiberglass-finishing",
+    "width": 1440,
+    "height": 1080,
+    "alt": "Craftspeople working on unfinished fiberglass forms",
+    "sourceFile": "微信图片_20261113163403_325_32.jpg",
+    "sourceSha256": "71c64b2ad635e805bfc9d479c55b4fbb0fc8c02ff3fe33c9212c486f55e27a0f",
+    "authorizationDate": "2026-11-13",
+    "editing": "Conservative colour and exposure correction and subject-led crop for web display.",
+    "tool": "Codex built-in image_gen"
+  },
+  {
+    "id": "workshop-sculpture-floor",
+    "width": 1440,
+    "height": 1080,
+    "alt": "A tall yellow sculpture and other figures on the workshop floor",
+    "sourceFile": "微信图片_20261113163403_326_32.jpg",
+    "sourceSha256": "c3a4d1fff7e0bb576050eb6b2ba4ae443dfebb2a6a32d780e10fe89e56941cf4",
+    "authorizationDate": "2026-11-13",
+    "editing": "Conservative colour and exposure correction and subject-led crop for web display.",
+    "tool": "Codex built-in image_gen"
+  },
+  {
+    "id": "workshop-festive-rabbits",
+    "width": 1440,
+    "height": 736,
+    "alt": "Five festive rabbit figures in the workshop",
+    "sourceFile": "微信图片_20261113163403_327_32.jpg",
+    "sourceSha256": "3058e5bf03a86ddda4080ce95e6173f47ed39bece214694613429e4e67a32a22",
+    "authorizationDate": "2026-11-13",
+    "editing": "Conservative colour and exposure correction and subject-led crop for web display.",
+    "tool": "Codex built-in image_gen"
+  },
+  {
+    "id": "workshop-faceted-animals",
+    "width": 1191,
+    "height": 1321,
+    "alt": "Turquoise and pink faceted animals on rolling platforms",
+    "sourceFile": "微信图片_20261113163403_328_32.jpg",
+    "sourceSha256": "2bbc4e251c7830829515557324f132fbab5ab42ef6f48f5a0ccec92de6a99328",
+    "authorizationDate": "2026-11-13",
+    "editing": "Conservative colour and exposure correction and subject-led crop for web display.",
+    "tool": "Codex built-in image_gen"
+  },
+  {
+    "id": "workshop-dispatch-area",
+    "width": 1440,
+    "height": 1080,
+    "alt": "Wrapped sculptures in the dispatch area",
+    "sourceFile": "微信图片_20261113163403_329_32.jpg",
+    "sourceSha256": "bab418603362cbf562ef2cf02522f3e776db0aa0a812641a1300acb1da3600d2",
+    "authorizationDate": "2026-11-13",
+    "editing": "Conservative colour and exposure correction and subject-led crop for web display.",
+    "tool": "Codex built-in image_gen"
+  },
+  {
+    "id": "workshop-crate-packing",
+    "width": 1080,
+    "height": 1440,
+    "alt": "Cushioned sculptures inside open wooden crates",
+    "sourceFile": "微信图片_20261113163403_331_32.jpg",
+    "sourceSha256": "820b2b6c879510509cea4d16d7a1148b4801200a742b1e1be500ba4946e158cf",
+    "authorizationDate": "2026-11-13",
+    "editing": "Conservative colour and exposure correction and subject-led crop for web display.",
+    "tool": "Codex built-in image_gen"
+  },
+  {
+    "id": "workshop-crates-ready",
+    "width": 1080,
+    "height": 1440,
+    "alt": "Closed shipping crates lined up outside the workshop",
+    "sourceFile": "微信图片_20261113163403_332_32.jpg",
+    "sourceSha256": "3fa65bb87b81b1e9602fbe1d9de03b916d1b66ddc8f3f0b9c14f466a71d5e64d",
+    "authorizationDate": "2026-11-13",
+    "editing": "Conservative colour and exposure correction and subject-led crop for web display.",
+    "tool": "Codex built-in image_gen"
   }
 ]

@@ -1,14 +1,16 @@
 ---
 import { media } from '../data/site';
-import { presentationImages } from '../data/photography';
+import { photo, presentationImages } from '../data/photography';
 import Media from './Media.astro';
 import { localize } from "../i18n/content";
+interface Props { home?: boolean }
+const { home = false } = Astro.props;
 const { t, path, categories } = localize(Astro.url.pathname);
 ---
 <nav class="material-grid" aria-label={t("Product categories", "產品分類")}>
   {categories.map(category => (
     <a href={path(`/en/products/${category.id}/`)} class="material-card">
-      <Media image={media[category.id]} sizes="(max-width: 599px) 100vw, (max-width: 1199px) 33vw, 400px" />
+      <Media image={home && category.id === 'bottle-props' ? photo('tall-bottle') : media[category.id]} sizes="(max-width: 599px) 100vw, (max-width: 1199px) 33vw, 400px" />
       <div class="material-card-body">
         <h3>{category.title}</h3>
         <p>{category.description}</p>

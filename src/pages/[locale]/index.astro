@@ -5,15 +5,13 @@ import SculptureGallery from '../../components/SculptureGallery.astro';
 import Inquiry from '../../components/Inquiry.astro';
 import Process from '../../components/Process.astro';
 import HomeHero from '../../components/HomeHero.astro';
-import { media, productCategories, site } from '../../data/site';
-import { presentationImages } from '../../data/photography';
+import { site } from '../../data/site';
+import { homepageProducts } from '../../data/photography';
 import { localize } from "../../i18n/content";
 import { localizedRoutes } from '../../i18n/routes';
 
 const { t, path, copy, categories, company } = localize(Astro.url.pathname);
-const gallery = productCategories.flatMap(({ id }) => presentationImages(id)
-  .filter(item => item.image.source !== media[id].source && item.image.source !== media.hero.source)
-  .slice(0, 2));
+const gallery = homepageProducts();
 export const getStaticPaths = localizedRoutes;
 ---
 <SiteLayout title={copy.home.title} description={copy.home.description}>
@@ -31,14 +29,16 @@ export const getStaticPaths = localizedRoutes;
       <nav class="material-tabs featured-categories" aria-label={t("Browse featured product categories", "瀏覽精選產品分類")}>
         {categories.map(category => <a href={path(`/en/products/${category.id}/`)}>{category.title}</a>)}
       </nav>
-      <SculptureGallery items={gallery} threeColumns />
+      <div class="featured-rows">
+        {gallery.map(items => <SculptureGallery items={items} threeColumns sizes="(max-width: 599px) calc(100vw - 36px), (max-width: 1264px) 33vw, 400px" />)}
+      </div>
       <div class="section-action"><a href={path("/en/products/")} class="button button-outline">{t("View All Products", "瀏覽全部產品")} <span aria-hidden="true">↗</span></a></div>
     </div>
   </section>
   <section class="section materials-section">
     <div class="container">
       <div class="section-heading"><h2>{copy.home.materials}</h2><div class="gold-rule"></div></div>
-      <ProductCategoryGrid />
+      <ProductCategoryGrid home />
     </div>
   </section>
   <section class="section capabilities-section">
@@ -56,4 +56,12 @@ export const getStaticPaths = localizedRoutes;
   .intro-section .section-heading { margin-block-end:0; }
   .intro-section .text-link { margin-block-start:16px; }
   .featured-categories { justify-content:center; margin-block-end:24px; }
+  .featured-rows { display:grid; gap:24px; }
+  @media (min-width:600px) {
+    .featured-rows :global(.sculpture-grid-three) { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  }
+  @media (max-width:599px) {
+    .featured-rows { gap:16px; }
+    .featured-rows :global(.sculpture-grid-three) { grid-template-columns:1fr; gap:16px; }
+  }
 </style>
