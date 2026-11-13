@@ -6,11 +6,11 @@
 
 源码位于 [Strange-Men/ShoppingWeb](https://github.com/Strange-Men/ShoppingWeb)，当前开发分支 `codex/p1-english-preview`。公司标完成提交为 `7ebe5e720685cf954e8ef9396b7df4fd14ae27c9`；该提交已同步远端，尚未合并 main。后续发布配置与记录随同一分支提交。
 
-70 张在用图片母版位于 `src/assets/photos/`，公司标母版位于 `src/assets/brand/`，网页标志与图标位于 `public/brand/`，均由 Git 跟踪。构建自动生成 219 张 `public/media/` 派生图。图片来源记录在 `src/data/photography.json`。
+252 张在用图片母版位于 `src/assets/photos/`，公司标母版位于 `src/assets/brand/`，网页标志与图标位于 `public/brand/`，均由 Git 跟踪。构建自动生成 773 张 `public/media/` 派生图。图片来源记录在 `src/data/photography.json`。
 
-已实际从 GitHub 全新克隆到独立目录，执行 `pnpm install --frozen-lockfile` 与 `pnpm build`：生成 35 张图片、17 HTML，859 个本地链接／资源通过，无旧目录生成文件依赖。本次环境为 Windows、Node 24.22.1、pnpm 11.25.0，不把它写成所有操作系统的兼容性验收。
+版本 8 已从 GitHub 全新克隆到独立目录，执行 `pnpm install --frozen-lockfile` 与 `pnpm build`，生成 773 张响应式图片与 250 个 HTML 文件，16,017 条本地链接与资源通过检查。环境为 Windows、Node 24.22.1、pnpm 11.25.0。
 
-机器记录见 [独立克隆检查](qa/2026-11-05/portability-report.json)，并逐张解码验证了克隆目录生成的全部 35 图。
+版本 1 的 [独立克隆检查](qa/2026-11-05/portability-report.json) 包含当时全部 35 张图片的解码记录。
 
 新电脑安装上述 Node／pnpm 后：
 
@@ -30,7 +30,9 @@ pnpm preview
 
 **已上线，可直接发给同事：[NanXuan 英文分享预览](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/)**。Sites 部署工具实际返回 succeeded，并在无登录 cookie／token 的 HTTP 和浏览器中确认可访问，不以预期域名代替发布证明。
 
-当前发布版本 **7**，源码提交 `6be9e57888fb7a30551d9798ebd2218424d05265`，部署 ID `appgdep_6af5823654248191b72d26bd5426dae6`。Products 总览显示三个分类入口，分类页共有 55 张图。线上核对了总览、三个分类及恢复的 10 个详情和图片。[产品图库验收](qa/2026-11-12/catalog.md)。
+当前发布版本 **8**，源码提交 `d0a57640964e0fdb72e2765a73e4fa5784cacfea`，部署 ID `appgdep_6af6751ca4a48191a05d2ff9da751ff1`。三个分类共 232 个产品展示条目，含 99 项现场照片。线上检查覆盖产品总览、三个分类、四个玻璃钢分组、八个应用示意及代表性图片。[产品图库验收](qa/2026-11-13/catalog-expansion.md) · [线上记录](qa/2026-11-13/catalog-online.json)
+
+版本 **7** 将 Products 总览改为三个分类入口，分类页共有 55 张图。源码提交 `6be9e57888fb7a30551d9798ebd2218424d05265`，部署 ID `appgdep_6af5823654248191b72d26bd5426dae6`。[产品图库验收](qa/2026-11-12/catalog.md)。
 
 版本 **6** 扩充了三个产品分类的实拍，源码提交 `f90e0808637dfb5da439556bdfc0b851adb7c177`，部署 ID `appgdep_6af57efbe1ec81919849d26ea655cb60`。[版本 6 线上核对](qa/2026-11-12/catalog-online.json)。
 

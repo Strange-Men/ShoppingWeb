@@ -1,0 +1,219 @@
+{
+  "origin": "https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site",
+  "checkedAt": "2026-11-13T02:26:27.241Z",
+  "pages": [
+    {
+      "path": "/en/products/",
+      "status": 200,
+      "noindex": true,
+      "categoryLinks": [
+        "/en/products/fiberglass/",
+        "/en/products/stainless-steel/",
+        "/en/products/bottle-props/"
+      ]
+    },
+    {
+      "path": "/en/products/bottle-props/",
+      "status": 200,
+      "noindex": true,
+      "products": 40,
+      "onSite": 3
+    },
+    {
+      "path": "/en/products/design/bottle-cups/",
+      "status": 200,
+      "noindex": true,
+      "applicationIdea": true
+    },
+    {
+      "path": "/en/products/design/bottle-pastel/",
+      "status": 200,
+      "noindex": true,
+      "applicationIdea": true
+    },
+    {
+      "path": "/en/products/design/catalog-157-oversized-amber-bottles-in-a-retail-display/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/en/products/design/catalog-61-gold-folded-form/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/en/products/design/catalog-76-bronze-finish-winged-figure/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/en/products/design/dinosaur-figures/",
+      "status": 200,
+      "noindex": true,
+      "applicationIdea": true
+    },
+    {
+      "path": "/en/products/design/frp-mosaic/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/en/products/design/frp-mosaic/",
+      "status": 200,
+      "noindex": true,
+      "applicationIdea": true
+    },
+    {
+      "path": "/en/products/design/frp-woodland/",
+      "status": 200,
+      "noindex": true,
+      "applicationIdea": true
+    },
+    {
+      "path": "/en/products/design/hero-waterfront/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/en/products/design/lucky-cat/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/en/products/design/plaza-ring/",
+      "status": 200,
+      "noindex": true,
+      "applicationIdea": true
+    },
+    {
+      "path": "/en/products/design/silver-astronaut/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/en/products/design/steel-orbits/",
+      "status": 200,
+      "noindex": true,
+      "applicationIdea": true
+    },
+    {
+      "path": "/en/products/design/steel-ribbon/",
+      "status": 200,
+      "noindex": true,
+      "applicationIdea": true
+    },
+    {
+      "path": "/en/products/fiberglass/",
+      "status": 200,
+      "noindex": true,
+      "products": 149,
+      "onSite": 65,
+      "groups": [
+        "electroplated",
+        "bronze-finish",
+        "robots",
+        "other"
+      ]
+    },
+    {
+      "path": "/en/products/stainless-steel/",
+      "status": 200,
+      "noindex": true,
+      "products": 43,
+      "onSite": 31
+    }
+  ],
+  "media": [
+    {
+      "path": "/media/bottle-cups-outdoor-market-1440.webp",
+      "status": 200,
+      "bytes": 153162,
+      "sha256": "74cc72ba5ff906e18d0b8c84db8be25752d921652fa70cd7ccbbc9dc5b8725fd"
+    },
+    {
+      "path": "/media/bottle-pastel-cosmetics-storefront-1440.webp",
+      "status": 200,
+      "bytes": 218982,
+      "sha256": "c11ea9548d95992a9cdabe66c7fcf7caa732cf611147e9798d6b028206ecb6d3"
+    },
+    {
+      "path": "/media/catalog-157-oversized-amber-bottles-in-a-retail-display-1086.webp",
+      "status": 200,
+      "bytes": 141400,
+      "sha256": "51f455e27c75fb4b0a836fbd2ec0ad94ca53446bc646d90385c6c776666f086b"
+    },
+    {
+      "path": "/media/catalog-61-gold-folded-form-1088.webp",
+      "status": 200,
+      "bytes": 168322,
+      "sha256": "e31b38bc2013f2c368a474b8f3aa8748d16c3874fd0a8b74ffe7a5ef800791fb"
+    },
+    {
+      "path": "/media/catalog-76-bronze-finish-winged-figure-1200.webp",
+      "status": 200,
+      "bytes": 185384,
+      "sha256": "3f06081041dd947799e6a1d43395a2dc5a504f07c3cfb533b8111939ac04c889"
+    },
+    {
+      "path": "/media/dinosaur-figures-museum-trail-1440.webp",
+      "status": 200,
+      "bytes": 388812,
+      "sha256": "7b4c945dc7f8651451ea80b6ccce7db0359eec639f75f53befca3b519d02d3c2"
+    },
+    {
+      "path": "/media/frp-mosaic-1200.webp",
+      "status": 200,
+      "bytes": 117624,
+      "sha256": "f839f3aeae72e99d08c2906dd7fa65486b9f1502836d2348462387820fcfd82c"
+    },
+    {
+      "path": "/media/frp-mosaic-aquarium-entry-1440.webp",
+      "status": 200,
+      "bytes": 168060,
+      "sha256": "4f8c5271bedc46c95ef4fdfed3a5944323fe58ca1e01b990a0461a78935da56f"
+    },
+    {
+      "path": "/media/frp-woodland-shopping-center-display-1440.webp",
+      "status": 200,
+      "bytes": 168696,
+      "sha256": "db653eadadf67b632ba830af49156870c529c0b25b97fc0eadc4529611ae2796"
+    },
+    {
+      "path": "/media/hero-waterfront-1600.webp",
+      "status": 200,
+      "bytes": 155642,
+      "sha256": "0b6da6e2ed2faf6fa00c4b40ad744c9b1077320db34c66d9f463001f6e161cad"
+    },
+    {
+      "path": "/media/lucky-cat-1200.webp",
+      "status": 200,
+      "bytes": 242212,
+      "sha256": "4dcd12e8a9fcdf22225044284d6ab7fde2b540d154f247bb69f6529cdbd697f1"
+    },
+    {
+      "path": "/media/plaza-ring-evening-courtyard-1440.webp",
+      "status": 200,
+      "bytes": 277240,
+      "sha256": "6cc2628b2f269e6ba7ebac8529843ac34bdd9e4dcd4bfd777742f917a325a90f"
+    },
+    {
+      "path": "/media/silver-astronaut-1200.webp",
+      "status": 200,
+      "bytes": 94898,
+      "sha256": "a8ffe7535da27731314e122b3ba56feb1ade5955ef2a577e8071f6437ee9b55b"
+    },
+    {
+      "path": "/media/steel-orbits-waterfront-promenade-1440.webp",
+      "status": 200,
+      "bytes": 194842,
+      "sha256": "3ad060b5ab0b889475d77109d792d26678d07e02aeeb560be7cd5f4da4cea1d9"
+    },
+    {
+      "path": "/media/steel-ribbon-hotel-atrium-1440.webp",
+      "status": 200,
+      "bytes": 292442,
+      "sha256": "6d3f26af6e6169b8caff37bfc1e8dc36b9cde461e4ff93f7ad76cd0ca3d1da97"
+    }
+  ],
+  "onSiteCount": 99
+}
