@@ -6,7 +6,7 @@
 
 源码位于 [Strange-Men/ShoppingWeb](https://github.com/Strange-Men/ShoppingWeb)，默认分支 `main` 包含双语站点和完整开发历史。每次开发完成并通过相关检查后，提交改动并推送到 GitHub；通过开发分支交付时，将已验收的改动合入 `main`。
 
-252 张在用图片母版位于 `src/assets/photos/`，公司标母版位于 `src/assets/brand/`，网页标志与图标位于 `public/brand/`，均由 Git 跟踪。构建自动生成 773 张 `public/media/` 派生图。图片来源记录在 `src/data/photography.json`。
+262 张在用图片母版位于 `src/assets/photos/`，公司标母版位于 `src/assets/brand/`，网页标志与图标位于 `public/brand/`，均由 Git 跟踪。构建自动生成 809 张 `public/media/` 派生图。图片来源记录在 `src/data/photography.json`。
 
 版本 8 已从 GitHub 全新克隆到独立目录，执行 `pnpm install --frozen-lockfile` 与 `pnpm build`，生成 773 张响应式图片与 250 个 HTML 文件，16,017 条本地链接与资源通过检查。环境为 Windows、Node 24.22.1、pnpm 11.25.0。
 
@@ -26,7 +26,7 @@ pnpm preview
 
 ## Netlify 分享部署
 
-2026-11-13 已将提交 `cb5d629` 的双语静态产物发布到 Netlify 免费团队。[双语入口](https://nanxuan-sculpture.netlify.app/) · [English](https://nanxuan-sculpture.netlify.app/en/) · [繁體中文](https://nanxuan-sculpture.netlify.app/zh-hant/) · [部署记录](https://app.netlify.com/projects/nanxuan-sculpture/deploys/6af6be7be4619553381a7579)
+2026-11-13 已将提交 `024a459` 的双语静态产物发布到 Netlify 免费团队。[双语入口](https://nanxuan-sculpture.netlify.app/) · [English](https://nanxuan-sculpture.netlify.app/en/) · [繁體中文](https://nanxuan-sculpture.netlify.app/zh-hant/) · [部署记录](https://app.netlify.com/projects/nanxuan-sculpture/deploys/6af6d695910e901541dc44c1)
 
 公开访问检查通过，覆盖根路径、双语首页、产品总览、联系页及一张产品图片。两个联系页均包含 WhatsApp 链接。Netlify 使用手动部署，GitHub push 后需另行发布新的 `dist/`。
 
@@ -36,7 +36,9 @@ pnpm preview
 
 **已上线，可直接发给同事。** [双语入口](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/) · [English](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/en/) · [繁體中文](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/zh-hant/)
 
-当前发布版本 **9**，源码提交 `ae41e162934682ff09eb7931225b24d16a280053`，部署 ID `appgdep_6af6b7908448819198a6250390795ba4`。英文和繁体中文可在对应页面之间切换，包含新标志、浏览器图标和产品卡片对齐修正。匿名 HTTP 检查覆盖 9 个页面和 3 个图片资源。[双语验收](qa/2026-11-13/bilingual-preview.md) · [线上记录](qa/2026-11-13/bilingual-online.json)
+当前发布版本 **10**，源码提交 `024a459a219995e1966f5bbb8d615b064c8d92be`，部署 ID `appgdep_6af6d75414788191a56fc6c1c59e9119`。双语首页更新六张精选作品，玻璃纤维分类新增三件客户返图作品，车间轮播扩充至十二张。两个分享站均通过双语页面和图片检查。[本轮验收](qa/2026-11-13/featured-workshop.md)
+
+版本 **9** 加入繁体中文、新标志、浏览器图标和产品卡片对齐修正。源码提交 `ae41e162934682ff09eb7931225b24d16a280053`，部署 ID `appgdep_6af6b7908448819198a6250390795ba4`。[双语验收](qa/2026-11-13/bilingual-preview.md) · [线上记录](qa/2026-11-13/bilingual-online.json)
 
 版本 **8** 扩充了三个分类，合计 232 个产品展示条目，含 99 项现场照片。源码提交 `d0a57640964e0fdb72e2765a73e4fa5784cacfea`，部署 ID `appgdep_6af6751ca4a48191a05d2ff9da751ff1`。[产品图库验收](qa/2026-11-13/catalog-expansion.md) · [线上记录](qa/2026-11-13/catalog-online.json)
 

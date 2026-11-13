@@ -5,3 +5,5 @@
 車間輪播共有 12 張照片。新增照片涵蓋表面修整、車間作品、包裝與出貨。10 張新圖完成色彩、明暗與構圖修整，再轉為本地 WebP。出貨照片上的標籤文字已模糊化。
 
 Node 24.22.1 與 pnpm 11.25.0 構建通過。504 份 HTML、32,946 條本地連結與資源、809 張響應式 WebP。Astro 檢查無錯誤、警告或提示。本地 HTTP 檢查核對雙語首頁順序、玻璃纖維詳情、瓶型道具分類、車間輪播及 10 張新圖。瀏覽器確認桌面每排三張，並實測縮圖跳至第 12 張、用左方向鍵切回第 11 張。
+
+兩個公開分享網址均通過雙語首頁順序、玻璃纖維新詳情、瓶型道具分類及十二張車間輪播檢查。各站的十張新 WebP 與本地構建檔案的 SHA-256 相符。[ChatGPT 分享站](https://nanxuan-sculpture-preview.tedcodexstudylove667.chatgpt.site/) · [Netlify](https://nanxuan-sculpture.netlify.app/)
