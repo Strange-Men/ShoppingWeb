@@ -1,4 +1,13 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 ---
-<SiteLayout title="Page not found" description="The requested page could not be found. Return to the English sculpture preview or browse cases by material." noindex><section class="section"><div class="container narrow"><p class="eyebrow">404 / Page not found</p><h1>Let’s find your way back.</h1><p>This page is unavailable. The English preview and material collections are below.</p><div class="button-row"><a class="button button-gold" href="/en/">Back to home ↗</a><a class="button button-outline" href="/en/products/">Explore our work ↗</a></div></div></section></SiteLayout>
+<SiteLayout title="Page not found" description="The requested page could not be found. Return to the English or Traditional Chinese sculpture preview." noindex>
+  <section class="section"><div class="container narrow">
+    <p class="eyebrow">404 / Page not found · <span lang="zh-Hant">找不到頁面</span></p>
+    <h1>Let’s find your way back.</h1>
+    <div class="button-row">
+      <a class="button button-gold" href="/en/">English home ↗</a>
+      <a class="button button-outline" href="/zh-hant/" lang="zh-Hant">繁體中文首頁 ↗</a>
+    </div>
+  </div></section>
+</SiteLayout>

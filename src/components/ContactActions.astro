@@ -2,9 +2,11 @@
 import { site } from '../data/site';
 import { inquiryLinks } from '../lib/inquiry';
 interface Props { title?: string; path?: string }
-const links = inquiryLinks(site.contacts, site.canonicalOrigin, Astro.props.title, Astro.props.path);
+import { localize } from "../i18n/content";
+const { t, chinese, path: localPath } = localize(Astro.url.pathname);
+const links = inquiryLinks(site.contacts, site.canonicalOrigin, Astro.props.title, Astro.props.path ?? localPath("/en/contact/"), chinese);
 ---
 <div class="contact-actions">
-  {links.whatsapp ? <a class="button button-gold" href={links.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a> : <span class="contact-pending"><strong>WhatsApp</strong><small>Account to be added</small></span>}
-  {links.email ? <a class="button button-outline" href={links.email}>Send an email <span aria-hidden="true">↗</span></a> : <span class="contact-pending"><strong>Email</strong><small>Address to be added</small></span>}
+  {links.whatsapp ? <a class="button button-gold" href={links.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a> : <span class="contact-pending"><strong>WhatsApp</strong><small>{t("Account to be added", "帳號待補充")}</small></span>}
+  {links.email ? <a class="button button-outline" href={links.email}>{t("Send an email", "傳送電子郵件")} <span aria-hidden="true">↗</span></a> : <span class="contact-pending"><strong>{t("Email", "電子郵件")}</strong><small>{t("Address to be added", "信箱待補充")}</small></span>}
 </div>

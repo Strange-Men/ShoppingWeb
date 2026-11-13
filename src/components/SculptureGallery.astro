@@ -1,21 +1,23 @@
 ---
 import { productPath, type PresentationImage } from '../data/photography';
-import { productCategories } from '../data/site';
+import { localizedTitle } from '../i18n/photos';
 import Media from './Media.astro';
 interface Props { items: PresentationImage[]; threeColumns?: boolean; headingLevel?: 3 | 4 }
 const { items, threeColumns = items.length === 3, headingLevel = 3 } = Astro.props;
 const Heading = headingLevel === 4 ? 'h4' : 'h3';
 const thumbnailSizes = `(max-width: 999px) 50vw, ${threeColumns || items.length === 2 ? '400px' : '300px'}`;
+import { localize } from "../i18n/content";
+const { t, path, categories, chinese } = localize(Astro.url.pathname);
 ---
 <div class:list={['sculpture-grid', { 'sculpture-grid-three': threeColumns, 'sculpture-grid-two': items.length === 2 }]}>
   {items.map(item => (
     <article class="sculpture-tile">
-      <a class="product-card" href={productPath(item)}>
+      <a class="product-card" href={path(productPath(item))}>
         <Media image={item.image} sizes={thumbnailSizes} />
         <div class="product-card-body">
-          <span class="eyebrow">{productCategories.find(category => category.id === item.category)?.title}</span>
-          <Heading class="product-title">{item.title}</Heading>
-          <span class="text-link">View Details <span aria-hidden="true">↗</span></span>
+          <span class="eyebrow">{categories.find(category => category.id === item.category)?.title}</span>
+          <Heading class="product-title">{localizedTitle(item, chinese)}</Heading>
+          <span class="text-link">{t("View Details", "查看詳情")} <span aria-hidden="true">↗</span></span>
         </div>
       </a>
     </article>

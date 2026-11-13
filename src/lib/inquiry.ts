@@ -15,10 +15,14 @@ export function socialUrl(value: string, network: 'facebook' | 'instagram'): str
     return url.protocol === 'https:' && !url.username && !url.password && !url.port && host === `${network}.com` && url.pathname !== '/' ? url.href : null;
   } catch { return null; }
 }
-export function inquiryLinks(contacts: ContactConfig, origin: string, title = 'Custom sculpture inquiry', path = '/en/contact/') {
+export function inquiryLinks(contacts: ContactConfig, origin: string, title: string | undefined = undefined, path = '/en/contact/', chinese = false) {
   const formalOrigin = publicOrigin(origin);
-  const message = [`Hello, I would like to discuss: ${title}.`, ...(formalOrigin ? [`Reference: ${new URL(path, formalOrigin).href}`] : []), 'Dimensions:', 'Quantity:', 'Project location:', 'Reference / requirements:'].join('\n');
+  const subject = title ?? (chinese ? '客製雕塑詢價' : 'Custom sculpture inquiry');
+  const reference = formalOrigin ? [`${chinese ? '參考頁面：' : 'Reference: '}${new URL(path, formalOrigin).href}`] : [];
+  const message = (chinese
+    ? [`您好，我想洽詢：${subject}。`, ...reference, '尺寸：', '數量：', '專案地點：', '參考資料／需求：']
+    : [`Hello, I would like to discuss: ${subject}.`, ...reference, 'Dimensions:', 'Quantity:', 'Project location:', 'Reference / requirements:']).join('\n');
   const whatsapp = /^\d{8,15}$/.test(contacts.whatsappDigits) ? `https://wa.me/${contacts.whatsappDigits}?text=${encodeURIComponent(message)}` : null;
-  const email = /^[^\s@?&#]+@[^\s@?&#]+\.[^\s@?&#]+$/.test(contacts.email) ? `mailto:${contacts.email}?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(message)}` : null;
+  const email = /^[^\s@?&#]+@[^\s@?&#]+\.[^\s@?&#]+$/.test(contacts.email) ? `mailto:${contacts.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}` : null;
   return { whatsapp, email };
 }

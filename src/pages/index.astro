@@ -1,4 +1,15 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
+import { site } from '../data/site';
 ---
-<SiteLayout title="English preview entrance" description="Open the English sculpture website preview. Traditional Chinese and Arabic will follow when reviewed translations are available." noindex><section class="section"><div class="container narrow"><p class="eyebrow">楠轩雕塑 / P1 preview</p><h1>Welcome to the studio.</h1><p>The English preview is ready to explore.</p><a class="button button-gold" href="/en/">Enter English site ↗</a><p class="muted">繁體中文 · العربية — Coming soon</p></div></section></SiteLayout>
+<SiteLayout title="Choose your language" description="Explore the NanXuan sculpture website in English or Traditional Chinese." noindex>
+  <section class="section"><div class="container narrow">
+    <p class="eyebrow" lang="zh-Hant">{site.companyName}</p>
+    <h1>Choose your language</h1>
+    <div class="button-row">
+      <a class="button button-gold" href="/en/" lang="en">English ↗</a>
+      <a class="button button-outline" href="/zh-hant/" lang="zh-Hant">繁體中文 ↗</a>
+    </div>
+    <p class="muted"><span lang="ar" dir="rtl">العربية</span> · Coming soon</p>
+  </div></section>
+</SiteLayout>

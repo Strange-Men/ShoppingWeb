@@ -1,7 +1,9 @@
 ---
 import { displayBrand, site } from '../data/site';
+import { localize } from "../i18n/content";
+const { t, path } = localize(Astro.url.pathname);
 ---
-<a class="brand" href="/en/" aria-label={`${displayBrand} home`}>
-  <img class="brand-mark" src="/brand/nx-mark-128.webp" srcset="/brand/nx-mark-128.webp 128w, /brand/nx-mark-256.webp 256w" sizes="(max-width: 599px) 36px, 46px" width="128" height="107" alt="" aria-hidden="true" decoding="async" />
-  <span><strong>{displayBrand}</strong><small>{site.companyName}{!site.brandName && <span> · Brand preview</span>}</small></span>
+<a class="brand" href={path("/en/")} aria-label={t(`${displayBrand} home`, "楠軒雕塑首頁")}>
+  <img class="brand-mark" src="/brand/nx-mark-128.webp" srcset="/brand/nx-mark-128.webp 128w, /brand/nx-mark-256.webp 256w" sizes="(max-width: 599px) 30px, 37px" width="128" height="171" alt="" aria-hidden="true" decoding="async" />
+  <span><strong>{displayBrand}</strong><small lang="zh-Hant">{site.companyName}{!site.brandName && <span> · {t("Brand preview", "品牌預覽")}</span>}</small></span>
 </a>

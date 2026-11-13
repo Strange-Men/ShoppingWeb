@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 
 const root = new URL('../', import.meta.url);
-const source = fileURLToPath(new URL('src/assets/brand/nx-carved-master.png', root));
+const source = fileURLToPath(new URL('src/assets/brand/nanxuan-mark.svg', root));
 const output = fileURLToPath(new URL('public/brand/', root));
 await mkdir(output, { recursive: true });
 const mark = await sharp(source).trim().png().toBuffer();

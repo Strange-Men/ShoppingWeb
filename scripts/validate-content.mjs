@@ -5,10 +5,14 @@ import { site, media, materials, productCategories, isPreview } from '../src/dat
 import { cases, visibleCases, casePath } from '../src/data/cases.ts';
 import { applicationImages, photoRecords, presentationImages, workshopPhotos } from '../src/data/photography.ts';
 import { publicOrigin, inquiryLinks, socialUrl } from '../src/lib/inquiry.ts';
+import zhPhotography from '../src/i18n/photography.zh-hant.json' with { type: 'json' };
 const release = process.argv.includes('--production') || !isPreview;
 const root = fileURLToPath(new URL('../', import.meta.url));
 const errors = [];
 const assert = (value, message) => { if (!value) errors.push(message); };
+for (const { id } of photoRecords) {
+  assert(typeof zhPhotography[id] === 'string' && zhPhotography[id].trim(), `Missing Traditional Chinese photo text: ${id}`);
+}
 assert(materials.length === 2 && materials.map(item => item.id).sort().join(',') === 'fiberglass,stainless-steel', 'Only two supported materials are allowed.');
 assert(productCategories.length === 3 && productCategories.map(item => item.id).sort().join(',') === 'bottle-props,fiberglass,stainless-steel', 'Expected three product categories.');
 for (const category of productCategories) {

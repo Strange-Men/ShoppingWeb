@@ -1,5 +1,4 @@
 ---
-import { copy } from '../../../../i18n/en';
 import SiteLayout from '../../../../layouts/SiteLayout.astro';
 import PageHeading from '../../../../components/PageHeading.astro';
 import CaseCard from '../../../../components/CaseCard.astro';
@@ -8,21 +7,26 @@ import SculptureGallery from '../../../../components/SculptureGallery.astro';
 import { fiberglassGroups, fiberglassLeadFigures, presentationImages } from '../../../../data/photography';
 import { productCategories, isPreview } from '../../../../data/site';
 import { visibleCases } from '../../../../data/cases';
+import { localize } from "../../../../i18n/content";
+import { localizedRoutes, equivalentCasePath } from '../../../../i18n/routes';
+
+const { t, path, copy, categories, chinese } = localize(Astro.url.pathname);
+const category = categories.find(entry => entry.id === Astro.params.material)!;
 export function getStaticPaths() {
-  return productCategories.map(category => ({ params: { material: category.id }, props: { category } }));
+  return localizedRoutes().flatMap(({ params }) => productCategories.map(category => ({ params: { ...params, material: category.id } })));
 }
-const { category } = Astro.props;
 const photos = presentationImages(category.id);
-const cases = visibleCases().filter(item => item.material === category.id);
+const cases = visibleCases().filter(item => item.material === category.id && equivalentCasePath(item, chinese ? 'zh-Hant' : 'en'));
 const leadOrder = new Map<string, number>(fiberglassLeadFigures.map((id, index) => [id, index]));
 const rank = (id: string) => leadOrder.get(id) ?? leadOrder.size;
 const fiberglassPhotos = category.id === 'fiberglass' ? photos.toSorted((a, b) => rank(a.id) - rank(b.id)) : [];
+const groupTitles = { other: '公仔與其他雕塑', robots: '玻璃纖維機器人', electroplated: '電鍍玻璃纖維雕塑', 'bronze-finish': '仿銅玻璃纖維雕塑' };
 const groups = category.id === 'fiberglass'
-  ? fiberglassGroups.map(group => ({ ...group, items: fiberglassPhotos.filter(item => (item.finish ?? 'other') === group.id) })).filter(group => group.items.length)
-  : [{ id: 'product-gallery', title: 'Product Gallery', items: photos }];
+  ? fiberglassGroups.map(group => ({ ...group, title: chinese ? groupTitles[group.id] : group.title, items: fiberglassPhotos.filter(item => (item.finish ?? 'other') === group.id) })).filter(group => group.items.length)
+  : [{ id: 'product-gallery', title: t("Product Gallery", "產品圖庫"), items: photos }];
 const views = [
-  { id: 'factory', title: 'Product & Factory Photos' },
-  { id: 'site', title: 'On-site Photos' },
+  { id: 'factory', title: t("Product & Factory Photos", "產品與車間照片") },
+  { id: 'site', title: t("On-site Photos", "現場照片") },
 ] as const;
 const galleryGroups = groups.map(group => ({
   ...group,
@@ -34,16 +38,16 @@ const galleryGroups = groups.map(group => ({
 }));
 ---
 <SiteLayout title={category.heading} description={category.description}>
-  <PageHeading eyebrow="Made to Order" title={category.heading} description={category.description} />
+  <PageHeading eyebrow={t("Made to Order", "依需求製作")} title={category.heading} description={category.description} />
   <section class="section listing-section">
     <div class="container">
-      <nav class="material-tabs" aria-label="Browse by category">
-        <a href="/en/products/">Product Categories</a>
-        {productCategories.map(entry => <a href={`/en/products/${entry.id}/`} aria-current={entry.id === category.id ? 'page' : undefined}>{entry.title}</a>)}
+      <nav class="material-tabs" aria-label={t("Browse by category", "依類別瀏覽")}>
+        <a href={path("/en/products/")}>{t("Product Categories", "產品分類")}</a>
+        {categories.map(entry => <a href={path(`/en/products/${entry.id}/`)} aria-current={entry.id === category.id ? 'page' : undefined}>{entry.title}</a>)}
       </nav>
-      <div class="listing-meta"><p>{photos.length} products</p><a href="/en/contact/" class="text-link">Get Quote <span aria-hidden="true">↗</span></a></div>
+      <div class="listing-meta"><p>{t(`${photos.length} products`, `${photos.length} 項產品`)}</p><a href={path("/en/contact/")} class="text-link">{t("Get Quote", "洽詢報價")} <span aria-hidden="true">↗</span></a></div>
       {category.id === 'fiberglass' && (
-        <nav class="material-tabs gallery-navigation" aria-label="Fiberglass product groups">
+        <nav class="material-tabs gallery-navigation" aria-label={t("Fiberglass product groups", "玻璃纖維產品分組")}>
           {groups.map(group => <a href={`#${group.id}`}>{group.title}</a>)}
         </nav>
       )}
@@ -51,7 +55,7 @@ const galleryGroups = groups.map(group => ({
         <section class="catalog-group" id={group.id} aria-labelledby={`${group.id}-heading`}>
           <h2 id={`${group.id}-heading`}>{group.title}</h2>
           {group.views.length > 1 && (
-            <nav class="view-navigation" aria-label={`${group.title} photo types`}>
+            <nav class="view-navigation" aria-label={t(`${group.title} photo types`, `${group.title}照片類型`)}>
               {group.views.map(view => <a href={`#${view.anchor}`}>{view.title} ({view.items.length})</a>)}
             </nav>
           )}
@@ -63,7 +67,7 @@ const galleryGroups = groups.map(group => ({
           ))}
         </section>
       ))}
-      {isPreview && cases.length > 0 && <details class="case-previews"><summary>Case detail previews · Unpublished</summary><div class="case-grid">{cases.map(item => <CaseCard item={item} />)}</div></details>}
+      {isPreview && cases.length > 0 && <details class="case-previews"><summary>{t("Case detail previews · Unpublished", "案例頁預覽・尚未發布")}</summary><div class="case-grid">{cases.map(item => <CaseCard item={item} />)}</div></details>}
       <div class="material-note"><h2>{copy.work.materialNoteTitle}</h2><p>{copy.work.materialNote}</p></div>
     </div>
   </section>

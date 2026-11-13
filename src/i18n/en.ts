@@ -1,4 +1,4 @@
-// Owner-facing English page copy. Review here before introducing another language.
+// English page copy. Keep the Traditional Chinese dictionary in sync.
 export const copy = {
   home: {
     title: 'Custom sculpture manufacturer & bottle props',

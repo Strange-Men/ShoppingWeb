@@ -1,6 +1,7 @@
 @layer base, components, responsive;
 @layer base {
   :root { --navy:#1a1a2e; --navy-soft:#24243b; --gold:#c9a96e; --gold-dark:#775c2c; --ink:#24242b; --muted:#68676c; --paper:#f7f6f2; --line:#e4e1d9; --white:#fff; --radius:12px; --heading:'Playfair Display',Georgia,serif; --body:Inter,Arial,sans-serif; }
+  :root:lang(zh-Hant) { --body:Inter,'PingFang TC','Microsoft JhengHei','Noto Sans CJK TC',sans-serif; --heading:'PingFang TC','Microsoft JhengHei','Noto Sans CJK TC',sans-serif; }
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; scroll-padding-block-start:100px; }
   body { margin:0; color:var(--ink); font:400 15px/1.8 var(--body); background:var(--white); }
@@ -40,9 +41,9 @@
   .site-header { position:sticky; inset-block-start:0; z-index:40; background:var(--navy); color:var(--white); border-block-end:1px solid #ffffff18; }
   .header-inner { display:flex; align-items:center; gap:28px; min-block-size:82px; }
   .brand { display:flex; gap:12px; align-items:center; flex-shrink:0; }
-  .brand-mark { inline-size:46px; block-size:auto; flex-shrink:0; object-fit:contain; }
-  .brand strong { display:block; font:500 22px/1.2 var(--heading); letter-spacing:.085em; }
-  .brand small { display:block; font-size:10px; letter-spacing:.12em; line-height:1.5; margin-block-start:6px; color:#b9b7c3; }
+  .brand-mark { inline-size:37px; block-size:auto; flex-shrink:0; object-fit:contain; }
+  .brand strong { display:block; font:700 21px/1.15 Inter,Arial,sans-serif; letter-spacing:-.035em; }
+  .brand small { display:block; font:500 11px/1.5 'PingFang TC','Microsoft JhengHei','Noto Sans CJK TC',sans-serif; letter-spacing:.15em; margin-block-start:5px; color:#d7c8aa; }
   .brand small span { font-size:8px; letter-spacing:.04em; }
   .desktop-nav { display:flex; align-self:stretch; align-items:center; gap:26px; margin-inline:auto; }
   .desktop-nav a { font-size:12px; position:relative; white-space:nowrap; }
@@ -70,6 +71,7 @@
   .language-panel li { display:flex; justify-content:space-between; align-items:center; padding:14px 0; border-block-end:1px solid var(--line); font-size:16px; }
   .language-panel li small { font:400 10px/1.4 var(--body); color:var(--muted); }
   .language-current span { color:var(--gold-dark); }
+  .language-panel li a { text-decoration:underline; text-underline-offset:4px; }
   .language-panel .text-button { font-size:10px; }
   .text-button { padding:8px 0; border:0; background:none; display:flex; inline-size:100%; justify-content:space-between; }
   .mobile-menu { display:none; }
@@ -264,7 +266,7 @@
     .preview-dot { display:none; }
     .header-inner { min-block-size:68px; gap:12px; }
     .brand { gap:9px; }
-    .brand-mark { inline-size:36px; }
+    .brand-mark { inline-size:30px; }
     .brand strong { font-size:16px; letter-spacing:.06em; }
     .brand small { font-size:9px; margin-block-start:5px; }
     .brand small span { display:none; }

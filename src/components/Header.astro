@@ -1,26 +1,30 @@
 ---
 import LanguageCard from './LanguageCard.astro';
 import Brand from './Brand.astro';
-import { productCategories } from '../data/site';
-const links = [{ url: '/en/', label: 'Home' }, { url: '/en/about/', label: 'About Us' }, { url: '/en/products/', label: 'Products' }, { url: '/en/contact/', label: 'Contact' }];
-const current = (url: string) => url === '/en/' ? Astro.url.pathname === url : Astro.url.pathname.startsWith(url);
+import { localize } from '../i18n/content';
+import type { SculptureCase } from '../data/types';
+interface Props { item?: SculptureCase }
+const { item } = Astro.props;
+const { t, path, categories } = localize(Astro.url.pathname);
+const links = [{ url: path('/en/'), label: t('Home', '首頁') }, { url: path('/en/about/'), label: t('About Us', '關於我們') }, { url: path('/en/products/'), label: t('Products', '產品') }, { url: path('/en/contact/'), label: t('Contact', '聯絡我們') }];
+const current = (url: string) => url === path('/en/') ? Astro.url.pathname === url : Astro.url.pathname.startsWith(url);
 ---
 <header class="site-header">
   <div class="container header-inner">
     <Brand />
-    <nav class="desktop-nav" aria-label="Main navigation">
+    <nav class="desktop-nav" aria-label={t("Main navigation", "主選單")}>
       {links.map((link) => <a href={link.url} aria-current={current(link.url) ? 'page' : undefined}>{link.label}</a>)}
     </nav>
-    <div class="header-actions"><LanguageCard /><a href="/en/contact/" class="button button-gold header-cta">Get Quote <span aria-hidden="true">↗</span></a></div>
+    <div class="header-actions"><LanguageCard item={item} /><a href={path("/en/contact/")} class="button button-gold header-cta">{t("Get Quote", "洽詢報價")} <span aria-hidden="true">↗</span></a></div>
     <details class="mobile-menu" data-disclosure="menu">
-      <summary aria-controls="mobile-panel"><span class="menu-lines" aria-hidden="true">☰</span><span class="sr-only">Menu</span></summary>
+      <summary aria-controls="mobile-panel"><span class="menu-lines" aria-hidden="true">☰</span><span class="sr-only">{t("Menu", "選單")}</span></summary>
       <div class="menu-backdrop" aria-hidden="true"></div>
       <div class="mobile-panel" id="mobile-panel">
-        <div class="mobile-panel-top"><span class="eyebrow">Explore the studio</span></div>
-        <nav aria-label="Mobile navigation">{links.map((link, index) => <a href={link.url} aria-current={current(link.url) ? 'page' : undefined}><span class="nav-number">0{index + 1}</span>{link.label}<span aria-hidden="true">↗</span></a>)}</nav>
-        <div class="mobile-materials"><span class="eyebrow">Product categories</span>{productCategories.map(category => <a href={`/en/products/${category.id}/`}>{category.title}</a>)}</div>
-        <a href="/en/contact/" class="button button-gold">Get Quote <span aria-hidden="true">↗</span></a>
-        <p class="muted small">Custom sculpture. A conversation starts with your idea.</p>
+        <div class="mobile-panel-top"><span class="eyebrow">{t("Explore the studio", "探索楠軒")}</span></div>
+        <nav aria-label={t("Mobile navigation", "手機選單")}>{links.map((link, index) => <a href={link.url} aria-current={current(link.url) ? 'page' : undefined}><span class="nav-number">0{index + 1}</span>{link.label}<span aria-hidden="true">↗</span></a>)}</nav>
+        <div class="mobile-materials"><span class="eyebrow">{t("Product categories", "產品分類")}</span>{categories.map(category => <a href={path(`/en/products/${category.id}/`)}>{category.title}</a>)}</div>
+        <a href={path("/en/contact/")} class="button button-gold">{t("Get Quote", "洽詢報價")} <span aria-hidden="true">↗</span></a>
+        <p class="muted small">{t("Custom sculpture. A conversation starts with your idea.", "歡迎分享您的客製雕塑構想。")}</p>
       </div>
     </details>
   </div>

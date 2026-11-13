@@ -4,10 +4,10 @@ import { photo } from './photography.ts';
 // The only switch for a release build. `pnpm build` is a noindex preview by default.
 export const isPreview = process.env.SITE_MODE !== 'production';
 export const site = {
-  companyName: '楠轩雕塑',
+  companyName: '楠軒雕塑',
   brandName: 'NanXuan', // Owner-confirmed spelling and capitalization.
   legalName: 'Shenzhen Nanxuan Crafts Co., Ltd.',
-  legalNameZh: '深圳市楠轩工艺品有限公司',
+  legalNameZh: '深圳市楠軒工藝品有限公司',
   foundedYear: 2012,
   workshopAreaSqm: 4000,
   canonicalOrigin: '', // Verified public HTTPS origin, without a path.

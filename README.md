@@ -1,10 +1,10 @@
 # 定制雕塑海外官网
 
-楠轩雕塑的定制雕塑与瓶子道具展示及询盘网站。英文品牌 **NanXuan**，WhatsApp 与邮箱已配置。英文版已上线分享预览，繁中和阿语预留。
+楠軒雕塑的客製雕塑與瓶型道具展示及詢價網站。英文品牌 **NanXuan**，已配置 WhatsApp 與電子郵件。英文 `/en/` 與繁體中文 `/zh-hant/` 由共用 Astro 頁面靜態生成，阿語保留待上線。
 
 当前阶段为 P1 英文素材预览版。Products 总览提供三个分类入口，分类页展示玻璃钢 149 项、不锈钢 43 项、瓶子道具 40 项。玻璃钢可按电镀、仿铜、机器人及其他造型浏览，各类图库区分产品及工厂照片与现场照片。验收见 [产品图库](docs/qa/2026-11-13/catalog-expansion.md) 和 [车间图库](docs/qa/2026-11-12/README.md)。
 
-v0.3.1 公司标更新：已按业主要求设计“铸形 NX”，替换页头、页脚和浏览器图标，网站整体 UI 保持原样。[设计方案、官方参考与透明文件](docs/BRAND_IDENTITY.md)；需重新导出标志时运行 `pnpm prepare:brand`。
+页首、页尾和浏览器图标采用业主选定的新标志。[品牌说明与透明文件](docs/BRAND_IDENTITY.md)。重新导出时运行 `pnpm prepare:brand`。
 
 2026-11-05 后续授权：业主要求上线供同事查看的分享预览，覆盖此前“仅本地”的托管限制；仍保持 noindex，不采购域名／服务器，不启用正式案例或正式 SEO。部署状态及换电脑步骤见 [分享预览](docs/SHARED_PREVIEW.md)。
 
@@ -28,7 +28,7 @@ pnpm preview
 | --- | --- |
 | `pnpm check` | Astro／TypeScript、内容、咨询链接断言、文档完整性 |
 | `pnpm build` | 占位版构建，随后检查静态内链、元信息、noindex、JS 预算 |
-| `pnpm check:http` | 预览运行时检查 249 个页面入口和 5 个 404 路径 |
+| `pnpm check:http` | 预览运行时检查 497 个页面入口和 5 个 404 路径 |
 | `pnpm prepare:media` | 从 252 张在用 WebP 母版生成 773 张响应式派生图 |
 | `pnpm check:media` | 构建并启动预览后检查图片尺寸、体积和 HTTP 加载 |
 | `pnpm check:release` | 正式资料检查；当前应失败并列出缺失项 |
@@ -43,8 +43,8 @@ pnpm preview
 - [品牌、图片、账号和服务范围](src/data/site.ts)：NanXuan 与主要咨询账号已确认；其他空值保留占位。
 - [图片清单](src/data/photography.json)和[素材处理说明](docs/IMAGE_ASSETS.md)：来源、尺寸、编辑记录及焦点集中维护；[母版目录](src/assets/photos)随 Git 提交。`dev`、`check`、`build` 自动生成 `public/media/`，派生图不入库；克隆后不需要访问原始 Alan 文件夹。
 - [案例数据](src/data/cases.ts)：稳定 ID、语言内容和状态；8 个记录均为 `preview`，正式模式全部排除。
-- [英文主要页面文案](src/i18n/en.ts)：业务正文和 SEO；导航等固定界面标签保留在组件中。
-- [语言与路由状态](src/i18n/routes.ts)：English 可用，繁中／阿语 Coming soon，未生成对应页面。
+- [英文文案](src/i18n/en.ts)、[繁体中文文案](src/i18n/zh-hant.ts)与[繁中图片文案](src/i18n/photography.zh-hant.json)。
+- [语言与路由状态](src/i18n/routes.ts)：英文与繁中可在同一页面间切换，阿语显示即将推出。
 - [实现和检查记录](docs/IMPLEMENTATION_STATUS.md)、[截图入口](docs/qa/README.md)、[待补素材](docs/CONTENT_ASSETS.md)。
 
 公司资料已由业主确认：Shenzhen Nanxuan Crafts Co., Ltd.，2012 年成立，约 4,000 m² 车间；仅公开深圳公司／肇庆工厂城市。不锈钢工艺为 forging、assembly、grinding、polishing。照片作为经修饰的材料与造型展示，不配虚构客户、地点或交付故事。8 个详情模板仍为未发布预览，藏于列表的 Case detail previews 折叠区。

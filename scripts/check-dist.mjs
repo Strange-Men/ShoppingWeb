@@ -14,7 +14,9 @@ for (const file of files.filter(file=>file.endsWith('.js'))) { const data=await 
 for (const file of files.filter(file=>file.endsWith('.html'))) {
   const html=await readFile(file,'utf8'); const rel=path.relative(dist,file);
   if (/\bA[IL][\s-]+generated\s+design\s+concepts?\b/i.test(html)) errors.push(`Disallowed image label in public HTML: ${rel}`);
-  if (rel.replaceAll('\\','/') === 'en/index.html') {
+  const normalizedPath = rel.replaceAll('\\', '/');
+  const chinese = normalizedPath.startsWith('zh-hant/');
+  if (normalizedPath === 'en/index.html' || normalizedPath === 'zh-hant/index.html') {
     const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1] || '';
     const images = [...main.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map(match => match[1]);
     if (images.length !== new Set(images).size) errors.push('Homepage repeats a product image.');
@@ -27,7 +29,8 @@ for (const file of files.filter(file=>file.endsWith('.html'))) {
   if(!title || titles.has(title)) errors.push(`Missing/duplicate title: ${rel}`); titles.add(title);
   if(!description || descriptions.has(description)) errors.push(`Missing/duplicate description: ${rel}`); descriptions.add(description);
   if((html.match(/<h1(?:\s|>)/g)||[]).length!==1) errors.push(`Expected one H1: ${rel}`);
-  if(!html.includes('lang="en"')) errors.push(`English lang missing: ${rel}`);
+  if (!html.includes(`<html lang="${chinese ? 'zh-Hant' : 'en'}"`)) errors.push(`Page language mismatch: ${rel}`);
+  if (/楠轩|深圳市楠轩|繁体中文/.test(html)) errors.push(`Simplified Chinese brand or language label: ${rel}`);
   if(isPreview && !html.includes('content="noindex, nofollow"')) errors.push(`Preview noindex missing: ${rel}`);
   if(isPreview && /rel="canonical"|hreflang=/.test(html)) errors.push(`Preview must not emit production SEO links: ${rel}`);
   if(/tongmeisculpture\.com|<form|href="#"|src="https?:\/\//i.test(html)) errors.push(`Forbidden external media/form/fake link: ${rel}`);

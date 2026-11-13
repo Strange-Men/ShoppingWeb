@@ -1,34 +1,38 @@
 ---
-import { copy } from '../../i18n/en';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import ProductCategoryGrid from '../../components/ProductCategoryGrid.astro';
 import SculptureGallery from '../../components/SculptureGallery.astro';
 import Inquiry from '../../components/Inquiry.astro';
 import Process from '../../components/Process.astro';
 import HomeHero from '../../components/HomeHero.astro';
-import { media, productCategories, capabilities, site } from '../../data/site';
+import { media, productCategories, site } from '../../data/site';
 import { presentationImages } from '../../data/photography';
+import { localize } from "../../i18n/content";
+import { localizedRoutes } from '../../i18n/routes';
+
+const { t, path, copy, categories, company } = localize(Astro.url.pathname);
 const gallery = productCategories.flatMap(({ id }) => presentationImages(id)
   .filter(item => item.image.source !== media[id].source && item.image.source !== media.hero.source)
   .slice(0, 2));
+export const getStaticPaths = localizedRoutes;
 ---
 <SiteLayout title={copy.home.title} description={copy.home.description}>
   <HomeHero />
   <section class="section intro-section">
     <div class="container section-heading">
-      <h2>About NanXuan</h2>
-      <p>Established in {site.foundedYear}, {site.legalName} manufactures custom sculptures and display props, with an approximately {site.workshopAreaSqm.toLocaleString('en-US')} m² workshop in Zhaoqing, Guangdong, China.</p>
-      <a href="/en/about/" class="text-link">About Us <span aria-hidden="true">↗</span></a>
+      <h2>{t("About NanXuan", "關於楠軒")}</h2>
+      <p>{t(`Established in ${site.foundedYear}, ${site.legalName} manufactures custom sculptures and display props, with an approximately ${site.workshopAreaSqm.toLocaleString('en-US')} m² workshop in Zhaoqing, Guangdong, China.`, `楠軒成立於 ${site.foundedYear} 年，製作客製雕塑與展示道具，在中國廣東肇慶設有約 ${site.workshopAreaSqm.toLocaleString('zh-Hant')} 平方公尺的車間。`)}</p>
+      <a href={path("/en/about/")} class="text-link">{t("About Us", "關於我們")} <span aria-hidden="true">↗</span></a>
     </div>
   </section>
   <section class="section featured-section">
     <div class="container">
       <div class="section-heading"><h2>{copy.home.featured}</h2><div class="gold-rule"></div></div>
-      <nav class="material-tabs featured-categories" aria-label="Browse featured product categories">
-        {productCategories.map(category => <a href={`/en/products/${category.id}/`}>{category.title}</a>)}
+      <nav class="material-tabs featured-categories" aria-label={t("Browse featured product categories", "瀏覽精選產品分類")}>
+        {categories.map(category => <a href={path(`/en/products/${category.id}/`)}>{category.title}</a>)}
       </nav>
       <SculptureGallery items={gallery} threeColumns />
-      <div class="section-action"><a href="/en/products/" class="button button-outline">View All Products <span aria-hidden="true">↗</span></a></div>
+      <div class="section-action"><a href={path("/en/products/")} class="button button-outline">{t("View All Products", "瀏覽全部產品")} <span aria-hidden="true">↗</span></a></div>
     </div>
   </section>
   <section class="section materials-section">
@@ -41,7 +45,7 @@ const gallery = productCategories.flatMap(({ id }) => presentationImages(id)
     <div class="container">
       <div class="section-heading"><h2>{copy.home.capabilities}</h2><div class="gold-rule"></div></div>
       <div class="capability-grid">
-        {capabilities.map(item => <article><h3>{item.title}</h3><p>{item.text}</p></article>)}
+        {company.capabilities.map(item => <article><h3>{item.title}</h3><p>{item.text}</p></article>)}
       </div>
     </div>
   </section>

@@ -1,0 +1,80 @@
+---
+import SiteLayout from '../../../../layouts/SiteLayout.astro';
+import Media from '../../../../components/Media.astro';
+import SculptureGallery from '../../../../components/SculptureGallery.astro';
+import { applicationImages, presentationImages } from '../../../../data/photography';
+import { localize } from "../../../../i18n/content";
+import { localizedRoutes } from '../../../../i18n/routes';
+import { localizedPhoto, localizedTitle } from '../../../../i18n/photos';
+
+const { t, path, copy, categories, chinese } = localize(Astro.url.pathname);
+
+export function getStaticPaths() {
+  return localizedRoutes().flatMap(({ params }) => presentationImages().map(item => ({ params: { ...params, id: item.id }, props: { item } })));
+}
+
+const { item } = Astro.props;
+const title = localizedTitle(item, chinese);
+const category = categories.find(entry => entry.id === item.category)!;
+const categoryPath = path(`/en/products/${category.id}/`);
+const related = presentationImages(item.category).filter(entry => entry.id !== item.id).slice(0, 3);
+const scenes = applicationImages(item.id).map(scene => localizedPhoto(scene, chinese));
+---
+<SiteLayout title={title} description={t(`${title} from NanXuan. ${category.description}`, `${title}｜楠軒雕塑。 ${category.description}`)} noindex>
+  <div class="container">
+    <nav class="breadcrumbs" aria-label={t("Breadcrumb", "目前位置")}>
+      <a href={path("/en/")}>{t("Home", "首頁")}</a><span aria-hidden="true">/</span>
+      <a href={path("/en/products/")}>{t("Products", "產品")}</a><span aria-hidden="true">/</span>
+      <a href={categoryPath}>{category.title}</a><span aria-hidden="true">/</span>
+      <span aria-current="page">{title}</span>
+    </nav>
+  </div>
+  <section class="section case-detail">
+    <div class="container detail-grid">
+      <div class="product-image">
+        <a href={item.image.source!} aria-label={t(`View full image of ${title}`, `查看${title}大圖`)}>
+          <Media image={localizedPhoto(item.image, chinese)} eager sizes="(max-width: 899px) 100vw, 620px" />
+        </a>
+      </div>
+      <div class="detail-copy">
+        <p class="eyebrow">{category.title}</p>
+        <h1>{title}</h1>
+        <p class="lead">{category.description}</p>
+        <h2>{t("Request a Quote", "詢價")}</h2>
+        <p>{copy.work.materialNote}</p>
+        <a href={path("/en/contact/")} class="button button-gold">{t("Get Quote", "洽詢報價")} <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+  {scenes.length > 0 && (
+    <section class="section application-section">
+      <div class="container">
+        <div class="section-heading"><h2>{t("Application Ideas", "應用示意")}</h2></div>
+        {scenes.map(scene => (
+          <figure>
+            <a href={scene.source!} aria-label={t(`View full image: ${scene.alt}`, `查看大圖：${scene.alt}`)}>
+              <Media image={scene} sizes="(max-width: 899px) 100vw, 1080px" />
+            </a>
+            <figcaption>{scene.alt}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  )}
+  <section class="section">
+    <div class="container">
+      <div class="section-heading"><h2>{t("Related Products", "相關產品")}</h2></div>
+      <SculptureGallery items={related} />
+      <div class="section-action"><a href={categoryPath} class="text-link">{t("View Category", "瀏覽此分類")} <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </section>
+</SiteLayout>
+
+<style>
+  .application-section { background:var(--paper); }
+  .application-section figure { max-inline-size:1080px; margin-inline:auto; }
+  .application-section a { display:block; cursor:zoom-in; }
+  .application-section figcaption { margin-block-start:12px; color:var(--muted); }
+  .product-image a { display:block; cursor:zoom-in; }
+  .detail-copy .button { margin-block-start:20px; }
+</style>

@@ -1,16 +1,33 @@
 ---
-import { languages } from '../i18n/routes';
+import { languages, equivalentCasePath } from '../i18n/routes';
+import type { SculptureCase } from '../data/types';
+import { localize } from '../i18n/content';
+interface Props { item?: SculptureCase }
+const { item } = Astro.props;
+const { t, lang } = localize(Astro.url.pathname);
+const current = languages.find(language => language.locale === lang)!;
+const suffix = /^\/(?:en|zh-hant)\//.test(Astro.url.pathname)
+  ? Astro.url.pathname.replace(/^\/(?:en|zh-hant)\//, '/')
+  : '/';
+const choices = languages.map(language => ({
+  ...language,
+  href: item ? equivalentCasePath(item, language.locale) : `${language.prefix}${suffix.slice(1)}`,
+}));
 ---
 <details class="language-picker" data-disclosure="language">
-  <summary aria-controls="language-panel"><span aria-hidden="true">◎</span> English <span class="chevron" aria-hidden="true">⌄</span></summary>
+  <summary aria-controls="language-panel"><span aria-hidden="true">◎</span> <span lang={current.locale}>{current.label}</span> <span class="chevron" aria-hidden="true">⌄</span></summary>
   <div class="language-panel" id="language-panel">
-    <p class="eyebrow">Choose your language</p>
+    <p class="eyebrow">{t('Choose your language', '選擇語言')}</p>
     <ul>
-      {languages.map((language) => <li lang={language.locale} dir={language.dir} class:list={{ 'language-current': language.enabled }}>
-        <span>{language.label}</span>
-        {language.enabled ? <small lang="en" dir="ltr">Current language <span aria-hidden="true">✓</span></small> : <small lang="en" dir="ltr">Coming soon</small>}
+      {choices.map((language) => <li class:list={{ 'language-current': language.locale === lang }}>
+        {language.enabled && language.href && language.locale !== lang
+          ? <a href={language.href} lang={language.locale}>{language.label} <span aria-hidden="true">↗</span></a>
+          : <span lang={language.locale} dir={language.dir}>{language.label}</span>}
+        {language.locale === lang && <small>{t('Current language', '目前語言')} <span aria-hidden="true">✓</span></small>}
+        {!language.enabled && <small>{t('Coming soon', '即將推出')}</small>}
+        {language.enabled && !language.href && language.locale !== lang && <small>{t('Translation unavailable', '尚無此頁譯文')}</small>}
       </li>)}
     </ul>
-    <button class="text-button disclosure-close" type="button">Close language selection <span aria-hidden="true">×</span></button>
+    <button class="text-button disclosure-close" type="button">{t('Close language selection', '關閉語言選單')} <span aria-hidden="true">×</span></button>
   </div>
 </details>

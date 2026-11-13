@@ -1,15 +1,19 @@
 ---
-import { copy } from '../../../i18n/en';
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import PageHeading from '../../../components/PageHeading.astro';
 import Inquiry from '../../../components/Inquiry.astro';
 import ProductCategoryGrid from '../../../components/ProductCategoryGrid.astro';
+import { localize } from "../../../i18n/content";
+import { localizedRoutes } from '../../../i18n/routes';
+
+const { t, copy } = localize(Astro.url.pathname);
+export const getStaticPaths = localizedRoutes;
 ---
 <SiteLayout title={copy.work.title} description={copy.work.description}>
   <PageHeading eyebrow={copy.work.eyebrow} title={copy.work.heading} description={copy.work.lead} />
   <section class="section materials-section category-overview">
     <div class="container">
-      <h2 class="sr-only">Product Categories</h2>
+      <h2 class="sr-only">{t("Product Categories", "產品分類")}</h2>
       <ProductCategoryGrid />
     </div>
   </section>

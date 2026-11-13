@@ -1,7 +1,8 @@
 ---
-import { copy } from '../i18n/en';
 import ContactActions from './ContactActions.astro';
+import { localize } from "../i18n/content";
+const { t, path, copy } = localize(Astro.url.pathname);
 ---
 <section class="inquiry-section">
-  <div class="container inquiry-inner"><div><h2>{copy.inquiry.title}</h2><p>{copy.inquiry.text}</p></div><div><ContactActions /><a class="text-link light-link" href="/en/contact/">Contact Us <span aria-hidden="true">↗</span></a></div></div>
+  <div class="container inquiry-inner"><div><h2>{copy.inquiry.title}</h2><p>{copy.inquiry.text}</p></div><div><ContactActions /><a class="text-link light-link" href={path("/en/contact/")}>{t("Contact Us", "聯絡我們")} <span aria-hidden="true">↗</span></a></div></div>
 </section>

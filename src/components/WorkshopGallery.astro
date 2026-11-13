@@ -2,19 +2,28 @@
 import { workshopPhotos } from '../data/photography';
 import Media from './Media.astro';
 
-const photos = workshopPhotos();
+const captions = [
+  ['鏡面拋光鋼環', '鏡面拋光鋼環放在製作區的支架上。'],
+  ['金屬加工', '師傅在樣板和工作臺旁加工金屬零件。'],
+  ['大型雕塑組裝', '團隊在車間製作大型不鏽鋼人形雕塑。'],
+  ['發光圓環安裝', '車間內的圓形雕塑已點亮。'],
+  ['大型展示道具', '大型冰淇淋道具與彩色公仔並排陳列。'],
+];
 const format = (value: number) => String(value).padStart(2, '0');
+import { localize } from "../i18n/content";
+const { t, chinese } = localize(Astro.url.pathname);
+const photos = workshopPhotos().map((photo, index) => chinese ? { ...photo, title: captions[index][0], caption: captions[index][1] } : photo);
 ---
-<section id="our-workshop" class="section workshop" aria-labelledby="workshop-heading" data-workshop-gallery>
+<section id="our-workshop" class="section workshop" aria-labelledby="workshop-heading" data-workshop-gallery data-role-description={t("carousel", "輪播圖庫")}>
   <div class="container">
     <div class="workshop-heading">
-      <h2 id="workshop-heading">Our Workshop</h2>
-      <p>Inside our fabrication workshop in Zhaoqing, Guangdong.</p>
+      <h2 id="workshop-heading">{t("Our Workshop", "我們的車間")}</h2>
+      <p>{t("Inside our fabrication workshop in Zhaoqing, Guangdong.", "走進楠軒位於廣東肇慶的製作車間。")}</p>
     </div>
     <div class="workshop-panel">
-      <div class="workshop-track" id="workshop-photos" role="group" aria-label="Workshop photos" tabindex="0">
+      <div class="workshop-track" id="workshop-photos" role="group" aria-label={t("Workshop photos", "車間照片")} tabindex="0">
         {photos.map(({ image, title, caption }, index) => (
-          <figure class="workshop-slide" data-workshop-slide aria-label={`${index + 1} of ${photos.length}`}>
+          <figure class="workshop-slide" data-workshop-slide aria-label={t(`${index + 1} of ${photos.length}`, `第 ${index + 1} 張，共 ${photos.length} 張`)}>
             <Media image={image} sizes="(max-width: 699px) 100vw, (max-width: 1240px) 65vw, 800px" />
             <figcaption>
               <h3>{title}</h3>
@@ -24,9 +33,9 @@ const format = (value: number) => String(value).padStart(2, '0');
         ))}
       </div>
       <div class="workshop-controls" data-workshop-controls hidden>
-        <div class="workshop-thumbnails" role="group" aria-label="Choose a workshop photo">
+        <div class="workshop-thumbnails" role="group" aria-label={t("Choose a workshop photo", "選擇車間照片")}>
           {photos.map(({ image, title }) => (
-            <button type="button" aria-controls="workshop-photos" data-workshop-thumb aria-label={`Show ${title}`}>
+            <button type="button" aria-controls="workshop-photos" data-workshop-thumb aria-label={t(`Show ${title}`, `顯示${title}`)}>
               <img src={image.variants?.[0]?.source} alt="" width="76" height="56" loading="lazy" decoding="async" />
             </button>
           ))}
@@ -36,8 +45,8 @@ const format = (value: number) => String(value).padStart(2, '0');
             <span class="sr-only" data-workshop-announcement>{photos[0].title}</span>
             <span data-workshop-count>{format(1)} / {format(photos.length)}</span>
           </p>
-          <button type="button" class="workshop-arrow" data-workshop-prev aria-controls="workshop-photos" aria-label="Previous workshop photo"><span aria-hidden="true">←</span></button>
-          <button type="button" class="workshop-arrow" data-workshop-next aria-controls="workshop-photos" aria-label="Next workshop photo"><span aria-hidden="true">→</span></button>
+          <button type="button" class="workshop-arrow" data-workshop-prev aria-controls="workshop-photos" aria-label={t("Previous workshop photo", "上一張車間照片")}><span aria-hidden="true">←</span></button>
+          <button type="button" class="workshop-arrow" data-workshop-next aria-controls="workshop-photos" aria-label={t("Next workshop photo", "下一張車間照片")}><span aria-hidden="true">→</span></button>
         </div>
       </div>
     </div>
@@ -88,7 +97,7 @@ const format = (value: number) => String(value).padStart(2, '0');
     });
     sync();
     controls.hidden = false;
-    gallery.setAttribute('aria-roledescription', 'carousel');
+    gallery.setAttribute('aria-roledescription', gallery.dataset.roleDescription!);
   }
 </script>
 

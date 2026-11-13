@@ -1,16 +1,18 @@
 ---
-import { media, productCategories } from '../data/site';
+import { media } from '../data/site';
 import { presentationImages } from '../data/photography';
 import Media from './Media.astro';
+import { localize } from "../i18n/content";
+const { t, path, categories } = localize(Astro.url.pathname);
 ---
-<nav class="material-grid" aria-label="Product categories">
-  {productCategories.map(category => (
-    <a href={`/en/products/${category.id}/`} class="material-card">
+<nav class="material-grid" aria-label={t("Product categories", "產品分類")}>
+  {categories.map(category => (
+    <a href={path(`/en/products/${category.id}/`)} class="material-card">
       <Media image={media[category.id]} sizes="(max-width: 599px) 100vw, (max-width: 1199px) 33vw, 400px" />
       <div class="material-card-body">
         <h3>{category.title}</h3>
         <p>{category.description}</p>
-        <span class="text-link">View {presentationImages(category.id).length} Products <span aria-hidden="true">↗</span></span>
+        <span class="text-link">{t(`View ${presentationImages(category.id).length} Products`, `瀏覽 ${presentationImages(category.id).length} 項產品`)} <span aria-hidden="true">↗</span></span>
       </div>
     </a>
   ))}

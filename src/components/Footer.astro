@@ -1,13 +1,15 @@
 ---
-import { productCategories, site, isPreview } from '../data/site';
+import { site, isPreview } from '../data/site';
 import { socialUrl } from '../lib/inquiry';
 import Brand from './Brand.astro';
 const social = [{name:'Facebook', url:socialUrl(site.contacts.facebookUrl,'facebook')}, {name:'Instagram',url:socialUrl(site.contacts.instagramUrl,'instagram')}];
+import { localize } from "../i18n/content";
+const { t, path, categories } = localize(Astro.url.pathname);
 ---
 <footer class="site-footer"><div class="container">
-  <div class="footer-grid"><div class="footer-brand"><Brand /><p>Custom sculptures in fiberglass / FRP and stainless steel, plus oversized bottle props for displays.</p>{!site.brandName && <small class="muted">English brand awaiting confirmation.</small>}</div>
-    <div><h2>Explore</h2><a href="/en/">Home</a><a href="/en/about/">About Us</a><a href="/en/products/">Products</a><a href="/en/contact/">Contact</a></div>
-    <div><h2>Products</h2>{productCategories.map(category => <a href={`/en/products/${category.id}/`}>{category.title}</a>)}</div>
-    <div><h2>Let’s talk</h2><p>WhatsApp & email</p><a href="/en/contact/">Contact details <span aria-hidden="true">↗</span></a>{social.filter(item => item.url).map(item => <a href={item.url!} target="_blank" rel="noopener noreferrer">{item.name} ↗</a>)}</div>
-  </div><div class="footer-bottom"><span>© {new Date().getFullYear()} {site.companyName}</span><span>{isPreview ? 'P1 preview · Not for public release' : 'Custom sculpture studio'}</span><a href="/en/privacy/">Privacy notice</a></div>
+  <div class="footer-grid"><div class="footer-brand"><Brand /><p>{t("Custom sculptures in fiberglass / FRP and stainless steel, plus oversized bottle props for displays.", "客製玻璃纖維（FRP）與不鏽鋼雕塑，以及各式大型瓶型展示道具。")}</p>{!site.brandName && <small class="muted">{t("English brand awaiting confirmation.", "英文品牌名稱待確認。")}</small>}</div>
+    <div><h2>{t("Explore", "網站導覽")}</h2><a href={path("/en/")}>{t("Home", "首頁")}</a><a href={path("/en/about/")}>{t("About Us", "關於我們")}</a><a href={path("/en/products/")}>{t("Products", "產品")}</a><a href={path("/en/contact/")}>{t("Contact", "聯絡我們")}</a></div>
+    <div><h2>{t("Products", "產品")}</h2>{categories.map(category => <a href={path(`/en/products/${category.id}/`)}>{category.title}</a>)}</div>
+    <div><h2>{t("Let’s talk", "聯絡方式")}</h2><p>{t("WhatsApp & email", "WhatsApp 與電子郵件")}</p><a href={path("/en/contact/")}>{t("Contact details", "聯絡資訊")} <span aria-hidden="true">↗</span></a>{social.filter(item => item.url).map(item => <a href={item.url!} target="_blank" rel="noopener noreferrer">{item.name} ↗</a>)}</div>
+  </div><div class="footer-bottom"><span lang="zh-Hant">© {new Date().getFullYear()} {site.companyName}</span><span>{isPreview ? t('P1 preview · Not for public release', 'P1 預覽版・尚未正式發布') : t('Custom sculpture studio', '客製雕塑工作室')}</span><a href={path("/en/privacy/")}>{t("Privacy notice", "隱私聲明")}</a></div>
 </div></footer>

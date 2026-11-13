@@ -1497,6 +1497,1494 @@
       "pass": true
     },
     {
+      "route": "/zh-hant/about/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/contact/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/privacy/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/bottle-props/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/abstract-folded-form/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/abstract-steel-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/amber-bottle-lineup/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/amber-jar-pair/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/angled-lipstick-prop/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/animal-character-pair/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/antler-form/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/arched-waterfall/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/bear-family/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/blue-antenna-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/blue-green-characters/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/blue-jar-and-lid/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/blue-jar-set/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/bottle-cups/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/bottle-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/bottle-pastel/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/branching-tree/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/brown-character-lineup/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/building-mounted-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/burgundy-bottle-prop/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/candy-stripe-entrance/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/cartoon-display-set/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-148-cream-character-retail-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-149-outdoor-character-plaza-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-151-framed-character-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-156-outdoor-seated-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-157-oversized-amber-bottles-in-a-retail-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-159-garden-egg-and-rabbit-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-160-colorful-exhibition-sculptures/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-162-winged-figure-garden-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-164-pink-floral-exhibition-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-166-rabbit-figure-in-a-shopping-center/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-167-purple-garden-character-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-168-colorful-urban-sculptures/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-170-festive-red-character-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-171-restaurant-entrance-mascot/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-172-outdoor-red-character-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-173-seasonal-character-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-174-orange-cluster-street-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-175-gingerbread-store-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-176-snowman-store-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-177-pastel-rabbit-retail-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-178-bear-shopping-center-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-179-oversized-packaging-at-a-store-counter/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-180-character-at-a-shop-entrance/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-181-storefront-lucky-cat-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-183-blue-bow-store-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-184-illuminated-circular-character-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-185-purple-bottle-in-a-branded-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-190-white-lobby-robot/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-193-illuminated-night-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-194-food-hall-figure-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-195-suspended-heart-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-198-oversized-burger-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-199-green-atrium-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-200-character-under-a-decorative-arch/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-202-oversized-plate-and-cutlery-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-204-blue-character-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-208-character-wall-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-209-character-interior-installation/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-210-green-themed-exhibition/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-211-gold-themed-exhibition/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-212-moon-and-garden-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-213-indoor-festive-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-214-outdoor-plaza-character-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-215-red-sculptural-flower-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-217-themed-indoor-character-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-218-stacked-character-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-220-green-outdoor-character-installation/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-221-blue-retail-character-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-222-seated-helmet-character-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-224-outdoor-rabbit-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-225-oversized-ice-cream-shop-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-226-panda-shop-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-229-yellow-retail-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-230-illuminated-geometric-arch/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-61-gold-folded-form/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-62-gold-cylinder-set/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-63-metallic-figure-on-a-plinth/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-64-metallic-figurative-sculpture/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-65-gold-character-sculpture/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-67-metallic-costume-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-68-red-and-gold-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-69-mirror-finish-bear-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-70-metallic-helmet-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-71-polished-rabbit-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-72-gold-winged-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-73-green-metallic-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-74-blue-metallic-character-set/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-75-star-shaped-metallic-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-76-bronze-finish-winged-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-77-bronze-finish-standing-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-78-bronze-finish-portrait-bust/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-80-textured-bronze-finish-relief/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-82-bronze-finish-riding-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-83-bronze-finish-seated-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-84-bronze-finish-decorative-relief/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-85-bronze-finish-group-relief/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-86-blue-and-white-robot-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-87-white-helmet-robot-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-88-red-and-gold-robot-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-89-compact-screen-face-robot/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-90-articulated-white-robot/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/catalog-92-white-robot-pair/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/character-photo-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/colored-jars/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/colorful-bottle-trio/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/colorful-character-lineup/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/colorful-jester/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/colorful-packaging-props/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/concept-bottle-cover/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/concept-bottle-perfume/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/concept-bottle-pump/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/concept-frp-cover/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/concept-frp-crane/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/concept-frp-manta/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/concept-hero/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/concept-steel-cover/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/concept-steel-lattice/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/concept-steel-wave/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/costumed-figure-set/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/courtyard-fountain/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/courtyard-metal-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/crowned-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/cup-characters/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/curled-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/curved-bowl-fountain/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/curved-metal-shell/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/decorated-container-set/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/decorative-arch/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/decorative-bee/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/decorative-character-pair/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/diamond-jester/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/dinosaur-figures/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/dispenser-and-jar-set/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/dropper-pair/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/facade-character-installation/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/floral-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/flowing-lines/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/folded-geometric-steel/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/frp-mosaic/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/frp-woodland/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/garden-animal-sculpture/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/garden-steel-loop/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/glasses-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/globe-ring/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/gold-applicator-props/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/gold-cap-bottle/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/gold-helmet-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/green-costume-pair/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/guitar-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/helmet-character-set/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/hero-waterfront/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/hooded-character-pair/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/ice-window-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/iridescent-bust/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/iridescent-floral-steel/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/layered-leaf/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/layered-metal-swirl/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/long-eared-figures/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/lucky-cat/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/mascot-lineup/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/metal-leaves/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/metallic-jar-pair/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/nested-arches/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/openwork-animal/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/orange-robot/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/ornate-character-pair/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/ornate-mask/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/outdoor-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/outdoor-character-set/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/outdoor-qilin/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/pastel-animal-set/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/pastel-character-pair/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/patchwork-bird/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/patterned-eggs/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/perforated-steel-columns/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/pink-character-workshop/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/pink-cylinder-prop/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/pink-mint-bottles/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/pink-tube-prop/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/plaza-ribbon-sculpture/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/plaza-ring/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/polished-metal-flow/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/portrait-head/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/pump-and-jars/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/pumpkin-container-props/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/purple-bottles/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/rabbit-and-duck/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/rabbit-astronaut/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/rearing-horse/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/red-armor-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/red-blue-containers/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/red-cylinder/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/red-elephant/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/red-jar-lineup/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/red-lipstick-prop/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/red-spray-bottle/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/ribbon-fountain/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/robot-quartet/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/round-cat-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/round-robot-characters/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/sailor-characters/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/sculpted-cap/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/seated-cartoon/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/seated-character/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/shopfront-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/silver-astronaut/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/silver-pump/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/sphere-spiral/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/spherical-stack/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/spherical-steel-fountain/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/spiraling-steel-form/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/steel-faceted/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/steel-globe/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/steel-orbits/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/steel-ribbon/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/steel-ring/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/storefront-character-relief/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/sweeping-fountain/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/swept-metal-form/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/tall-bottle/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/tube-and-bottle/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/tube-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/twin-waves/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/upright-abstract-steel/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/white-lion/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/winged-horse/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/woodland-display/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/wrapped-gift-prop/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/yellow-eyed-figure/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/design/yellow-smile/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/fiberglass/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/fiberglass/preview-01/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/fiberglass/preview-02/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/fiberglass/preview-03/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/fiberglass/preview-04/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/stainless-steel/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/stainless-steel/preview-01/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/stainless-steel/preview-02/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/stainless-steel/preview-03/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "route": "/zh-hant/products/stainless-steel/preview-04/",
+      "status": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
       "route": "/qa-missing-page/",
       "status": 404,
       "actual": 404,
@@ -1509,7 +2997,7 @@
       "pass": true
     },
     {
-      "route": "/zh-hant/",
+      "route": "/zh-hant/products/fiberglass/not-a-case/",
       "status": 404,
       "actual": 404,
       "pass": true

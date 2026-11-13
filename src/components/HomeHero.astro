@@ -1,9 +1,6 @@
 ---
 import Media from './Media.astro';
 import { media, productCategories, site } from '../data/site';
-import { copy } from '../i18n/en';
-
-const { hero } = copy.home;
 const icons = [
   'M6 23l2-6L21 4l6 6-13 13-8 2z M19 6l6 6 M8 17l6 6 M5 11l6-6 4 4 M21 19l6 6-3 3-6-6',
   'M16 4l12 7-12 7-12-7 12-7z M4 16l12 7 12-7 M4 21l12 7 12-7',
@@ -11,6 +8,9 @@ const icons = [
   'M3 8h17v15H3z M20 13h5l4 5v5h-9 M7 23a3 3 0 1 0 6 0 M22 23a3 3 0 1 0 6 0',
 ];
 const values = [site.foundedYear, `${site.workshopAreaSqm.toLocaleString('en-US')} m²`, productCategories.length];
+import { localize } from "../i18n/content";
+const { t, path, copy } = localize(Astro.url.pathname);
+const { hero } = copy.home;
 ---
 <section class="home-hero" aria-labelledby="home-hero-title">
   <div class="hero-art">
@@ -22,19 +22,19 @@ const values = [site.foundedYear, `${site.workshopAreaSqm.toLocaleString('en-US'
       <h1 id="home-hero-title">{hero.title[0]} <br />{hero.title[1]}</h1>
       <div class="gold-rule" aria-hidden="true"></div>
       <p class="hero-lead">{hero.text}</p>
-      <ul class="hero-capabilities" aria-label="What we do">
+      <ul class="hero-capabilities" aria-label={t("What we do", "服務內容")}>
         {hero.capabilities.map((label, index) => <li>
           <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={icons[index]} /></svg>
           <span>{label}</span>
         </li>)}
       </ul>
-      <dl class="hero-facts" aria-label="NanXuan at a glance">
+      <dl class="hero-facts" aria-label={t("NanXuan at a glance", "楠軒概況")}>
         {hero.facts.map((label, index) => <div><dt>{label}</dt><dd>{values[index]}</dd></div>)}
       </dl>
       <p class="hero-signoff">{hero.notes.map((note) => <span>{note}</span>)}</p>
       <div class="button-row hero-actions">
-        <a class="button button-gold" href="/en/contact/">Get Quote <span aria-hidden="true">↗</span></a>
-        <a class="text-link" href="/en/products/">View Products <span aria-hidden="true">↗</span></a>
+        <a class="button button-gold" href={path("/en/contact/")}>{t("Get Quote", "洽詢報價")} <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href={path("/en/products/")}>{t("View Products", "瀏覽產品")} <span aria-hidden="true">↗</span></a>
       </div>
     </div>
   </div>

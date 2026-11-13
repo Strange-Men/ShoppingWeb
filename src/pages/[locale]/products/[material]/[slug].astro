@@ -1,0 +1,30 @@
+---
+import SiteLayout from '../../../../layouts/SiteLayout.astro';
+import Gallery from '../../../../components/Gallery.astro';
+import ContactActions from '../../../../components/ContactActions.astro';
+import CaseCard from '../../../../components/CaseCard.astro';
+import { visibleCases } from '../../../../data/cases';
+import { localize } from "../../../../i18n/content";
+import { activeLanguages, equivalentCasePath } from '../../../../i18n/routes';
+import { localizedCase } from '../../../../i18n/cases';
+
+const { t, path, copy, categories, chinese } = localize(Astro.url.pathname);
+export function getStaticPaths() {
+  return activeLanguages.flatMap(language => visibleCases().flatMap(item => {
+    if (!equivalentCasePath(item, language.locale)) return [];
+    const slug = item.status === 'preview' ? item.locales.en.slug : item.locales[language.locale]!.slug;
+    return [{ params: { locale: language.prefix.slice(1, -1), material: item.material, slug }, props: { item } }];
+  }));
+}
+const item = localizedCase(Astro.props.item, chinese);
+const { content } = item;
+const material = categories.find(entry => entry.id === item.material)!;
+const locale = chinese ? 'zh-Hant' : 'en';
+const related = visibleCases().filter(entry => entry.material === item.material && entry.id !== item.id && equivalentCasePath(entry, locale)).slice(0,3);
+---
+<SiteLayout title={content.title} description={content.seoDescription} noindex={item.status !== 'published'} item={item}>
+  <div class="container"><nav class="breadcrumbs" aria-label={t("Breadcrumb", "目前位置")}><a href={path("/en/")}>{t("Home", "首頁")}</a><span aria-hidden="true">/</span><a href={path("/en/products/")}>{t("Our work", "產品展示")}</a><span aria-hidden="true">/</span><a href={path(`/en/products/${item.material}/`)}>{material.title}</a><span aria-hidden="true">/</span><span aria-current="page">{item.status === 'preview' ? t('Preview detail', '案例預覽') : content.title}</span></nav></div>
+  <section class="section case-detail"><div class="container detail-grid"><Gallery images={item.images} title={content.title} /><div class="detail-copy"><p class="eyebrow">{material.title} / {t("Custom sculpture", "客製雕塑")}</p><h1>{content.title}</h1>{item.status === 'preview' && <p class="detail-preview">{t("Layout preview · Unpublished", "版型預覽・尚未發布")}<br /><span>{copy.detail.preview}</span></p>}<p class="lead">{content.summary}</p><dl class="spec-list"><div><dt>{t("Material", "材質")}</dt><dd>{material.title}</dd></div><div><dt>{t("Dimensions", "尺寸")}</dt><dd>{item.sizeNote}</dd></div><div><dt>{t("Surface finish", "表面處理")}</dt><dd>{item.finish || t('To be confirmed with project details.', '依專案需求確認。')}</dd></div><div><dt>{t("Application", "應用場景")}</dt><dd>{item.application || t('Project setting to be added.', '使用環境待補充。')}</dd></div><div><dt>{t("Case reference", "案例編號")}</dt><dd><bdi>{item.id}</bdi></dd></div></dl><h2>{t("Discuss a similar idea", "洽詢類似作品")}</h2><p>{item.customizationNotes}</p><ContactActions title={content.title} path={equivalentCasePath(item, locale)!} /><p class="small muted">{copy.detail.scope}</p></div></div></section>
+  <section class="section detail-notes"><div class="container narrow"><p class="eyebrow">{t("Case information", "案例資訊")}</p><h2>{copy.detail.noteTitle}</h2><p>{content.body}</p><p>{copy.detail.note}</p></div></section>
+  <section class="section"><div class="container"><div class="section-heading"><p class="eyebrow">{t("Continue exploring", "繼續瀏覽")}</p><h2>{t(`More in ${material.title}`, `更多${material.title}`)}</h2></div><div class="case-grid related-grid">{related.map(entry => <CaseCard item={entry} />)}</div><div class="section-action"><a href={path(`/en/products/${item.material}/`)} class="text-link">{t(`Back to ${material.title}`, `返回${material.title}`)} <span aria-hidden="true">↗</span></a></div></div></section>
+</SiteLayout>
